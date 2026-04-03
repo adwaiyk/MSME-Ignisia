@@ -1,0 +1,19 @@
+# Ignore Python virtual env
+venv/
+pyenv/
+__pycache__/
+
+# Ignore large binaries
+api/lib/python3.12/site-packages/nvidia/nccl/lib/libnccl.so.2
+api/lib/python3.12/site-packages/xgboost/lib/libxgboost.so
+
+# Ignore large datasets
+api/pipelining/data-synthesis/datasets/eway_bills.csv
+api/pipelining/data-synthesis/datasets/upi_transactions.csv
+
+# Ignore other unnecessary files
+*.csv
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
