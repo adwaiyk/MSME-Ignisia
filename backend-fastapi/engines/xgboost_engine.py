@@ -16,6 +16,7 @@ _PROJECT_ROOT = os.path.abspath(os.path.join(_ENGINE_DIR, "..", ".."))
 sys.path.insert(0, os.path.join(_PROJECT_ROOT, "data-synthesis"))
 
 import feature_engineering
+import shap_serializer
 
 _MODEL_DIR = os.path.join(_PROJECT_ROOT, "models")
 
@@ -80,11 +81,15 @@ def _sigmoid_stretch(prob: float) -> int:
     score = 300 + 600 * (1.0 - stretched)
     return int(np.clip(round(score), 300, 900))
 
-def _get_risk_band(score: int) -> str:
-    for low, high, band in RISK_BANDS:
-        if low <= score <= high:
-            return band
-    return "HIGH_RISK_DECLINED"
+def _get_risk_band(prob: float) -> str:
+    if prob > 0.8:
+        return "HIGH_RISK_DECLINED"
+    elif prob > 0.6:
+        return "MEDIUM_RISK_REVIEW"
+    elif prob > 0.4:
+        return "LOW_RISK_APPROVED"
+    else:
+        return "VERY_LOW_RISK_APPROVED"
 
 def score(entity_id: str, gst_payload: pd.DataFrame, upi_payload: pd.DataFrame,
           eway_payload: pd.DataFrame, master_payload: pd.DataFrame) -> dict:
@@ -93,24 +98,36 @@ def score(entity_id: str, gst_payload: pd.DataFrame, upi_payload: pd.DataFrame,
             entity_id, gst_payload, upi_payload, eway_payload, master_payload
         )
 
-        X = feature_df[FEATURE_COLS].fillna(0).values
+        X_df = feature_df[FEATURE_COLS].fillna(0)
 
         reasons = []
 
         if _xgb_model is not None:
-            xgb_proba = float(_xgb_model.predict_proba(X)[:, 1][0])
+            xgb_proba = float(_xgb_model.predict_proba(X_df)[:, 1][0])
         else:
             xgb_proba = 0.5
             reasons.append("XGBoost model unavailable — using default probability")
 
         if _lr_model is not None:
-            lr_proba = float(_lr_model.predict_proba(X)[:, 1][0])
+            lr_proba = float(_lr_model.predict_proba(X_df)[:, 1][0])
         else:
             lr_proba = 0.5
             reasons.append("LogisticRegression model unavailable — using default probability")
 
+        bureau_score = int(feature_df["bureau_score_cibil"].iloc[0])
+        if bureau_score > 750:
+            xgb_proba = max(0.0, xgb_proba * 0.85)
+            reasons.append("High CIBIL score (>750) — adjusted risk downwards")
+
         credit_score = _sigmoid_stretch(xgb_proba)
-        risk_band = _get_risk_band(credit_score)
+        risk_band = _get_risk_band(xgb_proba)
+
+        try:
+            shap_res = shap_serializer.explain(feature_df[FEATURE_COLS].fillna(0), _xgb_model)
+            top_5 = shap_res.get("top_5_reasons", [])
+            reasons.extend(top_5)
+        except Exception as e:
+            reasons.append(f"SHAP Error: {str(e)}")
 
         xgb_class = int(xgb_proba >= 0.5)
         lr_class = int(lr_proba >= 0.5)
@@ -122,6 +139,11 @@ def score(entity_id: str, gst_payload: pd.DataFrame, upi_payload: pd.DataFrame,
         upi_inflow_avg = float(feature_df["upi_inflow_avg"].iloc[0])
         multiplier = BAND_MULTIPLIERS.get(risk_band, 0.0)
         recommended_loan = min(upi_inflow_avg * multiplier, MAX_LOAN_AMOUNT)
+        
+        if bureau_score == -1:
+            recommended_loan *= 0.8
+            reasons.append("No prior bureau score found — limiting maximal loan amount by 20%")
+            
         tenure_months = BAND_TENURE.get(risk_band, 0)
 
         data_confidence = str(feature_df["data_confidence"].iloc[0])

@@ -43,8 +43,8 @@ def transform(entity_id: str, gst_df: pd.DataFrame, upi_df: pd.DataFrame,
     if len(upi) > 0:
         upi["amount_inr"] = pd.to_numeric(upi["amount_inr"], errors="coerce").fillna(0)
         upi["timestamp"] = pd.to_datetime(upi["timestamp"], errors="coerce")
-
-        upi["month"] = upi["timestamp"].dt.to_period("M")
+        # Drop timezone to suppress PeriodArray warnings
+        upi["month"] = upi["timestamp"].dt.tz_localize(None).dt.to_period("M")
         n_months = max(upi["month"].nunique(), 1)
 
         inflows = upi[upi["txn_type"] == "CREDIT"]["amount_inr"].sum()
@@ -86,7 +86,8 @@ def transform(entity_id: str, gst_df: pd.DataFrame, upi_df: pd.DataFrame,
 
     if len(eway) > 0:
         eway["generation_date"] = pd.to_datetime(eway["generation_date"], errors="coerce")
-        eway["month"] = eway["generation_date"].dt.to_period("M")
+        # Drop timezone to suppress PeriodArray warnings
+        eway["month"] = eway["generation_date"].dt.tz_localize(None).dt.to_period("M")
 
         monthly_counts = eway.groupby("month").size()
         features["eway_volume_avg"] = monthly_counts.mean() if len(monthly_counts) > 0 else 0.0

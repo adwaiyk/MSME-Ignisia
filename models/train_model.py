@@ -165,6 +165,10 @@ def main():
         smote = SMOTE(random_state=SEED)
         X_train_hp, y_train_hp = smote.fit_resample(X_train_hp_raw, y_train_hp_raw)
         X_train, y_train = smote.fit_resample(X_train_raw, y_train_raw)
+        
+        # Restore feature names after SMOTE
+        X_train_hp = pd.DataFrame(X_train_hp, columns=FEATURE_COLS)
+        X_train = pd.DataFrame(X_train, columns=FEATURE_COLS)
     except ModuleNotFoundError:
         print("imbalanced-learn not installed, skipping SMOTE...")
         X_train_hp, y_train_hp = X_train_hp_raw, y_train_hp_raw
@@ -183,9 +187,15 @@ def main():
         random_state=SEED, use_label_encoder=False, verbosity=0,
     )
     xgb_model.fit(X_train, y_train, eval_set=[(X_test, y_test)], verbose=False)
+    
+    # Calibrate probabilities using 5-fold CV on training set
+    from sklearn.calibration import CalibratedClassifierCV
+    print("Calibrating probabilities using CalibratedClassifierCV with 5-fold CV...")
+    calibrated_xgb = CalibratedClassifierCV(estimator=xgb_model, cv=5, method="isotonic")
+    calibrated_xgb.fit(X_train, y_train)
 
-    y_pred_xgb = xgb_model.predict(X_test)
-    y_proba_xgb = xgb_model.predict_proba(X_test)[:, 1]
+    y_pred_xgb = calibrated_xgb.predict(X_test)
+    y_proba_xgb = calibrated_xgb.predict_proba(X_test)[:, 1]
     auc_xgb = roc_auc_score(y_test, y_proba_xgb)
 
     print(f"\n{'='*70}\nXGBOOST RESULTS\n{'='*70}")
@@ -208,11 +218,11 @@ def main():
     xgb_path = os.path.join(MODEL_DIR, "xgboost_v1.joblib")
     lr_path = os.path.join(MODEL_DIR, "lr_model.joblib")
 
-    joblib.dump(xgb_model, xgb_path)
+    joblib.dump(calibrated_xgb, xgb_path)
     joblib.dump(lr_model, lr_path)
-    print(f"\n  ✓ XGBoost saved to: {xgb_path}\n  ✓ LogisticRegression saved to: {lr_path}")
+    print(f"\n  ✓ Calibrated XGBoost saved to: {xgb_path}\n  ✓ LogisticRegression saved to: {lr_path}")
 
-    print(f"\n{'='*70}\nTOP 10 FEATURE IMPORTANCES (XGBoost)\n{'='*70}")
+    print(f"\n{'='*70}\nTOP 10 FEATURE IMPORTANCES (Base XGBoost)\n{'='*70}")
     importances = pd.Series(xgb_model.feature_importances_, index=FEATURE_COLS).sort_values(ascending=False)
     for feat, imp in importances.head(10).items():
         print(f"  {feat:30s} {imp:.4f} " + "█" * int(imp * 50))
