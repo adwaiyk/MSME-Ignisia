@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.join(_PROJECT_ROOT, "data-synthesis"))
 
 import feature_engineering
 import shap_serializer
+from policy_adjustments import apply_gst_amnesty
 
 _MODEL_DIR = os.path.join(_PROJECT_ROOT, "models")
 
@@ -76,6 +77,13 @@ BAND_TENURE = {
 
 MAX_LOAN_AMOUNT = 50_00_000
 
+# DYNAMIC POLICY CONFIGURATION
+GST_POLICY = {
+    "active": True,
+    "type": "amnesty",
+    "alpha": 0.6
+}
+
 def _sigmoid_stretch(prob: float) -> int:
     stretched = 1.0 / (1.0 + np.exp(-10.0 * (prob - 0.5)))
     score = 300 + 600 * (1.0 - stretched)
@@ -98,9 +106,14 @@ def score(entity_id: str, gst_payload: pd.DataFrame, upi_payload: pd.DataFrame,
             entity_id, gst_payload, upi_payload, eway_payload, master_payload
         )
 
-        X_df = feature_df[FEATURE_COLS].fillna(0)
-
         reasons = []
+
+        # DYNAMIC POLICY ADJUSTMENT
+        if GST_POLICY.get("active"):
+            feature_df = apply_gst_amnesty(feature_df, GST_POLICY)
+            reasons.append(f"Applied active GST policy: {GST_POLICY.get('type')}")
+
+        X_df = feature_df[FEATURE_COLS].fillna(0)
 
         if _xgb_model is not None:
             xgb_proba = float(_xgb_model.predict_proba(X_df)[:, 1][0])

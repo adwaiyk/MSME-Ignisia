@@ -11,10 +11,18 @@ sys.path.insert(0, os.path.join(_PROJ, "data-synthesis"))
 
 import feature_engineering
 import shap_serializer
+from policy_adjustments import apply_gst_amnesty
 from xgboost_engine import FEATURE_COLS
 
 _MODEL_PATH = os.path.join(_PROJ, "models", "xgboost_v1.joblib")
 xgb_model = joblib.load(_MODEL_PATH)
+
+# DYNAMIC POLICY CONFIGURATION
+GST_POLICY = {
+    "active": True,
+    "type": "amnesty",
+    "alpha": 0.6
+}
 
 def score_from_gstin(gstin: str) -> dict:
     data_warnings = []
@@ -94,6 +102,11 @@ def score_from_gstin(gstin: str) -> dict:
     # Ensure numeric types
     for col in FEATURE_COLS:
         X[col] = pd.to_numeric(X[col], errors='coerce').fillna(0)
+    
+    # DYNAMIC POLICY ADJUSTMENT
+    if GST_POLICY.get("active"):
+        X = apply_gst_amnesty(X, GST_POLICY)
+        data_warnings.append(f"Applied active GST policy: {GST_POLICY.get('type')}")
     
     # ZERO ACTIVITY EDGE CASE
     activity_metrics = ["upi_inflow_avg", "upi_outflow_avg", "eway_volume_avg", "sales_volume_avg"]

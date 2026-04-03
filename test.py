@@ -12,13 +12,16 @@ import shap_serializer
 import feature_engineering
 
 def main():
-    print("Loading datasets (nrows=5000)...")
+    print("Loading datasets (skipping first 5000, nrows=5000)...")
     dataset_dir = os.path.join(ROOT, "data-synthesis", "datasets")
     
-    master_df = pd.read_csv(os.path.join(dataset_dir, "onboarding_data.csv"), nrows=5000)
-    gst_df = pd.read_csv(os.path.join(dataset_dir, "gst_filings.csv"), nrows=5000)
-    upi_df = pd.read_csv(os.path.join(dataset_dir, "upi_transactions.csv"), nrows=5000)
-    eway_df = pd.read_csv(os.path.join(dataset_dir, "eway_bills.csv"), nrows=5000)
+    # Read headers to ensure column names are preserved when skipping rows
+    header_df = pd.read_csv(os.path.join(dataset_dir, "onboarding_data.csv"), nrows=0)
+    
+    master_df = pd.read_csv(os.path.join(dataset_dir, "onboarding_data.csv"), skiprows=range(1, 5001), nrows=5000)
+    gst_df = pd.read_csv(os.path.join(dataset_dir, "gst_filings.csv"), skiprows=range(1, 5001), nrows=5000)
+    upi_df = pd.read_csv(os.path.join(dataset_dir, "upi_transactions.csv"), skiprows=range(1, 5001), nrows=5000)
+    eway_df = pd.read_csv(os.path.join(dataset_dir, "eway_bills.csv"), skiprows=range(1, 5001), nrows=5000)
     
     # Pre-process minimal columns exactly as generated datasets expected
     if "msme_id" in gst_df.columns:
