@@ -1,8 +1,3 @@
-"""
-feature_engineering.py
-Owner: ML & Risk Architect
-Purpose: Reusable feature engineering module.
-"""
 
 import numpy as np
 import pandas as pd
