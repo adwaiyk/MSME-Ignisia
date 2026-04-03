@@ -1,4 +1,4 @@
-*.csv
+data-synthesis/datasets/upi_transactions.csv
 
 __pycache__/
 test_out.txt

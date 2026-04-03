@@ -50,10 +50,19 @@ FEATURE_COLS = [
 
 def load_datasets():
     print("Loading datasets...")
-    master_df = pd.read_csv(os.path.join(DATASET_DIR, "msme_master.csv"))
-    gst_df = pd.read_csv(os.path.join(DATASET_DIR, "gst_history.csv"))
-    upi_df = pd.read_csv(os.path.join(DATASET_DIR, "upi_stream.csv"))
-    eway_df = pd.read_csv(os.path.join(DATASET_DIR, "eway_bill_stream.csv"))
+    DATASET_DIR2 = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data-synthesis", "datasets")
+    master_df = pd.read_csv(os.path.join(DATASET_DIR2, "onboarding_data.csv"))
+    gst_df = pd.read_csv(os.path.join(DATASET_DIR2, "gst_filings.csv"))
+    upi_df = pd.read_csv(os.path.join(DATASET_DIR2, "upi_transactions.csv"))
+    eway_df = pd.read_csv(os.path.join(DATASET_DIR2, "eway_bills.csv"))
+    
+    if "msme_id" in gst_df.columns:
+        gst_df.rename(columns={"msme_id": "entity_id"}, inplace=True)
+    if "industry_code" in master_df.columns and "industry_risk_factor" not in master_df.columns:
+        master_df["industry_risk_factor"] = 0.5
+    if "is_anomaly" not in eway_df.columns:
+        eway_df["is_anomaly"] = 0
+
     print(f"  Master: {len(master_df):,} | GST: {len(gst_df):,} | UPI: {len(upi_df):,} | E-way: {len(eway_df):,}")
     return master_df, gst_df, upi_df, eway_df
 
@@ -77,10 +86,10 @@ def build_feature_matrix(master_df, gst_df, upi_df, eway_df):
 def generate_risk_labels(feature_matrix):
     print("\nGenerating risk labels...")
     conditions = (
-        (feature_matrix["gst_ontime_rate"] < 0.6) |
-        (feature_matrix["upi_net_flow_ratio"] < 0) |
+        (feature_matrix["gst_ontime_rate"] < 0.4) |
+        (feature_matrix["upi_net_flow_ratio"] < -0.5) |
         (feature_matrix["eway_momentum"] < -0.3) |
-        (feature_matrix["eway_anomaly_rate"] > 0.2)
+        (feature_matrix["eway_anomaly_rate"] > 0.4)
     )
     labels = conditions.astype(int)
 
@@ -134,14 +143,32 @@ def main():
     print("=" * 70)
 
     master_df, gst_df, upi_df, eway_df = load_datasets()
-    feature_matrix = build_feature_matrix(master_df, gst_df, upi_df, eway_df)
+    fm_path = os.path.join(MODEL_DIR, "feature_matrix.csv")
+    if os.path.exists(fm_path):
+        print(f"Loading cached feature matrix from {fm_path}...")
+        feature_matrix = pd.read_csv(fm_path)
+    else:
+        feature_matrix = build_feature_matrix(master_df, gst_df, upi_df, eway_df)
+        feature_matrix.to_csv(fm_path, index=False)
+        
     labels = generate_risk_labels(feature_matrix)
 
     X = feature_matrix[FEATURE_COLS].copy().fillna(0)
     y = labels.copy()
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=SEED, stratify=y)
-    X_train_hp, X_val, y_train_hp, y_val = train_test_split(X_train, y_train, test_size=0.2, random_state=SEED, stratify=y_train)
+    X_train_raw, X_test, y_train_raw, y_test = train_test_split(X, y, test_size=0.2, random_state=SEED, stratify=y)
+    X_train_hp_raw, X_val, y_train_hp_raw, y_val = train_test_split(X_train_raw, y_train_raw, test_size=0.2, random_state=SEED, stratify=y_train_raw)
+
+    print("\nApplying SMOTE on training sets...")
+    try:
+        from imblearn.over_sampling import SMOTE
+        smote = SMOTE(random_state=SEED)
+        X_train_hp, y_train_hp = smote.fit_resample(X_train_hp_raw, y_train_hp_raw)
+        X_train, y_train = smote.fit_resample(X_train_raw, y_train_raw)
+    except ModuleNotFoundError:
+        print("imbalanced-learn not installed, skipping SMOTE...")
+        X_train_hp, y_train_hp = X_train_hp_raw, y_train_hp_raw
+        X_train, y_train = X_train_raw, y_train_raw
 
     n_pos = y_train.sum()
     n_neg = len(y_train) - n_pos
