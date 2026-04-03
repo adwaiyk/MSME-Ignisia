@@ -1,0 +1,76 @@
+# =========================
+# Python / FastAPI Backend
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# =========================
+# Next.js / React Frontend
+# =========================
+node_modules/
+.pnp
+.pnp.js
+.npm/
+
+# Next.js specific
+.next/
+out/
+build/
+
+# Vercel / Deployment
+.vercel
+
+# =========================
+# Machine Learning & Data
+# =========================
+# Ignore massive generated datasets (like your 10,000 MSME noise profiles)
+*.csv
+*.dat
+*.out
+*.log
+
+# Do NOT ignore your serialized model artifact! 
+# (You want xgboost_v1.joblib tracked for the hackathon deployment)
+# !models/xgboost_v1.joblib 
+
+# Jupyter Notebook checkpoints (if used during data synthesis)
+.ipynb_checkpoints
+
+# =========================
+# OS & IDE Files
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
