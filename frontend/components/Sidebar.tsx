@@ -21,7 +21,7 @@ export default function Sidebar() {
           <div className="p-2 bg-white/5 border border-white/10 rounded-lg mr-3 shadow-inner">
             <Building2 className="h-5 w-5 text-slate-300" />
           </div>
-          <span className="font-bold text-white tracking-tight">Global Underwriting</span>
+          <span className="font-bold text-white tracking-tight">Global underwriting</span>
         </div>
 
         {/* Navigation Links */}

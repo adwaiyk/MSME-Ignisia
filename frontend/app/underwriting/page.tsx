@@ -35,7 +35,7 @@ const mockFraudPayload = {
 };
 const mockNoiseNodes = Array.from({ length: 40 }, (_, i) => ({ id: `noise_${i}` }));
 
-export default function UnderwritingDashboard() {
+export default function underwritingDashboard() {
   const [gstinInput, setGstinInput] = useState("29HERO9999X1Z5");
   const [activeView, setActiveView] = useState<"hero" | "fraud">("hero");
 
@@ -51,7 +51,7 @@ export default function UnderwritingDashboard() {
     <div className="animate-in fade-in slide-in-from-bottom-2 duration-1000">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight text-white">Underwriting Engine</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-white">Underwriter Engine</h1>
           <p className="text-sm text-muted-foreground mt-1 font-medium italic">Advanced signal processing for credit risk</p>
         </div>
         <div className="flex w-full md:w-auto items-center space-x-3">

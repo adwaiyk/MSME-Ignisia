@@ -36,7 +36,7 @@ import {
 
 const navItems = [
   { title: "Command Center", url: "/dashboard", icon: LayoutDashboard },
-  { title: "Underwriting", url: "/underwriting", icon: ShieldCheck },
+  { title: "Underwriter", url: "/underwriting", icon: ShieldCheck },
   { title: "Data Intake", url: "/intake", icon: Database },
   { title: "Portfolio", url: "#", icon: Users },
   { title: "Settings", url: "#", icon: Settings },
