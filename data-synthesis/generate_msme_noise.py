@@ -1,17 +1,9 @@
-"""
-generate_msme_noise.py
-Owner: ML & Risk Architect
-Purpose: Generate 10,000 synthetic MSME profiles with correlated alternative data
-         signals across four CSVs.
-"""
-
 import os
 import string
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
 
-# ─── Configuration ───────────────────────────────────────────────────────────
 NUM_COMPANIES = 10_000
 NUM_GST_MONTHS = 6
 SEED = 42
@@ -97,7 +89,7 @@ def generate_master() -> pd.DataFrame:
     for i in range(NUM_COMPANIES):
         pan_body = _generate_pan_body()
         gstin = _generate_gstin(pan_body)
-        entity_id = gstin  # entity_id matches gstin format
+        entity_id = gstin
         name = _generate_company_name(i)
         
         industry_type = np.random.choice(list(INDUSTRY_CODES.keys()), p=[0.35, 0.40, 0.25])
@@ -123,7 +115,7 @@ def generate_master() -> pd.DataFrame:
             "vintage_months": vintage_months,
             "bureau_score_cibil": bureau_score_cibil,
             "credit_limit_requested": credit_limit_requested,
-            "industry_risk_factor": industry_risk_factor,  # Kept as required feature
+            "industry_risk_factor": industry_risk_factor, 
         })
 
     return pd.DataFrame(records)
@@ -159,11 +151,9 @@ def generate_gst_history(master_df: pd.DataFrame, size_classes: np.ndarray) -> p
             tax_period = rp_dt.strftime("%m%Y")
             turnover = _monthly_turnover(size_class)
             
-            # GSTR1 and GSTR3B each separate row
             for return_type in ["GSTR1", "GSTR3B"]:
                 is_on_time = np.random.random() < on_time_propensity
                 
-                # Assume due date is 15th (GSTR1) or 20th (GSTR3B) of following month
                 due_day = 15 if return_type == "GSTR1" else 20
                 due_date_dt = (rp_dt.replace(day=1) + timedelta(days=32)).replace(day=due_day)
                 due_date = due_date_dt.strftime("%Y-%m-%d")
@@ -175,11 +165,9 @@ def generate_gst_history(master_df: pd.DataFrame, size_classes: np.ndarray) -> p
                     delay_days = max(1, int(np.random.poisson(8)))
                     filing_date = (due_date_dt + timedelta(days=delay_days)).strftime("%Y-%m-%d")
                 
-                # Create corresponding new columns
                 total_sales_declared = round(turnover, 2)
                 tax_paid_total = round(total_sales_declared * np.random.uniform(0.05, 0.18), 2)
                 
-                # ITC ratio varies, on time filers utilize higher ITC
                 itc_ratio = np.random.uniform(0.6, 0.9) if is_on_time else np.random.uniform(0.1, 0.5)
                 tax_paid_itc = round(tax_paid_total * itc_ratio, 2)
                 tax_paid_cash = round(tax_paid_total - tax_paid_itc, 2)
@@ -240,7 +228,6 @@ def generate_upi_stream(master_df: pd.DataFrame, size_classes: np.ndarray) -> pd
                 is_repeated_counterparty = counterparty_vpa in seen_counterparties
                 seen_counterparties.add(counterparty_vpa)
 
-                # Geo-location
                 geo_location = company_city if np.random.random() < 0.6 else np.random.choice(CITY_NAMES)
 
                 avg_tx_amount = turnover / max(monthly_avg, 1)
@@ -267,7 +254,6 @@ def generate_eway_bills(master_df: pd.DataFrame, size_classes: np.ndarray, upi_d
     base_date = datetime(2026, 4, 1)
     bill_counter = 0
     
-    # Store Txn IDs to randomly link
     entity_txns = {}
     for entity_id, group in upi_df.groupby("entity_id"):
         entity_txns[entity_id] = group["txn_id"].tolist()
@@ -297,12 +283,10 @@ def generate_eway_bills(master_df: pd.DataFrame, size_classes: np.ndarray, upi_d
                 hsn_code = np.random.choice(HSN_CODES)
                 vehicle_no = f"MH{np.random.randint(10, 50)}AB{np.random.randint(1000, 9999)}"
 
-                # Linking UPI Txn ID (~40%)
                 linked_upi_txn_id = None
                 if entity_id in entity_txns and np.random.random() < 0.4 and len(entity_txns[entity_id]) > 0:
                     linked_upi_txn_id = np.random.choice(entity_txns[entity_id])
 
-                # Anomaly (~10%)
                 is_anomaly = np.random.random() < 0.1
 
                 records.append({
