@@ -17,7 +17,6 @@ def transform(entity_id: str, gst_df: pd.DataFrame, upi_df: pd.DataFrame,
 
     features = {"entity_id": entity_id}
 
-    # ─── GST Features ────────────────────────────────────────────────────────
     if len(gst) > 0:
         gst["delay_days"] = pd.to_numeric(gst["delay_days"], errors="coerce").fillna(0)
         gst["total_sales_declared"] = pd.to_numeric(gst["total_sales_declared"], errors="coerce").fillna(0)
@@ -45,7 +44,7 @@ def transform(entity_id: str, gst_df: pd.DataFrame, upi_df: pd.DataFrame,
         features["sales_volume_avg"] = 0.0
         features["itc_utilisation_ratio"] = 0.0
 
-    # ─── UPI Features ────────────────────────────────────────────────────────
+
     if len(upi) > 0:
         upi["amount_inr"] = pd.to_numeric(upi["amount_inr"], errors="coerce").fillna(0)
         upi["timestamp"] = pd.to_datetime(upi["timestamp"], errors="coerce")
@@ -90,7 +89,6 @@ def transform(entity_id: str, gst_df: pd.DataFrame, upi_df: pd.DataFrame,
         features["geo_diversity"] = 0
         features["repeated_counterparty_ratio"] = 0.0
 
-    # ─── E-way Bill Features ─────────────────────────────────────────────────
     if len(eway) > 0:
         eway["generation_date"] = pd.to_datetime(eway["generation_date"], errors="coerce")
         eway["month"] = eway["generation_date"].dt.to_period("M")
@@ -119,7 +117,6 @@ def transform(entity_id: str, gst_df: pd.DataFrame, upi_df: pd.DataFrame,
         features["eway_momentum"] = 0.0
         features["eway_anomaly_rate"] = 0.0
 
-    # ─── Master Features ─────────────────────────────────────────────────────
     if len(master) > 0:
         master_row = master.iloc[0]
 
@@ -147,7 +144,6 @@ def transform(entity_id: str, gst_df: pd.DataFrame, upi_df: pd.DataFrame,
         features["bureau_score_cibil"] = 500
         features["data_confidence"] = "low"
 
-    # ─── Build output DataFrame ──────────────────────────────────────────────
     result = pd.DataFrame([features])
     numeric_cols = result.select_dtypes(include=[np.number]).columns
     result[numeric_cols] = result[numeric_cols].fillna(0)
