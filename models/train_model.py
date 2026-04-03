@@ -190,7 +190,7 @@ def main():
     for feat, imp in importances.head(10).items():
         print(f"  {feat:30s} {imp:.4f} " + "█" * int(imp * 50))
 
-    print(f"\n{'='*70}\n✅ Training complete!\n{'='*70}")
+    print(f"\n{'='*70}\nTraining complete!\n{'='*70}")
 
 if __name__ == "__main__":
     main()
