@@ -24,7 +24,7 @@ This project builds a **real-time credit scoring system** using:
 
 ---
 
-##Workflow
+## Workflow
 User enters GSTIN
 ->
 Frontend (Next.js) sends request
