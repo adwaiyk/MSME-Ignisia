@@ -26,19 +26,19 @@ This project builds a **real-time credit scoring system** using:
 
 ##Workflow
 User enters GSTIN
-↓ ---
+->
 Frontend (Next.js) sends request
-↓
+->
 Backend (FastAPI) processes data
-↓
+->
 Feature Engineering (Pandas)
-↓
+->
 ML Model (XGBoost) calculates score
-↓
+->
 SHAP explains the decision
-↓
+->
 Graph Engine detects fraud
-↓
+->
 Final JSON response sent back
-↓
+->
 Frontend shows dashboard + results
