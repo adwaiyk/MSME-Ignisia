@@ -1,0 +1,4554 @@
+[
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14582",
+                "name": "Prime Foods",
+                "gstin": "26MXWQV1581K4ZO"
+            },
+            {
+                "msme_id": "MSME_18762",
+                "name": "Shree Traders",
+                "gstin": "34IBUFE5382D4Z1"
+            },
+            {
+                "msme_id": "MSME_17869",
+                "name": "Shree Enterprises",
+                "gstin": "14ODZMH8712L6ZV"
+            },
+            {
+                "msme_id": "MSME_15975",
+                "name": "Green Logistics",
+                "gstin": "20ORNAO3644A1Z8"
+            },
+            {
+                "msme_id": "MSME_12556",
+                "name": "Skyline Logistics",
+                "gstin": "20ZWMWJ8343A4ZL"
+            }
+        ],
+        "total_laundered_inr": 12408970.01,
+        "evidence_graph": [
+            {
+                "source": "MSME_14582",
+                "target": "MSME_18762",
+                "volume": 2480600.16
+            },
+            {
+                "source": "MSME_18762",
+                "target": "MSME_17869",
+                "volume": 2476405.72
+            },
+            {
+                "source": "MSME_17869",
+                "target": "MSME_15975",
+                "volume": 2481567.69
+            },
+            {
+                "source": "MSME_15975",
+                "target": "MSME_12556",
+                "volume": 2477320.73
+            },
+            {
+                "source": "MSME_12556",
+                "target": "MSME_14582",
+                "volume": 2493075.71
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11405",
+                "name": "Green Enterprises",
+                "gstin": "27LUHNP2014E4ZV"
+            },
+            {
+                "msme_id": "MSME_12865",
+                "name": "Lakshmi Logistics",
+                "gstin": "34PCAWO2500L1ZA"
+            },
+            {
+                "msme_id": "MSME_11380",
+                "name": "Shree Traders",
+                "gstin": "36HSFWM2238F2Z7"
+            },
+            {
+                "msme_id": "MSME_15681",
+                "name": "Global Enterprises",
+                "gstin": "15GJCPN4312S6ZD"
+            },
+            {
+                "msme_id": "MSME_16989",
+                "name": "Prime Textiles",
+                "gstin": "31NZIPP9930R3ZB"
+            }
+        ],
+        "total_laundered_inr": 12369381.36,
+        "evidence_graph": [
+            {
+                "source": "MSME_11405",
+                "target": "MSME_12865",
+                "volume": 2470291.39
+            },
+            {
+                "source": "MSME_12865",
+                "target": "MSME_11380",
+                "volume": 2466032.94
+            },
+            {
+                "source": "MSME_11380",
+                "target": "MSME_15681",
+                "volume": 2483708.3
+            },
+            {
+                "source": "MSME_15681",
+                "target": "MSME_16989",
+                "volume": 2466156.67
+            },
+            {
+                "source": "MSME_16989",
+                "target": "MSME_11405",
+                "volume": 2483192.06
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19965",
+                "name": "Urban Packaging",
+                "gstin": "21PSMED5617M7ZP"
+            },
+            {
+                "msme_id": "MSME_15172",
+                "name": "Rapid Enterprises",
+                "gstin": "26YFXHI6278D1ZL"
+            },
+            {
+                "msme_id": "MSME_13348",
+                "name": "Prime Traders",
+                "gstin": "21QWYVR5258F6ZC"
+            },
+            {
+                "msme_id": "MSME_19630",
+                "name": "Shree Packaging",
+                "gstin": "24GXOEW8116Q5ZG"
+            },
+            {
+                "msme_id": "MSME_11909",
+                "name": "Prime Logistics",
+                "gstin": "26USZFH1898F7ZN"
+            }
+        ],
+        "total_laundered_inr": 12293162.34,
+        "evidence_graph": [
+            {
+                "source": "MSME_19965",
+                "target": "MSME_15172",
+                "volume": 2452878.84
+            },
+            {
+                "source": "MSME_15172",
+                "target": "MSME_13348",
+                "volume": 2473471.96
+            },
+            {
+                "source": "MSME_13348",
+                "target": "MSME_19630",
+                "volume": 2455245.96
+            },
+            {
+                "source": "MSME_19630",
+                "target": "MSME_11909",
+                "volume": 2451212.84
+            },
+            {
+                "source": "MSME_11909",
+                "target": "MSME_19965",
+                "volume": 2460352.74
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12550",
+                "name": "Urban Traders",
+                "gstin": "35YMNYR9595E7ZL"
+            },
+            {
+                "msme_id": "MSME_12662",
+                "name": "Skyline Retail",
+                "gstin": "23DXXEM4244O7ZI"
+            },
+            {
+                "msme_id": "MSME_18809",
+                "name": "Green Logistics",
+                "gstin": "35GFXJR6306S3ZK"
+            },
+            {
+                "msme_id": "MSME_15262",
+                "name": "Om Traders",
+                "gstin": "34UDEDQ4290I3ZP"
+            },
+            {
+                "msme_id": "MSME_17560",
+                "name": "Global Packaging",
+                "gstin": "13CPMGE3242A3ZN"
+            }
+        ],
+        "total_laundered_inr": 12149858.94,
+        "evidence_graph": [
+            {
+                "source": "MSME_12550",
+                "target": "MSME_12662",
+                "volume": 2435162.93
+            },
+            {
+                "source": "MSME_12662",
+                "target": "MSME_18809",
+                "volume": 2417384.6
+            },
+            {
+                "source": "MSME_18809",
+                "target": "MSME_15262",
+                "volume": 2425094.97
+            },
+            {
+                "source": "MSME_15262",
+                "target": "MSME_17560",
+                "volume": 2434511.68
+            },
+            {
+                "source": "MSME_17560",
+                "target": "MSME_12550",
+                "volume": 2437704.76
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13053",
+                "name": "Urban Retail",
+                "gstin": "17PIZYN0201H2Z7"
+            },
+            {
+                "msme_id": "MSME_15293",
+                "name": "Lakshmi Foods",
+                "gstin": "10DBBRM6111Z4ZJ"
+            },
+            {
+                "msme_id": "MSME_18686",
+                "name": "Shree Textiles",
+                "gstin": "11DNTUH8098X6ZI"
+            },
+            {
+                "msme_id": "MSME_19136",
+                "name": "Om Textiles",
+                "gstin": "19QCJDZ3739U5Z8"
+            },
+            {
+                "msme_id": "MSME_14686",
+                "name": "Skyline Logistics",
+                "gstin": "15QRJMY9479D7ZZ"
+            }
+        ],
+        "total_laundered_inr": 11710493.41,
+        "evidence_graph": [
+            {
+                "source": "MSME_13053",
+                "target": "MSME_15293",
+                "volume": 2342371.49
+            },
+            {
+                "source": "MSME_15293",
+                "target": "MSME_18686",
+                "volume": 2337639.81
+            },
+            {
+                "source": "MSME_18686",
+                "target": "MSME_19136",
+                "volume": 2343172.26
+            },
+            {
+                "source": "MSME_19136",
+                "target": "MSME_14686",
+                "volume": 2349753.73
+            },
+            {
+                "source": "MSME_14686",
+                "target": "MSME_13053",
+                "volume": 2337556.12
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12274",
+                "name": "Urban Enterprises",
+                "gstin": "18CJQZO8997G2Z4"
+            },
+            {
+                "msme_id": "MSME_15635",
+                "name": "Green Enterprises",
+                "gstin": "31TRORJ2925A4ZR"
+            },
+            {
+                "msme_id": "MSME_17032",
+                "name": "Sai Logistics",
+                "gstin": "24PSEYX7445R8ZS"
+            },
+            {
+                "msme_id": "MSME_14068",
+                "name": "Green Foods",
+                "gstin": "10EDLZI5665G5Z3"
+            },
+            {
+                "msme_id": "MSME_15642",
+                "name": "Skyline Textiles",
+                "gstin": "24ULTWW9406L1ZL"
+            }
+        ],
+        "total_laundered_inr": 11457055.57,
+        "evidence_graph": [
+            {
+                "source": "MSME_12274",
+                "target": "MSME_15635",
+                "volume": 2296110.88
+            },
+            {
+                "source": "MSME_15635",
+                "target": "MSME_17032",
+                "volume": 2295103.92
+            },
+            {
+                "source": "MSME_17032",
+                "target": "MSME_14068",
+                "volume": 2297069.89
+            },
+            {
+                "source": "MSME_14068",
+                "target": "MSME_15642",
+                "volume": 2287354.28
+            },
+            {
+                "source": "MSME_15642",
+                "target": "MSME_12274",
+                "volume": 2281416.6
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10170",
+                "name": "Skyline Traders",
+                "gstin": "10YJTAM7698B1ZZ"
+            },
+            {
+                "msme_id": "MSME_17692",
+                "name": "Green Packaging",
+                "gstin": "21VSJIV2932N1ZS"
+            },
+            {
+                "msme_id": "MSME_13176",
+                "name": "Lakshmi Textiles",
+                "gstin": "20CXKNK9993O4Z9"
+            },
+            {
+                "msme_id": "MSME_10750",
+                "name": "Global Industries",
+                "gstin": "33KMRXP5007S3Z8"
+            },
+            {
+                "msme_id": "MSME_18942",
+                "name": "Om Foods",
+                "gstin": "10QFJYH7980J6ZQ"
+            }
+        ],
+        "total_laundered_inr": 11412586.09,
+        "evidence_graph": [
+            {
+                "source": "MSME_10170",
+                "target": "MSME_17692",
+                "volume": 2287179.15
+            },
+            {
+                "source": "MSME_17692",
+                "target": "MSME_13176",
+                "volume": 2291053.13
+            },
+            {
+                "source": "MSME_13176",
+                "target": "MSME_10750",
+                "volume": 2289749.42
+            },
+            {
+                "source": "MSME_10750",
+                "target": "MSME_18942",
+                "volume": 2272153.74
+            },
+            {
+                "source": "MSME_18942",
+                "target": "MSME_10170",
+                "volume": 2272450.65
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17260",
+                "name": "Rapid Logistics",
+                "gstin": "12WEKWG6119T6ZD"
+            },
+            {
+                "msme_id": "MSME_14979",
+                "name": "Sai Logistics",
+                "gstin": "11VUFZI0492C3Z9"
+            },
+            {
+                "msme_id": "MSME_14421",
+                "name": "Rapid Textiles",
+                "gstin": "19ESINM5501F8Z2"
+            },
+            {
+                "msme_id": "MSME_13760",
+                "name": "Lakshmi Enterprises",
+                "gstin": "16PZHFC0058W6ZM"
+            },
+            {
+                "msme_id": "MSME_18371",
+                "name": "Green Retail",
+                "gstin": "15EYHYJ6744Z6Z8"
+            }
+        ],
+        "total_laundered_inr": 11321281.88,
+        "evidence_graph": [
+            {
+                "source": "MSME_17260",
+                "target": "MSME_14979",
+                "volume": 2255943.56
+            },
+            {
+                "source": "MSME_14979",
+                "target": "MSME_14421",
+                "volume": 2259542.28
+            },
+            {
+                "source": "MSME_14421",
+                "target": "MSME_13760",
+                "volume": 2275132.63
+            },
+            {
+                "source": "MSME_13760",
+                "target": "MSME_18371",
+                "volume": 2274985.39
+            },
+            {
+                "source": "MSME_18371",
+                "target": "MSME_17260",
+                "volume": 2255678.02
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10467",
+                "name": "Urban Logistics",
+                "gstin": "32QMTAS0159G7ZA"
+            },
+            {
+                "msme_id": "MSME_11082",
+                "name": "Prime Packaging",
+                "gstin": "35OOAVW1359D4Z9"
+            },
+            {
+                "msme_id": "MSME_12918",
+                "name": "Lakshmi Packaging",
+                "gstin": "28XZCXW8035G3Z1"
+            },
+            {
+                "msme_id": "MSME_16018",
+                "name": "Sai Packaging",
+                "gstin": "24VMEWJ0223K6ZL"
+            },
+            {
+                "msme_id": "MSME_17304",
+                "name": "Skyline Industries",
+                "gstin": "16RPTUD4044Q8ZV"
+            }
+        ],
+        "total_laundered_inr": 10931152.82,
+        "evidence_graph": [
+            {
+                "source": "MSME_10467",
+                "target": "MSME_11082",
+                "volume": 2178494.9
+            },
+            {
+                "source": "MSME_11082",
+                "target": "MSME_12918",
+                "volume": 2195164.11
+            },
+            {
+                "source": "MSME_12918",
+                "target": "MSME_16018",
+                "volume": 2179266.95
+            },
+            {
+                "source": "MSME_16018",
+                "target": "MSME_17304",
+                "volume": 2189508.22
+            },
+            {
+                "source": "MSME_17304",
+                "target": "MSME_10467",
+                "volume": 2188718.64
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11359",
+                "name": "Green Textiles",
+                "gstin": "31RRLCV0413U4ZW"
+            },
+            {
+                "msme_id": "MSME_16612",
+                "name": "Green Enterprises",
+                "gstin": "14WUKEO0157F1ZT"
+            },
+            {
+                "msme_id": "MSME_19192",
+                "name": "Shree Traders",
+                "gstin": "19WRJHU6290X1ZS"
+            },
+            {
+                "msme_id": "MSME_10776",
+                "name": "Urban Industries",
+                "gstin": "22FBBDN2374O3Z3"
+            },
+            {
+                "msme_id": "MSME_19092",
+                "name": "Skyline Retail",
+                "gstin": "15FNUMG0799I4ZL"
+            }
+        ],
+        "total_laundered_inr": 10601618.4,
+        "evidence_graph": [
+            {
+                "source": "MSME_11359",
+                "target": "MSME_16612",
+                "volume": 2130610.73
+            },
+            {
+                "source": "MSME_16612",
+                "target": "MSME_19192",
+                "volume": 2116684.7
+            },
+            {
+                "source": "MSME_19192",
+                "target": "MSME_10776",
+                "volume": 2113919.0
+            },
+            {
+                "source": "MSME_10776",
+                "target": "MSME_19092",
+                "volume": 2114274.76
+            },
+            {
+                "source": "MSME_19092",
+                "target": "MSME_11359",
+                "volume": 2126129.21
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15724",
+                "name": "Shree Textiles",
+                "gstin": "12IJUYK5757T4Z8"
+            },
+            {
+                "msme_id": "MSME_14561",
+                "name": "Skyline Industries",
+                "gstin": "16NJPIU2044S4ZB"
+            },
+            {
+                "msme_id": "MSME_10308",
+                "name": "Shree Logistics",
+                "gstin": "36JPXLF5506T6ZO"
+            },
+            {
+                "msme_id": "MSME_13677",
+                "name": "Rapid Foods",
+                "gstin": "23YLLMP0620F6Z9"
+            },
+            {
+                "msme_id": "MSME_17544",
+                "name": "Green Industries",
+                "gstin": "14FIDPF6975J3ZV"
+            }
+        ],
+        "total_laundered_inr": 10545831.27,
+        "evidence_graph": [
+            {
+                "source": "MSME_15724",
+                "target": "MSME_14561",
+                "volume": 2113849.89
+            },
+            {
+                "source": "MSME_14561",
+                "target": "MSME_10308",
+                "volume": 2114057.27
+            },
+            {
+                "source": "MSME_10308",
+                "target": "MSME_13677",
+                "volume": 2102661.41
+            },
+            {
+                "source": "MSME_13677",
+                "target": "MSME_17544",
+                "volume": 2102510.29
+            },
+            {
+                "source": "MSME_17544",
+                "target": "MSME_15724",
+                "volume": 2112752.41
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13323",
+                "name": "Urban Retail",
+                "gstin": "17DGNFX6825N2ZB"
+            },
+            {
+                "msme_id": "MSME_17651",
+                "name": "Green Foods",
+                "gstin": "28MZJMB9208O5ZV"
+            },
+            {
+                "msme_id": "MSME_12935",
+                "name": "Lakshmi Textiles",
+                "gstin": "33OQPZU7782R5ZN"
+            },
+            {
+                "msme_id": "MSME_18512",
+                "name": "Global Traders",
+                "gstin": "27KLCSI3845G6ZQ"
+            },
+            {
+                "msme_id": "MSME_13525",
+                "name": "Lakshmi Enterprises",
+                "gstin": "25EQSMF6136L4Z2"
+            }
+        ],
+        "total_laundered_inr": 10179000.21,
+        "evidence_graph": [
+            {
+                "source": "MSME_13323",
+                "target": "MSME_17651",
+                "volume": 2027680.96
+            },
+            {
+                "source": "MSME_17651",
+                "target": "MSME_12935",
+                "volume": 2042042.26
+            },
+            {
+                "source": "MSME_12935",
+                "target": "MSME_18512",
+                "volume": 2045063.23
+            },
+            {
+                "source": "MSME_18512",
+                "target": "MSME_13525",
+                "volume": 2032759.07
+            },
+            {
+                "source": "MSME_13525",
+                "target": "MSME_13323",
+                "volume": 2031454.69
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15474",
+                "name": "Prime Textiles",
+                "gstin": "24TJHGM2257G3Z9"
+            },
+            {
+                "msme_id": "MSME_15962",
+                "name": "Prime Foods",
+                "gstin": "19FMBTL4607G2ZP"
+            },
+            {
+                "msme_id": "MSME_17865",
+                "name": "Prime Retail",
+                "gstin": "12YECNT1748T5Z0"
+            },
+            {
+                "msme_id": "MSME_17760",
+                "name": "Green Packaging",
+                "gstin": "14GGOTO4979Y6ZL"
+            },
+            {
+                "msme_id": "MSME_11962",
+                "name": "Lakshmi Packaging",
+                "gstin": "32EDINF7151Y3ZY"
+            }
+        ],
+        "total_laundered_inr": 9520253.76,
+        "evidence_graph": [
+            {
+                "source": "MSME_15474",
+                "target": "MSME_15962",
+                "volume": 1905329.45
+            },
+            {
+                "source": "MSME_15962",
+                "target": "MSME_17865",
+                "volume": 1900671.98
+            },
+            {
+                "source": "MSME_17865",
+                "target": "MSME_17760",
+                "volume": 1899391.68
+            },
+            {
+                "source": "MSME_17760",
+                "target": "MSME_11962",
+                "volume": 1908533.5
+            },
+            {
+                "source": "MSME_11962",
+                "target": "MSME_15474",
+                "volume": 1906327.15
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13199",
+                "name": "Green Textiles",
+                "gstin": "30CDIAU1494C6ZL"
+            },
+            {
+                "msme_id": "MSME_13412",
+                "name": "Rapid Logistics",
+                "gstin": "34HIWPV4110K6ZJ"
+            },
+            {
+                "msme_id": "MSME_17416",
+                "name": "Urban Traders",
+                "gstin": "22GLASZ5607Y1ZS"
+            },
+            {
+                "msme_id": "MSME_17452",
+                "name": "Skyline Textiles",
+                "gstin": "18DQQKM9002K4Z1"
+            }
+        ],
+        "total_laundered_inr": 9328394.49,
+        "evidence_graph": [
+            {
+                "source": "MSME_13199",
+                "target": "MSME_13412",
+                "volume": 2329006.74
+            },
+            {
+                "source": "MSME_13412",
+                "target": "MSME_17416",
+                "volume": 2328221.39
+            },
+            {
+                "source": "MSME_17416",
+                "target": "MSME_17452",
+                "volume": 2326586.48
+            },
+            {
+                "source": "MSME_17452",
+                "target": "MSME_13199",
+                "volume": 2344579.88
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17309",
+                "name": "Rapid Packaging",
+                "gstin": "34FWZYI9370J2ZH"
+            },
+            {
+                "msme_id": "MSME_19220",
+                "name": "Sai Logistics",
+                "gstin": "28AMABW1310D6Z2"
+            },
+            {
+                "msme_id": "MSME_13643",
+                "name": "Shree Foods",
+                "gstin": "15VXHLK6177O2Z9"
+            },
+            {
+                "msme_id": "MSME_16274",
+                "name": "Om Logistics",
+                "gstin": "23AIBEA9803Z1Z9"
+            },
+            {
+                "msme_id": "MSME_15444",
+                "name": "Om Enterprises",
+                "gstin": "33JIORG7566D8ZT"
+            }
+        ],
+        "total_laundered_inr": 9300895.4,
+        "evidence_graph": [
+            {
+                "source": "MSME_17309",
+                "target": "MSME_19220",
+                "volume": 1865228.9
+            },
+            {
+                "source": "MSME_19220",
+                "target": "MSME_13643",
+                "volume": 1854990.85
+            },
+            {
+                "source": "MSME_13643",
+                "target": "MSME_16274",
+                "volume": 1859379.86
+            },
+            {
+                "source": "MSME_16274",
+                "target": "MSME_15444",
+                "volume": 1855713.41
+            },
+            {
+                "source": "MSME_15444",
+                "target": "MSME_17309",
+                "volume": 1865582.38
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10896",
+                "name": "Sai Retail",
+                "gstin": "13BMZDD0905I5Z0"
+            },
+            {
+                "msme_id": "MSME_17433",
+                "name": "Rapid Industries",
+                "gstin": "30CTLHK7599N7Z1"
+            },
+            {
+                "msme_id": "MSME_19208",
+                "name": "Skyline Textiles",
+                "gstin": "23TRNXC0046X7ZG"
+            },
+            {
+                "msme_id": "MSME_19512",
+                "name": "Prime Foods",
+                "gstin": "31IQHPS9528H4ZW"
+            }
+        ],
+        "total_laundered_inr": 9241474.31,
+        "evidence_graph": [
+            {
+                "source": "MSME_10896",
+                "target": "MSME_17433",
+                "volume": 2315873.42
+            },
+            {
+                "source": "MSME_17433",
+                "target": "MSME_19208",
+                "volume": 2301265.19
+            },
+            {
+                "source": "MSME_19208",
+                "target": "MSME_19512",
+                "volume": 2313025.24
+            },
+            {
+                "source": "MSME_19512",
+                "target": "MSME_10896",
+                "volume": 2311310.46
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19051",
+                "name": "Om Retail",
+                "gstin": "17BFCEZ7782I6ZZ"
+            },
+            {
+                "msme_id": "MSME_16897",
+                "name": "Global Foods",
+                "gstin": "30SZUXT5675H1ZM"
+            },
+            {
+                "msme_id": "MSME_18034",
+                "name": "Sai Retail",
+                "gstin": "11YUTGF5930W2ZR"
+            },
+            {
+                "msme_id": "MSME_14816",
+                "name": "Green Retail",
+                "gstin": "15JZXBD6679F6Z1"
+            }
+        ],
+        "total_laundered_inr": 9200918.91,
+        "evidence_graph": [
+            {
+                "source": "MSME_19051",
+                "target": "MSME_16897",
+                "volume": 2289798.74
+            },
+            {
+                "source": "MSME_16897",
+                "target": "MSME_18034",
+                "volume": 2303494.84
+            },
+            {
+                "source": "MSME_18034",
+                "target": "MSME_14816",
+                "volume": 2296099.44
+            },
+            {
+                "source": "MSME_14816",
+                "target": "MSME_19051",
+                "volume": 2311525.89
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14485",
+                "name": "Green Logistics",
+                "gstin": "31TVMUW2885U8ZY"
+            },
+            {
+                "msme_id": "MSME_17171",
+                "name": "Global Industries",
+                "gstin": "19IILCF8230H4Z1"
+            },
+            {
+                "msme_id": "MSME_18330",
+                "name": "Sai Enterprises",
+                "gstin": "32TRLTM6860F8ZQ"
+            },
+            {
+                "msme_id": "MSME_19218",
+                "name": "Shree Logistics",
+                "gstin": "23UHGPE6931N4ZG"
+            }
+        ],
+        "total_laundered_inr": 9104606.19,
+        "evidence_graph": [
+            {
+                "source": "MSME_14485",
+                "target": "MSME_17171",
+                "volume": 2276937.33
+            },
+            {
+                "source": "MSME_17171",
+                "target": "MSME_18330",
+                "volume": 2278180.01
+            },
+            {
+                "source": "MSME_18330",
+                "target": "MSME_19218",
+                "volume": 2275799.08
+            },
+            {
+                "source": "MSME_19218",
+                "target": "MSME_14485",
+                "volume": 2273689.77
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15510",
+                "name": "Rapid Retail",
+                "gstin": "35OXICA0017J5ZH"
+            },
+            {
+                "msme_id": "MSME_13820",
+                "name": "Shree Logistics",
+                "gstin": "22LPNGJ0090M7Z8"
+            },
+            {
+                "msme_id": "MSME_18966",
+                "name": "Urban Industries",
+                "gstin": "12OQVCM4581L6ZM"
+            },
+            {
+                "msme_id": "MSME_19292",
+                "name": "Prime Enterprises",
+                "gstin": "19RNNFH6904Q2ZL"
+            },
+            {
+                "msme_id": "MSME_14832",
+                "name": "Sai Packaging",
+                "gstin": "15MCURC5500Q8ZY"
+            }
+        ],
+        "total_laundered_inr": 9071809.11,
+        "evidence_graph": [
+            {
+                "source": "MSME_15510",
+                "target": "MSME_13820",
+                "volume": 1819282.56
+            },
+            {
+                "source": "MSME_13820",
+                "target": "MSME_18966",
+                "volume": 1816841.44
+            },
+            {
+                "source": "MSME_18966",
+                "target": "MSME_19292",
+                "volume": 1816916.4
+            },
+            {
+                "source": "MSME_19292",
+                "target": "MSME_14832",
+                "volume": 1808680.29
+            },
+            {
+                "source": "MSME_14832",
+                "target": "MSME_15510",
+                "volume": 1810088.42
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18663",
+                "name": "Green Textiles",
+                "gstin": "23RZHWP1920E1ZO"
+            },
+            {
+                "msme_id": "MSME_10813",
+                "name": "Green Retail",
+                "gstin": "36POTUQ7121S6ZY"
+            },
+            {
+                "msme_id": "MSME_15045",
+                "name": "Shree Enterprises",
+                "gstin": "32TMMNY2346M6ZW"
+            },
+            {
+                "msme_id": "MSME_15912",
+                "name": "Lakshmi Traders",
+                "gstin": "25BCSCB9220H3Z1"
+            }
+        ],
+        "total_laundered_inr": 9003538.54,
+        "evidence_graph": [
+            {
+                "source": "MSME_18663",
+                "target": "MSME_10813",
+                "volume": 2252754.08
+            },
+            {
+                "source": "MSME_10813",
+                "target": "MSME_15045",
+                "volume": 2250001.25
+            },
+            {
+                "source": "MSME_15045",
+                "target": "MSME_15912",
+                "volume": 2254744.32
+            },
+            {
+                "source": "MSME_15912",
+                "target": "MSME_18663",
+                "volume": 2246038.89
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14796",
+                "name": "Lakshmi Traders",
+                "gstin": "22OCEYZ8798L1ZJ"
+            },
+            {
+                "msme_id": "MSME_10070",
+                "name": "Green Logistics",
+                "gstin": "36YEZEJ1810D4ZS"
+            },
+            {
+                "msme_id": "MSME_12968",
+                "name": "Prime Enterprises",
+                "gstin": "33TRYKS1291M5ZP"
+            },
+            {
+                "msme_id": "MSME_16429",
+                "name": "Prime Industries",
+                "gstin": "20QVNHF4474F2ZM"
+            },
+            {
+                "msme_id": "MSME_15813",
+                "name": "Rapid Foods",
+                "gstin": "31GKZQG6417M4ZT"
+            }
+        ],
+        "total_laundered_inr": 8928574.63,
+        "evidence_graph": [
+            {
+                "source": "MSME_14796",
+                "target": "MSME_10070",
+                "volume": 1778150.48
+            },
+            {
+                "source": "MSME_10070",
+                "target": "MSME_12968",
+                "volume": 1791477.56
+            },
+            {
+                "source": "MSME_12968",
+                "target": "MSME_16429",
+                "volume": 1787292.4
+            },
+            {
+                "source": "MSME_16429",
+                "target": "MSME_15813",
+                "volume": 1785482.29
+            },
+            {
+                "source": "MSME_15813",
+                "target": "MSME_14796",
+                "volume": 1786171.9
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19345",
+                "name": "Om Textiles",
+                "gstin": "27OTKFE3835D4Z9"
+            },
+            {
+                "msme_id": "MSME_16764",
+                "name": "Green Packaging",
+                "gstin": "16BSYYJ2094W8ZN"
+            },
+            {
+                "msme_id": "MSME_11634",
+                "name": "Skyline Foods",
+                "gstin": "25BKUGG6125J4ZN"
+            },
+            {
+                "msme_id": "MSME_10052",
+                "name": "Skyline Enterprises",
+                "gstin": "18VEEAM5709Q6ZH"
+            },
+            {
+                "msme_id": "MSME_15547",
+                "name": "Rapid Traders",
+                "gstin": "20HZBNS5722Q4ZB"
+            }
+        ],
+        "total_laundered_inr": 8880679.04,
+        "evidence_graph": [
+            {
+                "source": "MSME_19345",
+                "target": "MSME_16764",
+                "volume": 1775959.6
+            },
+            {
+                "source": "MSME_16764",
+                "target": "MSME_11634",
+                "volume": 1781008.8
+            },
+            {
+                "source": "MSME_11634",
+                "target": "MSME_10052",
+                "volume": 1767380.81
+            },
+            {
+                "source": "MSME_10052",
+                "target": "MSME_15547",
+                "volume": 1773797.39
+            },
+            {
+                "source": "MSME_15547",
+                "target": "MSME_19345",
+                "volume": 1782532.44
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13366",
+                "name": "Green Industries",
+                "gstin": "29TMFCU3898B6ZW"
+            },
+            {
+                "msme_id": "MSME_14726",
+                "name": "Urban Retail",
+                "gstin": "35RZTZX4263A8Z7"
+            },
+            {
+                "msme_id": "MSME_19119",
+                "name": "Rapid Industries",
+                "gstin": "22QHTNC8893M2Z1"
+            },
+            {
+                "msme_id": "MSME_15974",
+                "name": "Prime Traders",
+                "gstin": "33OJIXS3585I7ZF"
+            },
+            {
+                "msme_id": "MSME_13940",
+                "name": "Lakshmi Foods",
+                "gstin": "21DZCAZ8617E8Z7"
+            }
+        ],
+        "total_laundered_inr": 8749494.54,
+        "evidence_graph": [
+            {
+                "source": "MSME_13366",
+                "target": "MSME_14726",
+                "volume": 1753207.78
+            },
+            {
+                "source": "MSME_14726",
+                "target": "MSME_19119",
+                "volume": 1754433.47
+            },
+            {
+                "source": "MSME_19119",
+                "target": "MSME_15974",
+                "volume": 1745839.95
+            },
+            {
+                "source": "MSME_15974",
+                "target": "MSME_13940",
+                "volume": 1742109.54
+            },
+            {
+                "source": "MSME_13940",
+                "target": "MSME_13366",
+                "volume": 1753903.8
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11371",
+                "name": "Rapid Enterprises",
+                "gstin": "22XGZTR1716F3Z3"
+            },
+            {
+                "msme_id": "MSME_10082",
+                "name": "Urban Packaging",
+                "gstin": "35REZOO0334I5ZL"
+            },
+            {
+                "msme_id": "MSME_16183",
+                "name": "Prime Enterprises",
+                "gstin": "34LUMWE7882H2ZP"
+            },
+            {
+                "msme_id": "MSME_17155",
+                "name": "Shree Logistics",
+                "gstin": "30SUNJQ5614G4Z9"
+            }
+        ],
+        "total_laundered_inr": 8630630.79,
+        "evidence_graph": [
+            {
+                "source": "MSME_11371",
+                "target": "MSME_10082",
+                "volume": 2161715.39
+            },
+            {
+                "source": "MSME_10082",
+                "target": "MSME_16183",
+                "volume": 2149380.77
+            },
+            {
+                "source": "MSME_16183",
+                "target": "MSME_17155",
+                "volume": 2153885.11
+            },
+            {
+                "source": "MSME_17155",
+                "target": "MSME_11371",
+                "volume": 2165649.52
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18447",
+                "name": "Sai Packaging",
+                "gstin": "20EGXIV4845X2ZN"
+            },
+            {
+                "msme_id": "MSME_16233",
+                "name": "Rapid Textiles",
+                "gstin": "25LAOIR7663G4ZM"
+            },
+            {
+                "msme_id": "MSME_17753",
+                "name": "Sai Enterprises",
+                "gstin": "10WWTQD1161B2ZU"
+            },
+            {
+                "msme_id": "MSME_10965",
+                "name": "Skyline Foods",
+                "gstin": "29XBGQC7369B7Z0"
+            },
+            {
+                "msme_id": "MSME_10760",
+                "name": "Prime Industries",
+                "gstin": "35MIIPL9421P7Z8"
+            }
+        ],
+        "total_laundered_inr": 8596290.2,
+        "evidence_graph": [
+            {
+                "source": "MSME_18447",
+                "target": "MSME_16233",
+                "volume": 1720717.86
+            },
+            {
+                "source": "MSME_16233",
+                "target": "MSME_17753",
+                "volume": 1723763.39
+            },
+            {
+                "source": "MSME_17753",
+                "target": "MSME_10965",
+                "volume": 1714385.88
+            },
+            {
+                "source": "MSME_10965",
+                "target": "MSME_10760",
+                "volume": 1721380.48
+            },
+            {
+                "source": "MSME_10760",
+                "target": "MSME_18447",
+                "volume": 1716042.59
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11142",
+                "name": "Lakshmi Foods",
+                "gstin": "21INYJF0503T8ZX"
+            },
+            {
+                "msme_id": "MSME_17248",
+                "name": "Rapid Industries",
+                "gstin": "32WTCBM8791G5ZI"
+            },
+            {
+                "msme_id": "MSME_13017",
+                "name": "Prime Traders",
+                "gstin": "18GXBJK2074X8Z9"
+            },
+            {
+                "msme_id": "MSME_18734",
+                "name": "Lakshmi Packaging",
+                "gstin": "15PNHFH8932Y8ZM"
+            }
+        ],
+        "total_laundered_inr": 8562979.33,
+        "evidence_graph": [
+            {
+                "source": "MSME_11142",
+                "target": "MSME_17248",
+                "volume": 2145653.75
+            },
+            {
+                "source": "MSME_17248",
+                "target": "MSME_13017",
+                "volume": 2144992.25
+            },
+            {
+                "source": "MSME_13017",
+                "target": "MSME_18734",
+                "volume": 2135203.8
+            },
+            {
+                "source": "MSME_18734",
+                "target": "MSME_11142",
+                "volume": 2137129.53
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16739",
+                "name": "Om Logistics",
+                "gstin": "16SGNAW6853O5Z3"
+            },
+            {
+                "msme_id": "MSME_18979",
+                "name": "Urban Foods",
+                "gstin": "20SBNFJ3916P2ZP"
+            },
+            {
+                "msme_id": "MSME_12590",
+                "name": "Rapid Textiles",
+                "gstin": "36CLSTF3012U5ZD"
+            },
+            {
+                "msme_id": "MSME_10493",
+                "name": "Sai Textiles",
+                "gstin": "20QWTDU2800S8ZV"
+            }
+        ],
+        "total_laundered_inr": 8445071.36,
+        "evidence_graph": [
+            {
+                "source": "MSME_16739",
+                "target": "MSME_18979",
+                "volume": 2112952.25
+            },
+            {
+                "source": "MSME_18979",
+                "target": "MSME_12590",
+                "volume": 2120289.75
+            },
+            {
+                "source": "MSME_12590",
+                "target": "MSME_10493",
+                "volume": 2109565.35
+            },
+            {
+                "source": "MSME_10493",
+                "target": "MSME_16739",
+                "volume": 2102264.01
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12224",
+                "name": "Lakshmi Traders",
+                "gstin": "16MUZAU1006P6ZW"
+            },
+            {
+                "msme_id": "MSME_19750",
+                "name": "Prime Logistics",
+                "gstin": "16BMEVS1341Q8Z0"
+            },
+            {
+                "msme_id": "MSME_19746",
+                "name": "Shree Packaging",
+                "gstin": "19RAQWJ1593M8ZS"
+            },
+            {
+                "msme_id": "MSME_15205",
+                "name": "Urban Enterprises",
+                "gstin": "21DNCBC6943P5Z7"
+            },
+            {
+                "msme_id": "MSME_13187",
+                "name": "Om Textiles",
+                "gstin": "29VQBQP5022K4ZX"
+            }
+        ],
+        "total_laundered_inr": 7598426.95,
+        "evidence_graph": [
+            {
+                "source": "MSME_12224",
+                "target": "MSME_19750",
+                "volume": 1514837.36
+            },
+            {
+                "source": "MSME_19750",
+                "target": "MSME_19746",
+                "volume": 1519960.64
+            },
+            {
+                "source": "MSME_19746",
+                "target": "MSME_15205",
+                "volume": 1519194.66
+            },
+            {
+                "source": "MSME_15205",
+                "target": "MSME_13187",
+                "volume": 1518451.36
+            },
+            {
+                "source": "MSME_13187",
+                "target": "MSME_12224",
+                "volume": 1525982.93
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18516",
+                "name": "Rapid Logistics",
+                "gstin": "22IBHEQ5022X5ZY"
+            },
+            {
+                "msme_id": "MSME_18970",
+                "name": "Skyline Packaging",
+                "gstin": "32JIKQS0820B3ZY"
+            },
+            {
+                "msme_id": "MSME_12041",
+                "name": "Lakshmi Industries",
+                "gstin": "29CIDAQ8735B4ZC"
+            }
+        ],
+        "total_laundered_inr": 7451690.08,
+        "evidence_graph": [
+            {
+                "source": "MSME_18516",
+                "target": "MSME_18970",
+                "volume": 2481642.8
+            },
+            {
+                "source": "MSME_18970",
+                "target": "MSME_12041",
+                "volume": 2484521.57
+            },
+            {
+                "source": "MSME_12041",
+                "target": "MSME_18516",
+                "volume": 2485525.71
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19767",
+                "name": "Sai Industries",
+                "gstin": "29AQZYZ7488X5ZR"
+            },
+            {
+                "msme_id": "MSME_18146",
+                "name": "Sai Retail",
+                "gstin": "16JPQNC8424U3ZD"
+            },
+            {
+                "msme_id": "MSME_16279",
+                "name": "Om Textiles",
+                "gstin": "17QKVVI3755V7ZW"
+            }
+        ],
+        "total_laundered_inr": 7310851.83,
+        "evidence_graph": [
+            {
+                "source": "MSME_19767",
+                "target": "MSME_18146",
+                "volume": 2424273.88
+            },
+            {
+                "source": "MSME_18146",
+                "target": "MSME_16279",
+                "volume": 2444691.31
+            },
+            {
+                "source": "MSME_16279",
+                "target": "MSME_19767",
+                "volume": 2441886.64
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16508",
+                "name": "Urban Foods",
+                "gstin": "13HMQKZ0777Y8ZL"
+            },
+            {
+                "msme_id": "MSME_15328",
+                "name": "Sai Retail",
+                "gstin": "28YGSQJ1986X1ZH"
+            },
+            {
+                "msme_id": "MSME_13454",
+                "name": "Rapid Industries",
+                "gstin": "26HNOSZ6480J5ZD"
+            }
+        ],
+        "total_laundered_inr": 7206779.82,
+        "evidence_graph": [
+            {
+                "source": "MSME_16508",
+                "target": "MSME_15328",
+                "volume": 2395026.57
+            },
+            {
+                "source": "MSME_15328",
+                "target": "MSME_13454",
+                "volume": 2407652.54
+            },
+            {
+                "source": "MSME_13454",
+                "target": "MSME_16508",
+                "volume": 2404100.71
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17601",
+                "name": "Shree Packaging",
+                "gstin": "31MFAPT4376R7Z2"
+            },
+            {
+                "msme_id": "MSME_11043",
+                "name": "Urban Packaging",
+                "gstin": "29DURHT7657F5ZY"
+            },
+            {
+                "msme_id": "MSME_19750",
+                "name": "Prime Logistics",
+                "gstin": "16BMEVS1341Q8Z0"
+            },
+            {
+                "msme_id": "MSME_13105",
+                "name": "Urban Traders",
+                "gstin": "25PXOXS0533T6ZF"
+            },
+            {
+                "msme_id": "MSME_18177",
+                "name": "Om Logistics",
+                "gstin": "26JHGVN0294W2ZY"
+            }
+        ],
+        "total_laundered_inr": 7184417.83,
+        "evidence_graph": [
+            {
+                "source": "MSME_17601",
+                "target": "MSME_11043",
+                "volume": 1442572.01
+            },
+            {
+                "source": "MSME_11043",
+                "target": "MSME_19750",
+                "volume": 1436624.04
+            },
+            {
+                "source": "MSME_19750",
+                "target": "MSME_13105",
+                "volume": 1440287.85
+            },
+            {
+                "source": "MSME_13105",
+                "target": "MSME_18177",
+                "volume": 1434269.87
+            },
+            {
+                "source": "MSME_18177",
+                "target": "MSME_17601",
+                "volume": 1430664.06
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11645",
+                "name": "Om Industries",
+                "gstin": "25OBESB5199Q1ZT"
+            },
+            {
+                "msme_id": "MSME_19114",
+                "name": "Prime Traders",
+                "gstin": "16CZVXQ7422R3ZR"
+            },
+            {
+                "msme_id": "MSME_12482",
+                "name": "Sai Retail",
+                "gstin": "24GGNMT6762E4Z4"
+            }
+        ],
+        "total_laundered_inr": 6988383.57,
+        "evidence_graph": [
+            {
+                "source": "MSME_11645",
+                "target": "MSME_19114",
+                "volume": 2331175.79
+            },
+            {
+                "source": "MSME_19114",
+                "target": "MSME_12482",
+                "volume": 2331019.97
+            },
+            {
+                "source": "MSME_12482",
+                "target": "MSME_11645",
+                "volume": 2326187.81
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18322",
+                "name": "Skyline Textiles",
+                "gstin": "21GHMES4876B1ZX"
+            },
+            {
+                "msme_id": "MSME_13013",
+                "name": "Om Textiles",
+                "gstin": "16DPMKE5335O6ZX"
+            },
+            {
+                "msme_id": "MSME_13944",
+                "name": "Rapid Packaging",
+                "gstin": "32DABTS6918S1ZK"
+            }
+        ],
+        "total_laundered_inr": 6973068.05,
+        "evidence_graph": [
+            {
+                "source": "MSME_18322",
+                "target": "MSME_13013",
+                "volume": 2312387.03
+            },
+            {
+                "source": "MSME_13013",
+                "target": "MSME_13944",
+                "volume": 2333362.98
+            },
+            {
+                "source": "MSME_13944",
+                "target": "MSME_18322",
+                "volume": 2327318.04
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17768",
+                "name": "Lakshmi Industries",
+                "gstin": "10JHAUE6090V3ZG"
+            },
+            {
+                "msme_id": "MSME_10655",
+                "name": "Om Packaging",
+                "gstin": "24JZKCF9785W7Z9"
+            },
+            {
+                "msme_id": "MSME_15337",
+                "name": "Prime Retail",
+                "gstin": "13KWAJD3775E4ZL"
+            }
+        ],
+        "total_laundered_inr": 6917273.6,
+        "evidence_graph": [
+            {
+                "source": "MSME_17768",
+                "target": "MSME_10655",
+                "volume": 2311840.26
+            },
+            {
+                "source": "MSME_10655",
+                "target": "MSME_15337",
+                "volume": 2310100.69
+            },
+            {
+                "source": "MSME_15337",
+                "target": "MSME_17768",
+                "volume": 2295332.65
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11475",
+                "name": "Prime Industries",
+                "gstin": "23TMENJ9986P2Z2"
+            },
+            {
+                "msme_id": "MSME_16820",
+                "name": "Urban Foods",
+                "gstin": "35VMUQA5710Q5ZN"
+            },
+            {
+                "msme_id": "MSME_18489",
+                "name": "Rapid Retail",
+                "gstin": "33RFLNJ5489Q5ZR"
+            },
+            {
+                "msme_id": "MSME_12271",
+                "name": "Global Traders",
+                "gstin": "26XKKUT9096T5Z2"
+            },
+            {
+                "msme_id": "MSME_16828",
+                "name": "Global Industries",
+                "gstin": "28HSHCU4313T5Z1"
+            }
+        ],
+        "total_laundered_inr": 6821089.89,
+        "evidence_graph": [
+            {
+                "source": "MSME_11475",
+                "target": "MSME_16820",
+                "volume": 1364812.9
+            },
+            {
+                "source": "MSME_16820",
+                "target": "MSME_18489",
+                "volume": 1365924.65
+            },
+            {
+                "source": "MSME_18489",
+                "target": "MSME_12271",
+                "volume": 1362072.95
+            },
+            {
+                "source": "MSME_12271",
+                "target": "MSME_16828",
+                "volume": 1365537.26
+            },
+            {
+                "source": "MSME_16828",
+                "target": "MSME_11475",
+                "volume": 1362742.13
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13473",
+                "name": "Om Logistics",
+                "gstin": "25MORTA1654D4ZC"
+            },
+            {
+                "msme_id": "MSME_11390",
+                "name": "Prime Enterprises",
+                "gstin": "22SLIKF6354R8Z9"
+            },
+            {
+                "msme_id": "MSME_14541",
+                "name": "Sai Retail",
+                "gstin": "20YIZVD3216N7ZI"
+            },
+            {
+                "msme_id": "MSME_15586",
+                "name": "Om Packaging",
+                "gstin": "27RPVYM9065M6ZA"
+            },
+            {
+                "msme_id": "MSME_10447",
+                "name": "Lakshmi Enterprises",
+                "gstin": "14ZJHLM7141U3Z0"
+            }
+        ],
+        "total_laundered_inr": 6602011.64,
+        "evidence_graph": [
+            {
+                "source": "MSME_13473",
+                "target": "MSME_11390",
+                "volume": 1321893.53
+            },
+            {
+                "source": "MSME_11390",
+                "target": "MSME_14541",
+                "volume": 1321042.51
+            },
+            {
+                "source": "MSME_14541",
+                "target": "MSME_15586",
+                "volume": 1320962.8
+            },
+            {
+                "source": "MSME_15586",
+                "target": "MSME_10447",
+                "volume": 1319012.34
+            },
+            {
+                "source": "MSME_10447",
+                "target": "MSME_13473",
+                "volume": 1319100.46
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18486",
+                "name": "Global Industries",
+                "gstin": "23XQIND6223M5ZC"
+            },
+            {
+                "msme_id": "MSME_17138",
+                "name": "Rapid Traders",
+                "gstin": "34OPBID3242B1ZC"
+            },
+            {
+                "msme_id": "MSME_11742",
+                "name": "Om Logistics",
+                "gstin": "12JCCJE1518D5ZY"
+            },
+            {
+                "msme_id": "MSME_18348",
+                "name": "Global Enterprises",
+                "gstin": "20GLJIY5343O7ZM"
+            },
+            {
+                "msme_id": "MSME_19738",
+                "name": "Global Packaging",
+                "gstin": "26CLERX5766P4Z6"
+            }
+        ],
+        "total_laundered_inr": 6591811.55,
+        "evidence_graph": [
+            {
+                "source": "MSME_18486",
+                "target": "MSME_17138",
+                "volume": 1319570.02
+            },
+            {
+                "source": "MSME_17138",
+                "target": "MSME_11742",
+                "volume": 1312158.61
+            },
+            {
+                "source": "MSME_11742",
+                "target": "MSME_18348",
+                "volume": 1314729.57
+            },
+            {
+                "source": "MSME_18348",
+                "target": "MSME_19738",
+                "volume": 1321109.71
+            },
+            {
+                "source": "MSME_19738",
+                "target": "MSME_18486",
+                "volume": 1324243.64
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12884",
+                "name": "Green Textiles",
+                "gstin": "29LHLPP0771W2ZR"
+            },
+            {
+                "msme_id": "MSME_17175",
+                "name": "Lakshmi Logistics",
+                "gstin": "19YDXSV5112V8ZY"
+            },
+            {
+                "msme_id": "MSME_18741",
+                "name": "Skyline Industries",
+                "gstin": "21HWYMA1691W3Z4"
+            },
+            {
+                "msme_id": "MSME_10704",
+                "name": "Lakshmi Retail",
+                "gstin": "28PWFON4083V8ZT"
+            },
+            {
+                "msme_id": "MSME_18059",
+                "name": "Lakshmi Retail",
+                "gstin": "17QOCFA7456C4Z1"
+            }
+        ],
+        "total_laundered_inr": 6553355.32,
+        "evidence_graph": [
+            {
+                "source": "MSME_12884",
+                "target": "MSME_17175",
+                "volume": 1315830.34
+            },
+            {
+                "source": "MSME_17175",
+                "target": "MSME_18741",
+                "volume": 1308952.28
+            },
+            {
+                "source": "MSME_18741",
+                "target": "MSME_10704",
+                "volume": 1311614.52
+            },
+            {
+                "source": "MSME_10704",
+                "target": "MSME_18059",
+                "volume": 1309172.07
+            },
+            {
+                "source": "MSME_18059",
+                "target": "MSME_12884",
+                "volume": 1307786.11
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18142",
+                "name": "Lakshmi Logistics",
+                "gstin": "31XJLWI8823N2ZF"
+            },
+            {
+                "msme_id": "MSME_17861",
+                "name": "Shree Enterprises",
+                "gstin": "25RUGCV3904K4Z4"
+            },
+            {
+                "msme_id": "MSME_10020",
+                "name": "Rapid Enterprises",
+                "gstin": "32VXTOK4687B4Z6"
+            }
+        ],
+        "total_laundered_inr": 6485160.05,
+        "evidence_graph": [
+            {
+                "source": "MSME_18142",
+                "target": "MSME_17861",
+                "volume": 2161330.58
+            },
+            {
+                "source": "MSME_17861",
+                "target": "MSME_10020",
+                "volume": 2166398.24
+            },
+            {
+                "source": "MSME_10020",
+                "target": "MSME_18142",
+                "volume": 2157431.23
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10483",
+                "name": "Lakshmi Industries",
+                "gstin": "30YLWFO6271S1Z7"
+            },
+            {
+                "msme_id": "MSME_12891",
+                "name": "Lakshmi Packaging",
+                "gstin": "35UFHRT7401P5ZC"
+            },
+            {
+                "msme_id": "MSME_13376",
+                "name": "Prime Foods",
+                "gstin": "19ZWCQA4765L3ZW"
+            },
+            {
+                "msme_id": "MSME_11312",
+                "name": "Prime Textiles",
+                "gstin": "17LROAX5430X5ZY"
+            }
+        ],
+        "total_laundered_inr": 6455921.69,
+        "evidence_graph": [
+            {
+                "source": "MSME_10483",
+                "target": "MSME_12891",
+                "volume": 1612793.66
+            },
+            {
+                "source": "MSME_12891",
+                "target": "MSME_13376",
+                "volume": 1614912.11
+            },
+            {
+                "source": "MSME_13376",
+                "target": "MSME_11312",
+                "volume": 1613641.39
+            },
+            {
+                "source": "MSME_11312",
+                "target": "MSME_10483",
+                "volume": 1614574.53
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19439",
+                "name": "Rapid Retail",
+                "gstin": "30JETXX9726S7ZH"
+            },
+            {
+                "msme_id": "MSME_12476",
+                "name": "Om Packaging",
+                "gstin": "35VZIKA5890Z8ZO"
+            },
+            {
+                "msme_id": "MSME_16608",
+                "name": "Global Traders",
+                "gstin": "22LMUAN9346L4ZO"
+            }
+        ],
+        "total_laundered_inr": 6413063.61,
+        "evidence_graph": [
+            {
+                "source": "MSME_19439",
+                "target": "MSME_12476",
+                "volume": 2142390.19
+            },
+            {
+                "source": "MSME_12476",
+                "target": "MSME_16608",
+                "volume": 2129689.19
+            },
+            {
+                "source": "MSME_16608",
+                "target": "MSME_19439",
+                "volume": 2140984.23
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13444",
+                "name": "Lakshmi Enterprises",
+                "gstin": "14BHYLQ5905J4ZZ"
+            },
+            {
+                "msme_id": "MSME_14169",
+                "name": "Skyline Retail",
+                "gstin": "35UKRFU7555P2ZQ"
+            },
+            {
+                "msme_id": "MSME_13636",
+                "name": "Sai Traders",
+                "gstin": "30OVXXP8090X1Z6"
+            }
+        ],
+        "total_laundered_inr": 6407498.53,
+        "evidence_graph": [
+            {
+                "source": "MSME_13444",
+                "target": "MSME_14169",
+                "volume": 2129560.6
+            },
+            {
+                "source": "MSME_14169",
+                "target": "MSME_13636",
+                "volume": 2145564.58
+            },
+            {
+                "source": "MSME_13636",
+                "target": "MSME_13444",
+                "volume": 2132373.35
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11359",
+                "name": "Green Textiles",
+                "gstin": "31RRLCV0413U4ZW"
+            },
+            {
+                "msme_id": "MSME_18654",
+                "name": "Urban Logistics",
+                "gstin": "19KAJEP9780H1Z5"
+            },
+            {
+                "msme_id": "MSME_12529",
+                "name": "Prime Foods",
+                "gstin": "22ZXNHF5014J8Z2"
+            }
+        ],
+        "total_laundered_inr": 6189532.15,
+        "evidence_graph": [
+            {
+                "source": "MSME_11359",
+                "target": "MSME_18654",
+                "volume": 2064921.82
+            },
+            {
+                "source": "MSME_18654",
+                "target": "MSME_12529",
+                "volume": 2063132.57
+            },
+            {
+                "source": "MSME_12529",
+                "target": "MSME_11359",
+                "volume": 2061477.76
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12271",
+                "name": "Global Traders",
+                "gstin": "26XKKUT9096T5Z2"
+            },
+            {
+                "msme_id": "MSME_13422",
+                "name": "Green Enterprises",
+                "gstin": "16QOVAI5719J1ZP"
+            },
+            {
+                "msme_id": "MSME_16183",
+                "name": "Prime Enterprises",
+                "gstin": "34LUMWE7882H2ZP"
+            },
+            {
+                "msme_id": "MSME_13857",
+                "name": "Om Enterprises",
+                "gstin": "31GNKUP2502T7ZY"
+            }
+        ],
+        "total_laundered_inr": 6172338.55,
+        "evidence_graph": [
+            {
+                "source": "MSME_12271",
+                "target": "MSME_13422",
+                "volume": 1551089.29
+            },
+            {
+                "source": "MSME_13422",
+                "target": "MSME_16183",
+                "volume": 1537599.92
+            },
+            {
+                "source": "MSME_16183",
+                "target": "MSME_13857",
+                "volume": 1546156.98
+            },
+            {
+                "source": "MSME_13857",
+                "target": "MSME_12271",
+                "volume": 1537492.36
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11310",
+                "name": "Om Textiles",
+                "gstin": "24IALUW7447B7ZR"
+            },
+            {
+                "msme_id": "MSME_15936",
+                "name": "Urban Traders",
+                "gstin": "15DKFOS9230J4ZT"
+            },
+            {
+                "msme_id": "MSME_17312",
+                "name": "Global Retail",
+                "gstin": "34FWYYQ3308W7ZP"
+            }
+        ],
+        "total_laundered_inr": 5713813.33,
+        "evidence_graph": [
+            {
+                "source": "MSME_11310",
+                "target": "MSME_15936",
+                "volume": 1901310.94
+            },
+            {
+                "source": "MSME_15936",
+                "target": "MSME_17312",
+                "volume": 1904713.25
+            },
+            {
+                "source": "MSME_17312",
+                "target": "MSME_11310",
+                "volume": 1907789.14
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18318",
+                "name": "Sai Logistics",
+                "gstin": "12PXRSO9604V2Z4"
+            },
+            {
+                "msme_id": "MSME_17788",
+                "name": "Shree Packaging",
+                "gstin": "29SSQJS3217R4ZB"
+            },
+            {
+                "msme_id": "MSME_12356",
+                "name": "Sai Retail",
+                "gstin": "11LQWNF0610G4ZH"
+            },
+            {
+                "msme_id": "MSME_11372",
+                "name": "Shree Logistics",
+                "gstin": "13SQBXN5593T2Z8"
+            },
+            {
+                "msme_id": "MSME_13376",
+                "name": "Prime Foods",
+                "gstin": "19ZWCQA4765L3ZW"
+            }
+        ],
+        "total_laundered_inr": 5344939.36,
+        "evidence_graph": [
+            {
+                "source": "MSME_18318",
+                "target": "MSME_17788",
+                "volume": 1067946.69
+            },
+            {
+                "source": "MSME_17788",
+                "target": "MSME_12356",
+                "volume": 1066625.11
+            },
+            {
+                "source": "MSME_12356",
+                "target": "MSME_11372",
+                "volume": 1068036.04
+            },
+            {
+                "source": "MSME_11372",
+                "target": "MSME_13376",
+                "volume": 1073160.33
+            },
+            {
+                "source": "MSME_13376",
+                "target": "MSME_18318",
+                "volume": 1069171.19
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14399",
+                "name": "Rapid Enterprises",
+                "gstin": "22SONAP6399N3ZX"
+            },
+            {
+                "msme_id": "MSME_17743",
+                "name": "Global Enterprises",
+                "gstin": "35AWICQ6480C1ZN"
+            },
+            {
+                "msme_id": "MSME_19637",
+                "name": "Skyline Retail",
+                "gstin": "15UKZML9197X5ZG"
+            },
+            {
+                "msme_id": "MSME_14511",
+                "name": "Shree Foods",
+                "gstin": "17REAQQ0456M6ZS"
+            },
+            {
+                "msme_id": "MSME_13232",
+                "name": "Green Foods",
+                "gstin": "34BJHYJ7777F5ZD"
+            }
+        ],
+        "total_laundered_inr": 5335898.96,
+        "evidence_graph": [
+            {
+                "source": "MSME_14399",
+                "target": "MSME_17743",
+                "volume": 1066882.57
+            },
+            {
+                "source": "MSME_17743",
+                "target": "MSME_19637",
+                "volume": 1065093.26
+            },
+            {
+                "source": "MSME_19637",
+                "target": "MSME_14511",
+                "volume": 1068670.32
+            },
+            {
+                "source": "MSME_14511",
+                "target": "MSME_13232",
+                "volume": 1065455.57
+            },
+            {
+                "source": "MSME_13232",
+                "target": "MSME_14399",
+                "volume": 1069797.24
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17084",
+                "name": "Om Traders",
+                "gstin": "16YWZNQ0032B8Z4"
+            },
+            {
+                "msme_id": "MSME_17445",
+                "name": "Sai Retail",
+                "gstin": "31QOBNB1857D8ZJ"
+            },
+            {
+                "msme_id": "MSME_18724",
+                "name": "Urban Foods",
+                "gstin": "32OLDCG9204Z3ZW"
+            }
+        ],
+        "total_laundered_inr": 5256039.85,
+        "evidence_graph": [
+            {
+                "source": "MSME_17084",
+                "target": "MSME_17445",
+                "volume": 1758446.59
+            },
+            {
+                "source": "MSME_17445",
+                "target": "MSME_18724",
+                "volume": 1746329.28
+            },
+            {
+                "source": "MSME_18724",
+                "target": "MSME_17084",
+                "volume": 1751263.98
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12794",
+                "name": "Shree Textiles",
+                "gstin": "32MOJFG6445W1ZZ"
+            },
+            {
+                "msme_id": "MSME_12930",
+                "name": "Green Packaging",
+                "gstin": "35DBWLE8705Z5ZQ"
+            },
+            {
+                "msme_id": "MSME_19166",
+                "name": "Skyline Logistics",
+                "gstin": "22JIQMM9694O1ZX"
+            }
+        ],
+        "total_laundered_inr": 5247009.42,
+        "evidence_graph": [
+            {
+                "source": "MSME_12794",
+                "target": "MSME_12930",
+                "volume": 1753143.67
+            },
+            {
+                "source": "MSME_12930",
+                "target": "MSME_19166",
+                "volume": 1742560.92
+            },
+            {
+                "source": "MSME_19166",
+                "target": "MSME_12794",
+                "volume": 1751304.83
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11065",
+                "name": "Shree Logistics",
+                "gstin": "16CFUEV5861N5Z1"
+            },
+            {
+                "msme_id": "MSME_11098",
+                "name": "Lakshmi Packaging",
+                "gstin": "26YGYJT4749R6Z2"
+            },
+            {
+                "msme_id": "MSME_18236",
+                "name": "Global Logistics",
+                "gstin": "12UUIBS2414C5Z4"
+            }
+        ],
+        "total_laundered_inr": 5090647.85,
+        "evidence_graph": [
+            {
+                "source": "MSME_11065",
+                "target": "MSME_11098",
+                "volume": 1694995.78
+            },
+            {
+                "source": "MSME_11098",
+                "target": "MSME_18236",
+                "volume": 1701513.36
+            },
+            {
+                "source": "MSME_18236",
+                "target": "MSME_11065",
+                "volume": 1694138.71
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17565",
+                "name": "Skyline Logistics",
+                "gstin": "28HJFKA7647X2ZH"
+            },
+            {
+                "msme_id": "MSME_18230",
+                "name": "Global Industries",
+                "gstin": "28PQSXP8497Z4Z2"
+            },
+            {
+                "msme_id": "MSME_19563",
+                "name": "Prime Logistics",
+                "gstin": "18KTUHD4299Q2ZE"
+            }
+        ],
+        "total_laundered_inr": 5017786.82,
+        "evidence_graph": [
+            {
+                "source": "MSME_17565",
+                "target": "MSME_18230",
+                "volume": 1667836.72
+            },
+            {
+                "source": "MSME_18230",
+                "target": "MSME_19563",
+                "volume": 1672348.74
+            },
+            {
+                "source": "MSME_19563",
+                "target": "MSME_17565",
+                "volume": 1677601.36
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10758",
+                "name": "Skyline Packaging",
+                "gstin": "28EWDGZ2584V8ZV"
+            },
+            {
+                "msme_id": "MSME_16342",
+                "name": "Sai Foods",
+                "gstin": "25OFJMW4680U4ZN"
+            },
+            {
+                "msme_id": "MSME_17758",
+                "name": "Om Enterprises",
+                "gstin": "17HRMWX0116Q2ZN"
+            },
+            {
+                "msme_id": "MSME_18661",
+                "name": "Prime Retail",
+                "gstin": "27PJIPK8357W8ZB"
+            },
+            {
+                "msme_id": "MSME_19228",
+                "name": "Om Enterprises",
+                "gstin": "13FGRYB3848O1ZV"
+            }
+        ],
+        "total_laundered_inr": 4567113.47,
+        "evidence_graph": [
+            {
+                "source": "MSME_10758",
+                "target": "MSME_16342",
+                "volume": 917230.01
+            },
+            {
+                "source": "MSME_16342",
+                "target": "MSME_17758",
+                "volume": 909840.49
+            },
+            {
+                "source": "MSME_17758",
+                "target": "MSME_18661",
+                "volume": 916754.32
+            },
+            {
+                "source": "MSME_18661",
+                "target": "MSME_19228",
+                "volume": 911044.04
+            },
+            {
+                "source": "MSME_19228",
+                "target": "MSME_10758",
+                "volume": 912244.61
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19883",
+                "name": "Sai Foods",
+                "gstin": "14XYUXU8886S5ZZ"
+            },
+            {
+                "msme_id": "MSME_17773",
+                "name": "Global Traders",
+                "gstin": "16MKIZQ7741B3ZV"
+            },
+            {
+                "msme_id": "MSME_15400",
+                "name": "Prime Enterprises",
+                "gstin": "21GPAAM0227A3ZA"
+            },
+            {
+                "msme_id": "MSME_11339",
+                "name": "Rapid Industries",
+                "gstin": "14TBBWF8112T5Z4"
+            }
+        ],
+        "total_laundered_inr": 4529701.81,
+        "evidence_graph": [
+            {
+                "source": "MSME_19883",
+                "target": "MSME_17773",
+                "volume": 1128081.01
+            },
+            {
+                "source": "MSME_17773",
+                "target": "MSME_15400",
+                "volume": 1136629.61
+            },
+            {
+                "source": "MSME_15400",
+                "target": "MSME_11339",
+                "volume": 1130328.42
+            },
+            {
+                "source": "MSME_11339",
+                "target": "MSME_19883",
+                "volume": 1134662.77
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17251",
+                "name": "Lakshmi Packaging",
+                "gstin": "15CYWBP3020U2ZU"
+            },
+            {
+                "msme_id": "MSME_13936",
+                "name": "Global Enterprises",
+                "gstin": "12DGXZC1466N3ZK"
+            },
+            {
+                "msme_id": "MSME_16004",
+                "name": "Urban Foods",
+                "gstin": "19SFCFC2509H8Z8"
+            }
+        ],
+        "total_laundered_inr": 4512026.28,
+        "evidence_graph": [
+            {
+                "source": "MSME_17251",
+                "target": "MSME_13936",
+                "volume": 1502952.23
+            },
+            {
+                "source": "MSME_13936",
+                "target": "MSME_16004",
+                "volume": 1502244.89
+            },
+            {
+                "source": "MSME_16004",
+                "target": "MSME_17251",
+                "volume": 1506829.16
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16666",
+                "name": "Skyline Traders",
+                "gstin": "28OGLUP3999Y3ZE"
+            },
+            {
+                "msme_id": "MSME_18881",
+                "name": "Global Logistics",
+                "gstin": "13HXLMR2019C5Z2"
+            },
+            {
+                "msme_id": "MSME_18621",
+                "name": "Om Textiles",
+                "gstin": "15TFUUT4544O2ZE"
+            },
+            {
+                "msme_id": "MSME_14019",
+                "name": "Rapid Packaging",
+                "gstin": "34XDKCU8489K2ZB"
+            },
+            {
+                "msme_id": "MSME_19734",
+                "name": "Skyline Foods",
+                "gstin": "23SVMAT8431E5ZT"
+            }
+        ],
+        "total_laundered_inr": 4499917.4,
+        "evidence_graph": [
+            {
+                "source": "MSME_16666",
+                "target": "MSME_18881",
+                "volume": 899639.13
+            },
+            {
+                "source": "MSME_18881",
+                "target": "MSME_18621",
+                "volume": 899594.86
+            },
+            {
+                "source": "MSME_18621",
+                "target": "MSME_14019",
+                "volume": 898316.19
+            },
+            {
+                "source": "MSME_14019",
+                "target": "MSME_19734",
+                "volume": 903421.62
+            },
+            {
+                "source": "MSME_19734",
+                "target": "MSME_16666",
+                "volume": 898945.6
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16770",
+                "name": "Skyline Retail",
+                "gstin": "17LRRHP0101L8ZB"
+            },
+            {
+                "msme_id": "MSME_11253",
+                "name": "Lakshmi Logistics",
+                "gstin": "14NAKVR6303X5ZT"
+            },
+            {
+                "msme_id": "MSME_11228",
+                "name": "Lakshmi Traders",
+                "gstin": "22MVDMP7461U7ZH"
+            },
+            {
+                "msme_id": "MSME_16305",
+                "name": "Sai Packaging",
+                "gstin": "21VAPFQ4878Y6ZT"
+            }
+        ],
+        "total_laundered_inr": 4462796.68,
+        "evidence_graph": [
+            {
+                "source": "MSME_16770",
+                "target": "MSME_11253",
+                "volume": 1115884.28
+            },
+            {
+                "source": "MSME_11253",
+                "target": "MSME_11228",
+                "volume": 1119439.54
+            },
+            {
+                "source": "MSME_11228",
+                "target": "MSME_16305",
+                "volume": 1114742.88
+            },
+            {
+                "source": "MSME_16305",
+                "target": "MSME_16770",
+                "volume": 1112729.98
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19132",
+                "name": "Prime Traders",
+                "gstin": "35YPBOK2689Z5ZL"
+            },
+            {
+                "msme_id": "MSME_11098",
+                "name": "Lakshmi Packaging",
+                "gstin": "26YGYJT4749R6Z2"
+            },
+            {
+                "msme_id": "MSME_14269",
+                "name": "Shree Traders",
+                "gstin": "34LXSYW7908Q7Z9"
+            }
+        ],
+        "total_laundered_inr": 4436468.94,
+        "evidence_graph": [
+            {
+                "source": "MSME_19132",
+                "target": "MSME_11098",
+                "volume": 1472580.72
+            },
+            {
+                "source": "MSME_11098",
+                "target": "MSME_14269",
+                "volume": 1483402.05
+            },
+            {
+                "source": "MSME_14269",
+                "target": "MSME_19132",
+                "volume": 1480486.17
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18223",
+                "name": "Sai Traders",
+                "gstin": "27RDREO9997M3Z9"
+            },
+            {
+                "msme_id": "MSME_11047",
+                "name": "Shree Packaging",
+                "gstin": "25EZOBX0898I2ZC"
+            },
+            {
+                "msme_id": "MSME_14916",
+                "name": "Shree Foods",
+                "gstin": "32TOLMM3714C5ZJ"
+            }
+        ],
+        "total_laundered_inr": 4262485.35,
+        "evidence_graph": [
+            {
+                "source": "MSME_18223",
+                "target": "MSME_11047",
+                "volume": 1416772.77
+            },
+            {
+                "source": "MSME_11047",
+                "target": "MSME_14916",
+                "volume": 1427206.93
+            },
+            {
+                "source": "MSME_14916",
+                "target": "MSME_18223",
+                "volume": 1418505.65
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19781",
+                "name": "Green Retail",
+                "gstin": "20UEFNM8803M8Z5"
+            },
+            {
+                "msme_id": "MSME_15769",
+                "name": "Green Enterprises",
+                "gstin": "19DQJGH9466E7ZU"
+            },
+            {
+                "msme_id": "MSME_18392",
+                "name": "Global Traders",
+                "gstin": "19XHOFR8941J7ZU"
+            }
+        ],
+        "total_laundered_inr": 4240040.92,
+        "evidence_graph": [
+            {
+                "source": "MSME_19781",
+                "target": "MSME_15769",
+                "volume": 1408025.75
+            },
+            {
+                "source": "MSME_15769",
+                "target": "MSME_18392",
+                "volume": 1418944.18
+            },
+            {
+                "source": "MSME_18392",
+                "target": "MSME_19781",
+                "volume": 1413070.99
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13611",
+                "name": "Shree Industries",
+                "gstin": "32HFAXI1438H2ZG"
+            },
+            {
+                "msme_id": "MSME_10072",
+                "name": "Urban Enterprises",
+                "gstin": "24LNMEM9566Q8Z1"
+            },
+            {
+                "msme_id": "MSME_13915",
+                "name": "Om Retail",
+                "gstin": "34YADOW7451A2Z6"
+            },
+            {
+                "msme_id": "MSME_10282",
+                "name": "Om Industries",
+                "gstin": "28XANKZ5169J3ZV"
+            }
+        ],
+        "total_laundered_inr": 3975321.59,
+        "evidence_graph": [
+            {
+                "source": "MSME_13611",
+                "target": "MSME_10072",
+                "volume": 997860.1
+            },
+            {
+                "source": "MSME_10072",
+                "target": "MSME_13915",
+                "volume": 996259.85
+            },
+            {
+                "source": "MSME_13915",
+                "target": "MSME_10282",
+                "volume": 992352.06
+            },
+            {
+                "source": "MSME_10282",
+                "target": "MSME_13611",
+                "volume": 988849.58
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18515",
+                "name": "Green Industries",
+                "gstin": "34RZRDE6116M4ZT"
+            },
+            {
+                "msme_id": "MSME_10524",
+                "name": "Rapid Textiles",
+                "gstin": "36OLYIY0150K3ZD"
+            },
+            {
+                "msme_id": "MSME_12832",
+                "name": "Green Logistics",
+                "gstin": "10KVVQV0497U8ZD"
+            },
+            {
+                "msme_id": "MSME_19888",
+                "name": "Shree Industries",
+                "gstin": "20MDFZG9493L5Z6"
+            }
+        ],
+        "total_laundered_inr": 3803348.1,
+        "evidence_graph": [
+            {
+                "source": "MSME_18515",
+                "target": "MSME_10524",
+                "volume": 950898.13
+            },
+            {
+                "source": "MSME_10524",
+                "target": "MSME_12832",
+                "volume": 952428.48
+            },
+            {
+                "source": "MSME_12832",
+                "target": "MSME_19888",
+                "volume": 951485.17
+            },
+            {
+                "source": "MSME_19888",
+                "target": "MSME_18515",
+                "volume": 948536.32
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15770",
+                "name": "Sai Logistics",
+                "gstin": "24KBAQB4084X4Z0"
+            },
+            {
+                "msme_id": "MSME_12171",
+                "name": "Shree Enterprises",
+                "gstin": "27QTIDD2991L6ZE"
+            },
+            {
+                "msme_id": "MSME_11037",
+                "name": "Prime Retail",
+                "gstin": "35HUTPJ6403W4ZS"
+            }
+        ],
+        "total_laundered_inr": 3798530.77,
+        "evidence_graph": [
+            {
+                "source": "MSME_15770",
+                "target": "MSME_12171",
+                "volume": 1268164.87
+            },
+            {
+                "source": "MSME_12171",
+                "target": "MSME_11037",
+                "volume": 1263225.98
+            },
+            {
+                "source": "MSME_11037",
+                "target": "MSME_15770",
+                "volume": 1267139.92
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19929",
+                "name": "Global Industries",
+                "gstin": "26AYCHF1390U6ZI"
+            },
+            {
+                "msme_id": "MSME_17965",
+                "name": "Skyline Foods",
+                "gstin": "10NJADO2199C5ZC"
+            },
+            {
+                "msme_id": "MSME_19445",
+                "name": "Rapid Enterprises",
+                "gstin": "14NGZHR7032S6Z3"
+            },
+            {
+                "msme_id": "MSME_14719",
+                "name": "Global Enterprises",
+                "gstin": "35KRWSO0126O4ZY"
+            }
+        ],
+        "total_laundered_inr": 3643472.06,
+        "evidence_graph": [
+            {
+                "source": "MSME_19929",
+                "target": "MSME_17965",
+                "volume": 910137.07
+            },
+            {
+                "source": "MSME_17965",
+                "target": "MSME_19445",
+                "volume": 910146.39
+            },
+            {
+                "source": "MSME_19445",
+                "target": "MSME_14719",
+                "volume": 911050.26
+            },
+            {
+                "source": "MSME_14719",
+                "target": "MSME_19929",
+                "volume": 912138.34
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18483",
+                "name": "Lakshmi Foods",
+                "gstin": "21PTPWD9609T3ZE"
+            },
+            {
+                "msme_id": "MSME_12008",
+                "name": "Rapid Traders",
+                "gstin": "25KFBET9153E6ZW"
+            },
+            {
+                "msme_id": "MSME_13977",
+                "name": "Om Packaging",
+                "gstin": "32EHVXE6539C1ZS"
+            },
+            {
+                "msme_id": "MSME_13388",
+                "name": "Sai Foods",
+                "gstin": "27EUJUH1368V4Z9"
+            },
+            {
+                "msme_id": "MSME_12456",
+                "name": "Global Enterprises",
+                "gstin": "31QHQKY5963V4ZH"
+            }
+        ],
+        "total_laundered_inr": 3619675.96,
+        "evidence_graph": [
+            {
+                "source": "MSME_18483",
+                "target": "MSME_12008",
+                "volume": 720905.81
+            },
+            {
+                "source": "MSME_12008",
+                "target": "MSME_13977",
+                "volume": 726048.5
+            },
+            {
+                "source": "MSME_13977",
+                "target": "MSME_13388",
+                "volume": 724504.67
+            },
+            {
+                "source": "MSME_13388",
+                "target": "MSME_12456",
+                "volume": 722268.31
+            },
+            {
+                "source": "MSME_12456",
+                "target": "MSME_18483",
+                "volume": 725948.67
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14190",
+                "name": "Sai Retail",
+                "gstin": "36HUMTL4801J4Z9"
+            },
+            {
+                "msme_id": "MSME_10942",
+                "name": "Sai Packaging",
+                "gstin": "35NMMWG7298L5ZM"
+            },
+            {
+                "msme_id": "MSME_16766",
+                "name": "Skyline Foods",
+                "gstin": "12DFXCV4958C1ZB"
+            }
+        ],
+        "total_laundered_inr": 3527756.36,
+        "evidence_graph": [
+            {
+                "source": "MSME_14190",
+                "target": "MSME_10942",
+                "volume": 1179361.66
+            },
+            {
+                "source": "MSME_10942",
+                "target": "MSME_16766",
+                "volume": 1174033.45
+            },
+            {
+                "source": "MSME_16766",
+                "target": "MSME_14190",
+                "volume": 1174361.25
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10544",
+                "name": "Urban Packaging",
+                "gstin": "28GJQSC5024I8Z6"
+            },
+            {
+                "msme_id": "MSME_17619",
+                "name": "Om Packaging",
+                "gstin": "17QMUJK9734B8Z7"
+            },
+            {
+                "msme_id": "MSME_14348",
+                "name": "Prime Textiles",
+                "gstin": "32UZYTT0165D7Z3"
+            },
+            {
+                "msme_id": "MSME_18835",
+                "name": "Global Industries",
+                "gstin": "36QJXFW8979M3ZP"
+            }
+        ],
+        "total_laundered_inr": 3344879.96,
+        "evidence_graph": [
+            {
+                "source": "MSME_10544",
+                "target": "MSME_17619",
+                "volume": 834290.43
+            },
+            {
+                "source": "MSME_17619",
+                "target": "MSME_14348",
+                "volume": 835995.37
+            },
+            {
+                "source": "MSME_14348",
+                "target": "MSME_18835",
+                "volume": 836947.64
+            },
+            {
+                "source": "MSME_18835",
+                "target": "MSME_10544",
+                "volume": 837646.52
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19172",
+                "name": "Green Industries",
+                "gstin": "21CAXEZ2881R1ZR"
+            },
+            {
+                "msme_id": "MSME_12407",
+                "name": "Urban Retail",
+                "gstin": "28LEHRO4305U2ZO"
+            },
+            {
+                "msme_id": "MSME_15583",
+                "name": "Urban Packaging",
+                "gstin": "34OZSDW8984W4Z3"
+            },
+            {
+                "msme_id": "MSME_10280",
+                "name": "Global Retail",
+                "gstin": "14PFAOC9315S6ZH"
+            },
+            {
+                "msme_id": "MSME_17928",
+                "name": "Green Enterprises",
+                "gstin": "15FCMHH7151V4ZV"
+            }
+        ],
+        "total_laundered_inr": 3280593.76,
+        "evidence_graph": [
+            {
+                "source": "MSME_19172",
+                "target": "MSME_12407",
+                "volume": 654919.07
+            },
+            {
+                "source": "MSME_12407",
+                "target": "MSME_15583",
+                "volume": 654059.68
+            },
+            {
+                "source": "MSME_15583",
+                "target": "MSME_10280",
+                "volume": 658579.01
+            },
+            {
+                "source": "MSME_10280",
+                "target": "MSME_17928",
+                "volume": 658904.42
+            },
+            {
+                "source": "MSME_17928",
+                "target": "MSME_19172",
+                "volume": 654131.58
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15072",
+                "name": "Sai Traders",
+                "gstin": "35ACEGL7277R1ZO"
+            },
+            {
+                "msme_id": "MSME_17070",
+                "name": "Global Logistics",
+                "gstin": "33PFOZL5769N5ZW"
+            },
+            {
+                "msme_id": "MSME_18715",
+                "name": "Skyline Traders",
+                "gstin": "36JGOKM7255Q6ZY"
+            }
+        ],
+        "total_laundered_inr": 3194035.99,
+        "evidence_graph": [
+            {
+                "source": "MSME_15072",
+                "target": "MSME_17070",
+                "volume": 1067440.84
+            },
+            {
+                "source": "MSME_17070",
+                "target": "MSME_18715",
+                "volume": 1061746.86
+            },
+            {
+                "source": "MSME_18715",
+                "target": "MSME_15072",
+                "volume": 1064848.29
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12922",
+                "name": "Global Retail",
+                "gstin": "25XNMZV1402U7ZH"
+            },
+            {
+                "msme_id": "MSME_19907",
+                "name": "Global Traders",
+                "gstin": "21XNWWL3242Q5ZN"
+            },
+            {
+                "msme_id": "MSME_15416",
+                "name": "Prime Retail",
+                "gstin": "28LZRSY3157L4ZQ"
+            }
+        ],
+        "total_laundered_inr": 3138617.98,
+        "evidence_graph": [
+            {
+                "source": "MSME_12922",
+                "target": "MSME_19907",
+                "volume": 1049166.81
+            },
+            {
+                "source": "MSME_19907",
+                "target": "MSME_15416",
+                "volume": 1041006.84
+            },
+            {
+                "source": "MSME_15416",
+                "target": "MSME_12922",
+                "volume": 1048444.33
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11251",
+                "name": "Green Retail",
+                "gstin": "22GPENE9515Y2Z8"
+            },
+            {
+                "msme_id": "MSME_14157",
+                "name": "Skyline Logistics",
+                "gstin": "14BBEUF0039P5ZD"
+            },
+            {
+                "msme_id": "MSME_19007",
+                "name": "Green Industries",
+                "gstin": "11JJYNP6183S7ZZ"
+            }
+        ],
+        "total_laundered_inr": 3074862.71,
+        "evidence_graph": [
+            {
+                "source": "MSME_11251",
+                "target": "MSME_14157",
+                "volume": 1028597.03
+            },
+            {
+                "source": "MSME_14157",
+                "target": "MSME_19007",
+                "volume": 1021052.55
+            },
+            {
+                "source": "MSME_19007",
+                "target": "MSME_11251",
+                "volume": 1025213.13
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17333",
+                "name": "Global Enterprises",
+                "gstin": "35FJMOL4656Z2ZI"
+            },
+            {
+                "msme_id": "MSME_18940",
+                "name": "Prime Enterprises",
+                "gstin": "16GCNRL1971T5ZW"
+            },
+            {
+                "msme_id": "MSME_14097",
+                "name": "Green Packaging",
+                "gstin": "22JWLLI9138Y1ZY"
+            },
+            {
+                "msme_id": "MSME_16657",
+                "name": "Om Retail",
+                "gstin": "29BNVVH0375N4ZP"
+            },
+            {
+                "msme_id": "MSME_12820",
+                "name": "Lakshmi Enterprises",
+                "gstin": "26LQIYH2340U2ZI"
+            }
+        ],
+        "total_laundered_inr": 3010788.44,
+        "evidence_graph": [
+            {
+                "source": "MSME_17333",
+                "target": "MSME_18940",
+                "volume": 604099.48
+            },
+            {
+                "source": "MSME_18940",
+                "target": "MSME_14097",
+                "volume": 600588.53
+            },
+            {
+                "source": "MSME_14097",
+                "target": "MSME_16657",
+                "volume": 600634.35
+            },
+            {
+                "source": "MSME_16657",
+                "target": "MSME_12820",
+                "volume": 600234.43
+            },
+            {
+                "source": "MSME_12820",
+                "target": "MSME_17333",
+                "volume": 605231.65
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10345",
+                "name": "Skyline Enterprises",
+                "gstin": "27JOCOQ3851I3ZC"
+            },
+            {
+                "msme_id": "MSME_18282",
+                "name": "Shree Traders",
+                "gstin": "28TGNUA1940L3ZA"
+            },
+            {
+                "msme_id": "MSME_10528",
+                "name": "Green Logistics",
+                "gstin": "24TZJLQ1062R7ZV"
+            },
+            {
+                "msme_id": "MSME_16908",
+                "name": "Urban Traders",
+                "gstin": "13XGVDH7457L5ZZ"
+            },
+            {
+                "msme_id": "MSME_11201",
+                "name": "Global Retail",
+                "gstin": "19BOCWJ3411U5Z9"
+            }
+        ],
+        "total_laundered_inr": 2997411.95,
+        "evidence_graph": [
+            {
+                "source": "MSME_10345",
+                "target": "MSME_18282",
+                "volume": 601278.52
+            },
+            {
+                "source": "MSME_18282",
+                "target": "MSME_10528",
+                "volume": 599652.82
+            },
+            {
+                "source": "MSME_10528",
+                "target": "MSME_16908",
+                "volume": 601055.66
+            },
+            {
+                "source": "MSME_16908",
+                "target": "MSME_11201",
+                "volume": 598047.06
+            },
+            {
+                "source": "MSME_11201",
+                "target": "MSME_10345",
+                "volume": 597377.89
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15597",
+                "name": "Rapid Industries",
+                "gstin": "21ICASO1261H6ZS"
+            },
+            {
+                "msme_id": "MSME_16895",
+                "name": "Urban Textiles",
+                "gstin": "22ZFMHR0893W2ZH"
+            },
+            {
+                "msme_id": "MSME_11623",
+                "name": "Rapid Textiles",
+                "gstin": "36WNOKK6177K3ZK"
+            },
+            {
+                "msme_id": "MSME_12748",
+                "name": "Urban Packaging",
+                "gstin": "33HLVFM2580H4ZP"
+            }
+        ],
+        "total_laundered_inr": 2816128.29,
+        "evidence_graph": [
+            {
+                "source": "MSME_15597",
+                "target": "MSME_16895",
+                "volume": 701481.62
+            },
+            {
+                "source": "MSME_16895",
+                "target": "MSME_11623",
+                "volume": 706150.66
+            },
+            {
+                "source": "MSME_11623",
+                "target": "MSME_12748",
+                "volume": 704032.04
+            },
+            {
+                "source": "MSME_12748",
+                "target": "MSME_15597",
+                "volume": 704463.97
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13894",
+                "name": "Prime Textiles",
+                "gstin": "23TGJTH9256S4ZY"
+            },
+            {
+                "msme_id": "MSME_17977",
+                "name": "Sai Industries",
+                "gstin": "13YJEDC1221D1ZG"
+            },
+            {
+                "msme_id": "MSME_15388",
+                "name": "Prime Retail",
+                "gstin": "29JTDGZ3430G3ZH"
+            },
+            {
+                "msme_id": "MSME_16728",
+                "name": "Lakshmi Packaging",
+                "gstin": "18GKZEV1782A4ZA"
+            },
+            {
+                "msme_id": "MSME_14706",
+                "name": "Prime Textiles",
+                "gstin": "32SDUHA1739R4Z4"
+            }
+        ],
+        "total_laundered_inr": 2677836.18,
+        "evidence_graph": [
+            {
+                "source": "MSME_13894",
+                "target": "MSME_17977",
+                "volume": 532636.61
+            },
+            {
+                "source": "MSME_17977",
+                "target": "MSME_15388",
+                "volume": 537105.81
+            },
+            {
+                "source": "MSME_15388",
+                "target": "MSME_16728",
+                "volume": 536409.5
+            },
+            {
+                "source": "MSME_16728",
+                "target": "MSME_14706",
+                "volume": 535595.25
+            },
+            {
+                "source": "MSME_14706",
+                "target": "MSME_13894",
+                "volume": 536089.01
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19104",
+                "name": "Prime Industries",
+                "gstin": "12VGHYK4902K6Z4"
+            },
+            {
+                "msme_id": "MSME_18898",
+                "name": "Om Textiles",
+                "gstin": "27PPQCT8234U6ZZ"
+            },
+            {
+                "msme_id": "MSME_18581",
+                "name": "Green Retail",
+                "gstin": "26ZVCVF8881T8ZG"
+            }
+        ],
+        "total_laundered_inr": 2640337.43,
+        "evidence_graph": [
+            {
+                "source": "MSME_19104",
+                "target": "MSME_18898",
+                "volume": 883902.25
+            },
+            {
+                "source": "MSME_18898",
+                "target": "MSME_18581",
+                "volume": 875768.67
+            },
+            {
+                "source": "MSME_18581",
+                "target": "MSME_19104",
+                "volume": 880666.51
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14449",
+                "name": "Om Textiles",
+                "gstin": "25TDYEE8552L8Z1"
+            },
+            {
+                "msme_id": "MSME_18224",
+                "name": "Lakshmi Enterprises",
+                "gstin": "34HTXFU5762O4Z6"
+            },
+            {
+                "msme_id": "MSME_19233",
+                "name": "Skyline Logistics",
+                "gstin": "36RTUEK1626P5ZY"
+            }
+        ],
+        "total_laundered_inr": 2559851.91,
+        "evidence_graph": [
+            {
+                "source": "MSME_14449",
+                "target": "MSME_18224",
+                "volume": 853637.35
+            },
+            {
+                "source": "MSME_18224",
+                "target": "MSME_19233",
+                "volume": 855398.12
+            },
+            {
+                "source": "MSME_19233",
+                "target": "MSME_14449",
+                "volume": 850816.44
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19926",
+                "name": "Rapid Traders",
+                "gstin": "22RYPAY5947Z7Z3"
+            },
+            {
+                "msme_id": "MSME_14984",
+                "name": "Skyline Textiles",
+                "gstin": "21POFZM6996B1Z2"
+            },
+            {
+                "msme_id": "MSME_17493",
+                "name": "Om Textiles",
+                "gstin": "24LWJBP2762Z4Z2"
+            },
+            {
+                "msme_id": "MSME_12652",
+                "name": "Sai Traders",
+                "gstin": "36JHAAS9355W5ZK"
+            },
+            {
+                "msme_id": "MSME_16863",
+                "name": "Global Enterprises",
+                "gstin": "10LXPPP4248Q2ZC"
+            }
+        ],
+        "total_laundered_inr": 2416871.84,
+        "evidence_graph": [
+            {
+                "source": "MSME_19926",
+                "target": "MSME_14984",
+                "volume": 483449.05
+            },
+            {
+                "source": "MSME_14984",
+                "target": "MSME_17493",
+                "volume": 484129.23
+            },
+            {
+                "source": "MSME_17493",
+                "target": "MSME_12652",
+                "volume": 481257.1
+            },
+            {
+                "source": "MSME_12652",
+                "target": "MSME_16863",
+                "volume": 483808.3
+            },
+            {
+                "source": "MSME_16863",
+                "target": "MSME_19926",
+                "volume": 484228.16
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16920",
+                "name": "Rapid Retail",
+                "gstin": "20CPEVO4242S1ZP"
+            },
+            {
+                "msme_id": "MSME_11002",
+                "name": "Rapid Textiles",
+                "gstin": "18QOBZI1801Y1Z5"
+            },
+            {
+                "msme_id": "MSME_10586",
+                "name": "Green Industries",
+                "gstin": "35VYLYC1897I6Z6"
+            },
+            {
+                "msme_id": "MSME_13180",
+                "name": "Green Packaging",
+                "gstin": "19KQHLY2805T6Z4"
+            },
+            {
+                "msme_id": "MSME_13498",
+                "name": "Prime Foods",
+                "gstin": "14ZQJTA0668N8Z1"
+            }
+        ],
+        "total_laundered_inr": 2375312.97,
+        "evidence_graph": [
+            {
+                "source": "MSME_16920",
+                "target": "MSME_11002",
+                "volume": 476835.94
+            },
+            {
+                "source": "MSME_11002",
+                "target": "MSME_10586",
+                "volume": 475324.47
+            },
+            {
+                "source": "MSME_10586",
+                "target": "MSME_13180",
+                "volume": 474131.79
+            },
+            {
+                "source": "MSME_13180",
+                "target": "MSME_13498",
+                "volume": 475642.01
+            },
+            {
+                "source": "MSME_13498",
+                "target": "MSME_16920",
+                "volume": 473378.76
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13083",
+                "name": "Skyline Retail",
+                "gstin": "33RSLRA2240N8ZW"
+            },
+            {
+                "msme_id": "MSME_19021",
+                "name": "Sai Textiles",
+                "gstin": "21IHBXM9007B8ZQ"
+            },
+            {
+                "msme_id": "MSME_19667",
+                "name": "Rapid Enterprises",
+                "gstin": "23VZTMD3628P5ZR"
+            },
+            {
+                "msme_id": "MSME_11129",
+                "name": "Urban Traders",
+                "gstin": "22JGCTZ9393Y3ZQ"
+            },
+            {
+                "msme_id": "MSME_19418",
+                "name": "Prime Retail",
+                "gstin": "19PKWIU4012E3ZR"
+            }
+        ],
+        "total_laundered_inr": 2217010.78,
+        "evidence_graph": [
+            {
+                "source": "MSME_13083",
+                "target": "MSME_19021",
+                "volume": 443457.77
+            },
+            {
+                "source": "MSME_19021",
+                "target": "MSME_19667",
+                "volume": 442583.5
+            },
+            {
+                "source": "MSME_19667",
+                "target": "MSME_11129",
+                "volume": 443871.16
+            },
+            {
+                "source": "MSME_11129",
+                "target": "MSME_19418",
+                "volume": 443405.53
+            },
+            {
+                "source": "MSME_19418",
+                "target": "MSME_13083",
+                "volume": 443692.82
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14655",
+                "name": "Om Logistics",
+                "gstin": "30ZTGLS0867X7ZQ"
+            },
+            {
+                "msme_id": "MSME_13518",
+                "name": "Shree Retail",
+                "gstin": "23JUDKM7506A5Z2"
+            },
+            {
+                "msme_id": "MSME_11547",
+                "name": "Urban Traders",
+                "gstin": "33YMRJP1812J3ZZ"
+            },
+            {
+                "msme_id": "MSME_19432",
+                "name": "Global Textiles",
+                "gstin": "14IVCTU7473I4ZL"
+            }
+        ],
+        "total_laundered_inr": 2012649.98,
+        "evidence_graph": [
+            {
+                "source": "MSME_14655",
+                "target": "MSME_13518",
+                "volume": 502958.37
+            },
+            {
+                "source": "MSME_13518",
+                "target": "MSME_11547",
+                "volume": 503420.63
+            },
+            {
+                "source": "MSME_11547",
+                "target": "MSME_19432",
+                "volume": 503431.94
+            },
+            {
+                "source": "MSME_19432",
+                "target": "MSME_14655",
+                "volume": 502839.04
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16740",
+                "name": "Sai Industries",
+                "gstin": "11DHTUX4661A1ZK"
+            },
+            {
+                "msme_id": "MSME_17817",
+                "name": "Shree Foods",
+                "gstin": "32WWCNM2772G2Z0"
+            },
+            {
+                "msme_id": "MSME_17153",
+                "name": "Rapid Traders",
+                "gstin": "33POWXK1038I3ZD"
+            },
+            {
+                "msme_id": "MSME_16264",
+                "name": "Green Textiles",
+                "gstin": "19MORIC9792A4ZH"
+            },
+            {
+                "msme_id": "MSME_12133",
+                "name": "Rapid Foods",
+                "gstin": "25MOMBA3524W7ZY"
+            }
+        ],
+        "total_laundered_inr": 1856633.75,
+        "evidence_graph": [
+            {
+                "source": "MSME_16740",
+                "target": "MSME_17817",
+                "volume": 372606.6
+            },
+            {
+                "source": "MSME_17817",
+                "target": "MSME_17153",
+                "volume": 370467.99
+            },
+            {
+                "source": "MSME_17153",
+                "target": "MSME_16264",
+                "volume": 372625.38
+            },
+            {
+                "source": "MSME_16264",
+                "target": "MSME_12133",
+                "volume": 370610.21
+            },
+            {
+                "source": "MSME_12133",
+                "target": "MSME_16740",
+                "volume": 370323.57
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14701",
+                "name": "Lakshmi Packaging",
+                "gstin": "20FLYPZ7510N7ZQ"
+            },
+            {
+                "msme_id": "MSME_13798",
+                "name": "Global Packaging",
+                "gstin": "20HMOQG8750P8ZO"
+            },
+            {
+                "msme_id": "MSME_13352",
+                "name": "Shree Industries",
+                "gstin": "19UCGSH0937O7ZJ"
+            },
+            {
+                "msme_id": "MSME_14951",
+                "name": "Lakshmi Logistics",
+                "gstin": "18TFNRM4847R5ZP"
+            }
+        ],
+        "total_laundered_inr": 1830763.39,
+        "evidence_graph": [
+            {
+                "source": "MSME_14701",
+                "target": "MSME_13798",
+                "volume": 459658.77
+            },
+            {
+                "source": "MSME_13798",
+                "target": "MSME_13352",
+                "volume": 457657.83
+            },
+            {
+                "source": "MSME_13352",
+                "target": "MSME_14951",
+                "volume": 456729.66
+            },
+            {
+                "source": "MSME_14951",
+                "target": "MSME_14701",
+                "volume": 456717.13
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19639",
+                "name": "Green Traders",
+                "gstin": "34ZDHMY3996U2ZS"
+            },
+            {
+                "msme_id": "MSME_16541",
+                "name": "Lakshmi Logistics",
+                "gstin": "35ORZMO0336A5ZH"
+            },
+            {
+                "msme_id": "MSME_17683",
+                "name": "Skyline Retail",
+                "gstin": "32ZAGJY9638V8Z9"
+            }
+        ],
+        "total_laundered_inr": 1638021.94,
+        "evidence_graph": [
+            {
+                "source": "MSME_19639",
+                "target": "MSME_16541",
+                "volume": 544848.38
+            },
+            {
+                "source": "MSME_16541",
+                "target": "MSME_17683",
+                "volume": 546508.48
+            },
+            {
+                "source": "MSME_17683",
+                "target": "MSME_19639",
+                "volume": 546665.08
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19831",
+                "name": "Urban Industries",
+                "gstin": "25SFETL8995C1ZJ"
+            },
+            {
+                "msme_id": "MSME_12452",
+                "name": "Green Packaging",
+                "gstin": "23VMXKL4164I1Z5"
+            },
+            {
+                "msme_id": "MSME_17375",
+                "name": "Prime Textiles",
+                "gstin": "26OTOVZ6324Z2ZI"
+            }
+        ],
+        "total_laundered_inr": 1629017.61,
+        "evidence_graph": [
+            {
+                "source": "MSME_19831",
+                "target": "MSME_12452",
+                "volume": 541540.47
+            },
+            {
+                "source": "MSME_12452",
+                "target": "MSME_17375",
+                "volume": 544186.28
+            },
+            {
+                "source": "MSME_17375",
+                "target": "MSME_19831",
+                "volume": 543290.86
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13220",
+                "name": "Prime Textiles",
+                "gstin": "14LJXZP5037U2ZK"
+            },
+            {
+                "msme_id": "MSME_16441",
+                "name": "Urban Traders",
+                "gstin": "19LPAIH4375F3Z9"
+            },
+            {
+                "msme_id": "MSME_12624",
+                "name": "Global Traders",
+                "gstin": "23OESOT3868H7ZN"
+            },
+            {
+                "msme_id": "MSME_18519",
+                "name": "Skyline Industries",
+                "gstin": "12IJVGE2096Y5ZV"
+            }
+        ],
+        "total_laundered_inr": 1543387.22,
+        "evidence_graph": [
+            {
+                "source": "MSME_13220",
+                "target": "MSME_16441",
+                "volume": 384476.47
+            },
+            {
+                "source": "MSME_16441",
+                "target": "MSME_12624",
+                "volume": 386772.75
+            },
+            {
+                "source": "MSME_12624",
+                "target": "MSME_18519",
+                "volume": 387525.94
+            },
+            {
+                "source": "MSME_18519",
+                "target": "MSME_13220",
+                "volume": 384612.06
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16545",
+                "name": "Sai Packaging",
+                "gstin": "21MIDMC2741W5ZQ"
+            },
+            {
+                "msme_id": "MSME_19067",
+                "name": "Sai Textiles",
+                "gstin": "31QAZMF3195O2ZP"
+            },
+            {
+                "msme_id": "MSME_15343",
+                "name": "Green Foods",
+                "gstin": "17YNAVU0796W6ZB"
+            }
+        ],
+        "total_laundered_inr": 1490746.32,
+        "evidence_graph": [
+            {
+                "source": "MSME_16545",
+                "target": "MSME_19067",
+                "volume": 496059.67
+            },
+            {
+                "source": "MSME_19067",
+                "target": "MSME_15343",
+                "volume": 496733.49
+            },
+            {
+                "source": "MSME_15343",
+                "target": "MSME_16545",
+                "volume": 497953.16
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18994",
+                "name": "Shree Foods",
+                "gstin": "34DSGXE5192D6Z1"
+            },
+            {
+                "msme_id": "MSME_19960",
+                "name": "Global Foods",
+                "gstin": "29YPDPD2177Y1Z9"
+            },
+            {
+                "msme_id": "MSME_17033",
+                "name": "Lakshmi Textiles",
+                "gstin": "31LLQBP0333A2ZU"
+            }
+        ],
+        "total_laundered_inr": 1457214.64,
+        "evidence_graph": [
+            {
+                "source": "MSME_18994",
+                "target": "MSME_19960",
+                "volume": 483196.94
+            },
+            {
+                "source": "MSME_19960",
+                "target": "MSME_17033",
+                "volume": 486588.01
+            },
+            {
+                "source": "MSME_17033",
+                "target": "MSME_18994",
+                "volume": 487429.69
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12733",
+                "name": "Rapid Retail",
+                "gstin": "14KEFCP9662A2Z7"
+            },
+            {
+                "msme_id": "MSME_15706",
+                "name": "Lakshmi Packaging",
+                "gstin": "18WNOZW1668Q3ZQ"
+            },
+            {
+                "msme_id": "MSME_13616",
+                "name": "Prime Logistics",
+                "gstin": "13NDGVF0404Y4ZY"
+            },
+            {
+                "msme_id": "MSME_10798",
+                "name": "Green Textiles",
+                "gstin": "33JVWJU7796Y5ZL"
+            }
+        ],
+        "total_laundered_inr": 1414586.37,
+        "evidence_graph": [
+            {
+                "source": "MSME_12733",
+                "target": "MSME_15706",
+                "volume": 352570.24
+            },
+            {
+                "source": "MSME_15706",
+                "target": "MSME_13616",
+                "volume": 352361.84
+            },
+            {
+                "source": "MSME_13616",
+                "target": "MSME_10798",
+                "volume": 354823.87
+            },
+            {
+                "source": "MSME_10798",
+                "target": "MSME_12733",
+                "volume": 354830.42
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17518",
+                "name": "Urban Textiles",
+                "gstin": "25KEWIH0696U1ZC"
+            },
+            {
+                "msme_id": "MSME_10999",
+                "name": "Skyline Retail",
+                "gstin": "24LPNXL1510M2Z9"
+            },
+            {
+                "msme_id": "MSME_17419",
+                "name": "Green Enterprises",
+                "gstin": "32OVQCR0816L8ZQ"
+            },
+            {
+                "msme_id": "MSME_16327",
+                "name": "Urban Industries",
+                "gstin": "24DHOGS4573B5ZC"
+            }
+        ],
+        "total_laundered_inr": 1304799.18,
+        "evidence_graph": [
+            {
+                "source": "MSME_17518",
+                "target": "MSME_10999",
+                "volume": 326240.51
+            },
+            {
+                "source": "MSME_10999",
+                "target": "MSME_17419",
+                "volume": 325901.48
+            },
+            {
+                "source": "MSME_17419",
+                "target": "MSME_16327",
+                "volume": 326885.94
+            },
+            {
+                "source": "MSME_16327",
+                "target": "MSME_17518",
+                "volume": 325771.25
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12890",
+                "name": "Skyline Retail",
+                "gstin": "29GWVHD6814O8ZX"
+            },
+            {
+                "msme_id": "MSME_11784",
+                "name": "Urban Logistics",
+                "gstin": "36MAHQU8267V8ZZ"
+            },
+            {
+                "msme_id": "MSME_11060",
+                "name": "Sai Logistics",
+                "gstin": "12ERBQT1873S3ZM"
+            }
+        ],
+        "total_laundered_inr": 1152638.83,
+        "evidence_graph": [
+            {
+                "source": "MSME_12890",
+                "target": "MSME_11784",
+                "volume": 383808.94
+            },
+            {
+                "source": "MSME_11784",
+                "target": "MSME_11060",
+                "volume": 385098.9
+            },
+            {
+                "source": "MSME_11060",
+                "target": "MSME_12890",
+                "volume": 383730.99
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10312",
+                "name": "Shree Traders",
+                "gstin": "30XEYII2838Q5ZF"
+            },
+            {
+                "msme_id": "MSME_17780",
+                "name": "Rapid Enterprises",
+                "gstin": "35XKXGT5085R1ZU"
+            },
+            {
+                "msme_id": "MSME_18328",
+                "name": "Sai Traders",
+                "gstin": "26IMHND4412T2ZL"
+            }
+        ],
+        "total_laundered_inr": 1024663.0,
+        "evidence_graph": [
+            {
+                "source": "MSME_10312",
+                "target": "MSME_17780",
+                "volume": 341009.44
+            },
+            {
+                "source": "MSME_17780",
+                "target": "MSME_18328",
+                "volume": 341994.72
+            },
+            {
+                "source": "MSME_18328",
+                "target": "MSME_10312",
+                "volume": 341658.84
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14315",
+                "name": "Rapid Industries",
+                "gstin": "16CZHTP0206R2ZF"
+            },
+            {
+                "msme_id": "MSME_11631",
+                "name": "Shree Retail",
+                "gstin": "16COKTI1768G6Z4"
+            },
+            {
+                "msme_id": "MSME_15743",
+                "name": "Skyline Packaging",
+                "gstin": "18ZTFEB3651V7ZJ"
+            }
+        ],
+        "total_laundered_inr": 983564.89,
+        "evidence_graph": [
+            {
+                "source": "MSME_14315",
+                "target": "MSME_11631",
+                "volume": 329598.13
+            },
+            {
+                "source": "MSME_11631",
+                "target": "MSME_15743",
+                "volume": 326532.42
+            },
+            {
+                "source": "MSME_15743",
+                "target": "MSME_14315",
+                "volume": 327434.34
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17013",
+                "name": "Global Logistics",
+                "gstin": "31ITHXI3736D5ZI"
+            },
+            {
+                "msme_id": "MSME_16772",
+                "name": "Om Logistics",
+                "gstin": "35HYWTY1086R8ZR"
+            },
+            {
+                "msme_id": "MSME_14127",
+                "name": "Prime Industries",
+                "gstin": "10LLFSG0388T2ZP"
+            }
+        ],
+        "total_laundered_inr": 791010.22,
+        "evidence_graph": [
+            {
+                "source": "MSME_17013",
+                "target": "MSME_16772",
+                "volume": 262883.1
+            },
+            {
+                "source": "MSME_16772",
+                "target": "MSME_14127",
+                "volume": 264431.05
+            },
+            {
+                "source": "MSME_14127",
+                "target": "MSME_17013",
+                "volume": 263696.07
+            }
+        ]
+    }
+]

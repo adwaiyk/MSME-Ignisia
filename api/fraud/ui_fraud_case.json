@@ -1,0 +1,59 @@
+{
+    "fraud_type": "Accommodation Bill",
+    "reasoning": "ML anomaly detection + Graph Cycle validation with <5% variance.",
+    "total_laundered_inr": 12408970.01,
+    "nodes": [
+        {
+            "id": "MSME_14582",
+            "label": "Prime Foods",
+            "gstin": "26MXWQV1581K4ZO"
+        },
+        {
+            "id": "MSME_18762",
+            "label": "Shree Traders",
+            "gstin": "34IBUFE5382D4Z1"
+        },
+        {
+            "id": "MSME_17869",
+            "label": "Shree Enterprises",
+            "gstin": "14ODZMH8712L6ZV"
+        },
+        {
+            "id": "MSME_15975",
+            "label": "Green Logistics",
+            "gstin": "20ORNAO3644A1Z8"
+        },
+        {
+            "id": "MSME_12556",
+            "label": "Skyline Logistics",
+            "gstin": "20ZWMWJ8343A4ZL"
+        }
+    ],
+    "links": [
+        {
+            "source": "MSME_14582",
+            "target": "MSME_18762",
+            "label": "\u20b92,480,600"
+        },
+        {
+            "source": "MSME_18762",
+            "target": "MSME_17869",
+            "label": "\u20b92,476,406"
+        },
+        {
+            "source": "MSME_17869",
+            "target": "MSME_15975",
+            "label": "\u20b92,481,568"
+        },
+        {
+            "source": "MSME_15975",
+            "target": "MSME_12556",
+            "label": "\u20b92,477,321"
+        },
+        {
+            "source": "MSME_12556",
+            "target": "MSME_14582",
+            "label": "\u20b92,493,076"
+        }
+    ]
+}
