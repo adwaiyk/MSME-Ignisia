@@ -1,3 +1,4 @@
+// Location: components/app-sidebar.tsx
 "use client"
 
 import * as React from "react"
@@ -12,7 +13,8 @@ import {
   User2,
   LogOut,
   Settings,
-  Users
+  Users,
+  ClipboardList
 } from "lucide-react"
 
 import {
@@ -37,9 +39,7 @@ import {
 const navItems = [
   { title: "Command Center", url: "/dashboard", icon: LayoutDashboard },
   { title: "Underwriter", url: "/underwriting", icon: ShieldCheck },
-  { title: "Data Intake", url: "/intake", icon: Database },
-  { title: "Portfolio", url: "#", icon: Users },
-  { title: "Settings", url: "#", icon: Settings },
+  { title: "Audit Ledger", url: "/ledger", icon: ClipboardList },
 ]
 
 export function AppSidebar() {
