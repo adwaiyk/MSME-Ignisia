@@ -7,15 +7,12 @@ import warnings
 warnings.filterwarnings('ignore')
 
 def run_sequential_engine(txn_file=r"E:\My Stuff\MSME-Ignisia\Project\backend\api_final_final\api\xgboost\data-synthesis\datasets\upi_transactions.csv", onboarding_file=r"E:\My Stuff\MSME-Ignisia\Project\backend\api_final_final\api\xgboost\data-synthesis\datasets\onboarding_data.csv"):
-    print("\n🚀 INITIATING ENRICHED FRAUD DETECTION ENGINE 🚀")
+    print("\nINITIATING ENRICHED FRAUD DETECTION ENGINE")
 
-    # ==========================================
-    # STEP 0: LOAD METADATA (GSTIN MAPPING)
-    # ==========================================
     try:
         print("⏳ Loading MSME Onboarding metadata...")
         onboarding_df = pd.read_csv(onboarding_file)
-        # Create a fast lookup map: { 'MSME_10000': '35IPABW5427I8ZY', ... }
+        
         gstin_map = dict(zip(onboarding_df.entity_id, onboarding_df.gstin))
         name_map = dict(zip(onboarding_df.entity_id, onboarding_df.name))
         print(f"✅ Successfully mapped {len(gstin_map)} MSME identities.")
@@ -23,9 +20,7 @@ def run_sequential_engine(txn_file=r"E:\My Stuff\MSME-Ignisia\Project\backend\ap
         print(f"⚠️ Error: {onboarding_file} not found! Proceeding with N/A for GSTINs.")
         gstin_map, name_map = {}, {}
 
-    # ==========================================
-    # STEP 1: LOAD TRANSACTIONS
-    # ==========================================
+
     try:
         print("⏳ Loading transactions...")
         df = pd.read_csv(txn_file, low_memory=False)
@@ -42,20 +37,16 @@ def run_sequential_engine(txn_file=r"E:\My Stuff\MSME-Ignisia\Project\backend\ap
         txn_count=('txn_id', 'count')
     ).reset_index()
 
-    # ==========================================
-    # TIER 1: ML RADAR
-    # ==========================================
+    
     print(f"📡 [TIER 1] ML Engine sweeping {len(edgelist_df)} flows...")
     ml_features = edgelist_df[['weight', 'txn_count']]
     iso_forest = IsolationForest(n_estimators=100, contamination=0.02, random_state=42, n_jobs=1)
     edgelist_df['is_anomaly'] = iso_forest.fit_predict(ml_features) 
     
     flagged_anomalies = edgelist_df[edgelist_df['is_anomaly'] == -1]
-    print(f"🚨 RADAR ALERT: Isolated {len(flagged_anomalies)} anomalous flows.")
+    print(f"RADAR ALERT: Isolated {len(flagged_anomalies)} anomalous flows.")
 
-    # ==========================================
-    # TIER 2: GRAPH SNIPER
-    # ==========================================
+    
     G = nx.from_pandas_edgelist(flagged_anomalies, source='source', target='target', edge_attr='weight', create_using=nx.DiGraph())
     
     confirmed_fraud_rings = []
@@ -65,11 +56,11 @@ def run_sequential_engine(txn_file=r"E:\My Stuff\MSME-Ignisia\Project\backend\ap
             if len(ring) > 2:
                 edge_weights = [G[ring[i]][ring[(i + 1) % len(ring)]]['weight'] for i in range(len(ring))]
                 
-                # Variance Check
+                
                 cov = np.std(edge_weights) / np.mean(edge_weights) if np.mean(edge_weights) > 0 else 1
                 
                 if cov < 0.05:
-                    # Enrich node data with GSTIN and Names
+                    
                     nodes_enriched = []
                     for node_id in ring:
                         nodes_enriched.append({
@@ -88,16 +79,14 @@ def run_sequential_engine(txn_file=r"E:\My Stuff\MSME-Ignisia\Project\backend\ap
                         ]
                     })
     except Exception as e:
-        print(f"⚠️ Search Error: {e}")
+        print(f"Search Error: {e}")
 
-   # ==========================================
-    # FINAL OUTPUT & EXPORT
-    # ==========================================
+   
     if confirmed_fraud_rings:
         confirmed_fraud_rings.sort(key=lambda x: x['total_laundered_inr'], reverse=True)
         top_case = confirmed_fraud_rings[0]
 
-        # UI Payload with GSTINs
+        
         ui_payload = {
             "fraud_type": "Accommodation Bill",
             "reasoning": "ML anomaly detection + Graph Cycle validation with <5% variance.",
@@ -118,15 +107,15 @@ def run_sequential_engine(txn_file=r"E:\My Stuff\MSME-Ignisia\Project\backend\ap
         with open("detected_fraud_rings.json", "w") as f:
             json.dump(confirmed_fraud_rings, f, indent=4)
 
-        # ---- UPDATED PRINT STATEMENTS HERE ----
+        
         print("-" * 60)
-        print(f"🛑 TARGETS ACQUIRED: NetworkX mathematically proved exactly {len(confirmed_fraud_rings)} Accommodation Bill rings.")
-        print(f"🔥 SUCCESS: All {len(confirmed_fraud_rings)} rings have been enriched with GSTIN data.")
-        print(f"💾 Master report saved to 'detected_fraud_rings.json'")
-        print(f"💾 Top UI case saved to 'ui_fraud_case.json'")
+        print(f"TARGETS ACQUIRED: NetworkX mathematically proved exactly {len(confirmed_fraud_rings)} Accommodation Bill rings.")
+        print(f"SUCCESS: All {len(confirmed_fraud_rings)} rings have been enriched with GSTIN data.")
+        print(f"Master report saved to 'detected_fraud_rings.json'")
+        print(f"Top UI case saved to 'ui_fraud_case.json'")
         print("-" * 60)
     else:
-        print("✅ CLEAR: No rings found.")
+        print(" CLEAR: No rings found.")
 
 if __name__ == "__main__":
     run_sequential_engine()
