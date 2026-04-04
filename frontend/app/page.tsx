@@ -62,9 +62,7 @@ export default function LandingPage() {
               Launch Engine <ArrowRight className="h-5 w-5" />
             </Button>
           </Link>
-          <Button variant="outline" className="border-white/10 bg-white/5 hover:bg-white/10 text-white font-bold h-14 px-8 rounded-full text-lg backdrop-blur-md">
-            Read Whitepaper
-          </Button>
+          
         </div>
 
         {/* --- HERO DASHBOARD MOCKUP (Abstract Floating Elements) --- */}
