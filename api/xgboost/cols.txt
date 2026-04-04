@@ -1,0 +1,4 @@
+Onboarding: ['entity_id', 'name', 'gstin', 'industry_code', 'vintage_months', 'bureau_score_cibil', 'credit_limit_requested']
+GST: ['return_type', 'msme_id', 'tax_period', 'filing_date', 'due_date', 'delay_days', 'total_sales_declared', 'tax_paid_cash', 'tax_paid_itc']
+UPI: ['entity_id', 'txn_id', 'timestamp', 'amount_inr', 'txn_type', 'counterparty_vpa', 'counterparty_mcc', 'geo_location', 'is_repeated_counterparty', 'is_circular']
+Eway: ['eway_bill_no', 'generation_date', 'valid_until', 'origin_pincode', 'dest_pincode', 'hsn_code', 'invoice_value_inr', 'vehicle_no', 'entity_id', 'linked_upi_txn_id', 'upi_amount']
