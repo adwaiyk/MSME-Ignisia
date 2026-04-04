@@ -1,7 +1,9 @@
+// Location: app/underwriting/page.tsx
 "use client";
 
 import React, { useState } from "react";
-import { Search, ShieldCheck, Activity, TrendingUp, TrendingDown, AlertTriangle, IndianRupee, Clock, ArrowRightLeft } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Search, ShieldCheck, Activity, TrendingUp, TrendingDown, AlertTriangle, IndianRupee, Clock, ArrowRightLeft, Calendar } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -9,16 +11,14 @@ import { Badge } from "@/components/ui/badge";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import FraudGraph3D from "@/components/three/FraudGraph3D";
 
-// 1. GAUGE CHART DATA (XGBoost Spectrum)
 const gaugeData = [
-  { name: "Poor/Bad", value: 20, color: "#ef4444" },      // 300-649 (Red)
-  { name: "Fair/Avg", value: 20, color: "#f97316" },      // 650-699 (Orange)
-  { name: "Good", value: 20, color: "#eab308" },          // 700-749 (Yellow)
-  { name: "Very Good", value: 20, color: "#84cc16" },     // 750-799 (Light Green)
-  { name: "Excellent", value: 20, color: "#22c55e" },     // 800-900 (Dark Green)
+  { name: "Poor/Bad", value: 20, color: "#ef4444" },
+  { name: "Fair/Avg", value: 20, color: "#f97316" },
+  { name: "Good", value: 20, color: "#eab308" },
+  { name: "Very Good", value: 20, color: "#84cc16" },
+  { name: "Excellent", value: 20, color: "#22c55e" },
 ];
 
-// 2. MOCK SHAP DATA (Aligned with shap_serializer.py)
 const shapData = [
   { feature: "total_upi_credits", value: 65, type: "positive", label: "High UPI Transaction Velocity" },
   { feature: "vintage_months", value: 42, type: "positive", label: "Strong Business Vintage" },
@@ -27,7 +27,6 @@ const shapData = [
   { feature: "eway_bill_mismatch", value: -5, type: "negative", label: "Slight E-way Bill Variance" },
 ];
 
-// 3. FRAUD PAYLOAD (Hardcoded Scenario)
 const mockFraudPayload = {
   fraud_type: "Accommodation Bill",
   reasoning: "ML anomaly detection + Graph Cycle validation with <5% variance.",
@@ -44,16 +43,16 @@ const mockFraudPayload = {
       { source: "MSME_18762", target: "MSME_17869", label: "₹2,476,406" },
       { source: "MSME_17869", target: "MSME_15975", label: "₹2,481,568" },
       { source: "MSME_15975", target: "MSME_12556", label: "₹2,477,321" },
-      { source: "MSME_12556", target: "MSME_14582", label: "₹2,493,076" } // Circular Loop!
+      { source: "MSME_12556", target: "MSME_14582", label: "₹2,493,076" }
   ]
 };
 
-// 4. MOCK UPI LEDGER DATA
 const legitTransactions = [
   { id: "TXN_9981", date: "2026-04-03", amount: "₹45,000", entity: "Vendor A", type: "DEBIT", status: "SUCCESS" },
   { id: "TXN_9982", date: "2026-04-02", amount: "₹12,500", entity: "Supplier B", type: "CREDIT", status: "SUCCESS" },
   { id: "TXN_9983", date: "2026-04-01", amount: "₹89,200", entity: "Logistics Corp", type: "DEBIT", status: "SUCCESS" },
 ];
+
 const fraudTransactions = [
   { id: "TXN_F001", date: "2026-04-04", amount: "₹2,480,600", entity: "Shree Traders", type: "DEBIT", status: "FLAGGED" },
   { id: "TXN_F002", date: "2026-04-03", amount: "₹2,493,076", entity: "Skyline Logistics", type: "CREDIT", status: "FLAGGED" },
@@ -61,17 +60,25 @@ const fraudTransactions = [
 ];
 
 export default function UnderwritingDashboard() {
+  const router = useRouter();
   const [gstinInput, setGstinInput] = useState("29LEGIT1234A1Z5");
   const [activeView, setActiveView] = useState<"idle" | "legit" | "fraud">("idle");
   const [isInferencing, setIsInferencing] = useState(false);
 
+  // Editable Sanction Limit States
+  const [sanctionAmt, setSanctionAmt] = useState("14.5");
+  const [sanctionUnit, setSanctionUnit] = useState("Lakhs");
+  
+  // Modal States
+  const [showModal, setShowModal] = useState(false);
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
+
   const handleInference = () => {
     setIsInferencing(true);
     setActiveView("idle");
-    
     setTimeout(() => {
       setIsInferencing(false);
-      // Hardcoded hackathon trigger
       if (gstinInput.trim().toUpperCase() === "26MXWQV1581K4ZO") {
         setActiveView("fraud");
       } else {
@@ -80,11 +87,63 @@ export default function UnderwritingDashboard() {
     }, 1200);
   };
 
+  const handleFinalize = () => {
+    const record = {
+      id: `APP_${Math.floor(Math.random() * 10000)}`,
+      gstin: gstinInput,
+      amount: `₹${sanctionAmt} ${sanctionUnit}`,
+      amnestyWindow: startDate && endDate ? `${startDate} to ${endDate}` : "None applied",
+      date: new Date().toISOString().split('T')[0],
+      status: "SANCTIONED"
+    };
+    
+    const existing = JSON.parse(localStorage.getItem('audit_ledger') || '[]');
+    localStorage.setItem('audit_ledger', JSON.stringify([record, ...existing]));
+    router.push('/ledger');
+  };
+
   const upiLedger = activeView === "fraud" ? fraudTransactions : legitTransactions;
 
   return (
-    <div className="animate-in fade-in slide-in-from-bottom-2 duration-1000 p-2">
+    <div className="animate-in fade-in slide-in-from-bottom-2 duration-1000 p-2 relative">
       
+      {/* AMNESTY MODAL */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm">
+          <div className="bg-[#0a0a0a] border border-primary/30 p-8 rounded-2xl w-[450px] shadow-[0_0_50px_rgba(16,185,129,0.1)]">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 bg-primary/10 rounded-lg">
+                <Calendar className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h2 className="text-xl font-bold text-white uppercase tracking-tight">Policy Override</h2>
+                <p className="text-xs text-primary font-mono mt-1">GST Amnesty Scheme Adjustment</p>
+              </div>
+            </div>
+            
+            <p className="text-sm text-slate-400 mb-6 leading-relaxed">
+              Define the government amnesty quarter. The ML model will dynamically zero-out SHAP penalties for late filings within this specific timeframe without retraining.
+            </p>
+
+            <div className="space-y-4 mb-8">
+              <div>
+                <label className="text-xs font-bold text-white uppercase tracking-widest mb-2 block">Amnesty Start Date</label>
+                <Input type="date" value={startDate} onChange={(e)=>setStartDate(e.target.value)} className="bg-black border-white/10 text-white dark:[color-scheme:dark]" />
+              </div>
+              <div>
+                <label className="text-xs font-bold text-white uppercase tracking-widest mb-2 block">Amnesty End Date</label>
+                <Input type="date" value={endDate} onChange={(e)=>setEndDate(e.target.value)} className="bg-black border-white/10 text-white dark:[color-scheme:dark]" />
+              </div>
+            </div>
+
+            <div className="flex justify-end gap-3">
+              <Button variant="outline" onClick={() => setShowModal(false)} className="border-white/10 text-white hover:bg-white/5">Cancel</Button>
+              <Button onClick={handleFinalize} className="bg-primary hover:bg-emerald-600 text-black font-bold">Finalize & Log Audit</Button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* HEADER & SEARCH */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
         <div>
@@ -124,7 +183,7 @@ export default function UnderwritingDashboard() {
         </div>
       )}
 
-      {/* UPI TRANSACTIONS LEDGER (Visible after inference) */}
+      {/* UPI TRANSACTIONS LEDGER */}
       {activeView !== "idle" && (
         <Card className="bg-card/40 border-white/5 backdrop-blur-md rounded-3xl mb-8 animate-in fade-in duration-500">
           <CardHeader className="border-b border-white/5 p-4 px-6 flex flex-row items-center justify-between">
@@ -159,7 +218,7 @@ export default function UnderwritingDashboard() {
         </Card>
       )}
 
-      {/* STATE 2: FRAUD (Red UI & Circular 3D Network Graph) */}
+      {/* STATE 2: FRAUD */}
       {activeView === "fraud" && (
         <Card className="bg-black/60 border-destructive/50 backdrop-blur-md overflow-hidden rounded-3xl animate-in zoom-in-95 duration-500">
           <CardHeader className="bg-destructive/10 border-b border-destructive/20 p-6">
@@ -180,18 +239,17 @@ export default function UnderwritingDashboard() {
             </div>
           </CardHeader>
           <CardContent className="p-0 h-[500px] relative">
-            {/* The Graph component gets the exact payload */}
             <FraudGraph3D fraudPayload={mockFraudPayload} noiseNodes={Array.from({ length: 40 }, (_, i) => ({ id: `noise_${i}` }))} />
           </CardContent>
         </Card>
       )}
 
-      {/* STATE 3: LEGIT (XGBoost Gauge, SHAP NLP, Deliverables) */}
+      {/* STATE 3: LEGIT */}
       {activeView === "legit" && (
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 animate-in slide-in-from-bottom-4 duration-700">
           
           <div className="xl:col-span-1 space-y-6">
-            {/* The Custom XGBoost Gauge Chart with Ticker */}
+            {/* The Custom XGBoost Gauge Chart */}
             <Card className="bg-card/40 border-white/5 backdrop-blur-md p-6 rounded-3xl relative overflow-hidden flex flex-col items-center min-h-[400px]">
               <div className="absolute top-0 right-0 w-full h-full bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
               <h3 className="text-xs text-muted-foreground uppercase tracking-widest font-bold mb-4 relative z-10 w-full text-left">Ignisia XGBoost Score</h3>
@@ -212,7 +270,7 @@ export default function UnderwritingDashboard() {
                 </div>
               </div>
 
-              {/* Score Ticker / Legend */}
+              {/* Score Legend */}
               <div className="w-full mt-6 space-y-2 z-10 bg-black/40 p-4 rounded-2xl border border-white/5">
                 <div className="flex items-center justify-between text-[10px] font-mono">
                   <span className="flex items-center gap-1.5"><div className="w-2 h-2 rounded-full bg-emerald-500"></div>750-900 (Excellent)</span>
@@ -225,35 +283,54 @@ export default function UnderwritingDashboard() {
                 </div>
                 <div className="flex items-center justify-between text-[10px] font-mono text-muted-foreground">
                   <span className="flex items-center gap-1.5"><div className="w-2 h-2 rounded-full bg-red-500"></div>300-649 (Poor/Bad)</span>
-                  <span>NA/NH (No History)</span>
                 </div>
               </div>
             </Card>
 
-            {/* Expected Deliverables Panel */}
+            {/* Editable Final Assessment */}
             <Card className="bg-card/40 border-white/5 backdrop-blur-md rounded-3xl">
               <CardHeader className="border-b border-white/5 p-5">
-                <CardTitle className="text-sm font-bold uppercase tracking-widest text-slate-400">Final Assessment</CardTitle>
+                <CardTitle className="text-sm font-bold uppercase tracking-widest text-slate-400 flex justify-between">
+                  Final Assessment
+                  <Badge className="bg-primary/10 text-primary border-primary/20">A1 RISK BAND</Badge>
+                </CardTitle>
               </CardHeader>
-              <CardContent className="p-5 space-y-4">
-                <div>
-                  <p className="text-xs text-muted-foreground mb-1 flex items-center gap-1"><ShieldCheck className="h-3 w-3" /> Risk Band</p>
-                  <Badge className="bg-emerald-500/20 text-emerald-400 border-emerald-500/50 uppercase tracking-widest font-bold">Low Risk (A1)</Badge>
+              <CardContent className="p-5 space-y-5">
+                
+                <div className="bg-black/50 p-4 rounded-xl border border-white/5">
+                  <p className="text-[10px] text-muted-foreground mb-2 font-bold uppercase tracking-widest">Adjust Sanction Limit</p>
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl font-black text-primary">₹</span>
+                    <Input 
+                      type="number" 
+                      value={sanctionAmt} 
+                      onChange={(e) => setSanctionAmt(e.target.value)}
+                      className="bg-transparent border-b-2 border-white/20 border-t-0 border-x-0 rounded-none text-2xl font-black text-white px-1 h-12 w-24 focus-visible:ring-0 focus-visible:border-primary" 
+                    />
+                    <select 
+                      value={sanctionUnit} 
+                      onChange={(e) => setSanctionUnit(e.target.value)}
+                      className="bg-white/5 border border-white/10 text-white rounded-lg px-3 py-2 text-sm font-bold outline-none focus:border-primary cursor-pointer h-10"
+                    >
+                      <option className="bg-black">Lakhs</option>
+                      <option className="bg-black">Crores</option>
+                    </select>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-xs text-muted-foreground mb-1 flex items-center gap-1"><IndianRupee className="h-3 w-3" /> Estimated Sanction Limit</p>
-                  <p className="text-2xl font-black text-white">₹14.5 Lakhs</p>
-                </div>
+
                 <div>
                   <p className="text-xs text-muted-foreground mb-1 flex items-center gap-1"><Clock className="h-3 w-3" /> Data Freshness</p>
                   <p className="text-[10px] font-mono text-primary bg-primary/10 px-2 py-1 rounded border border-primary/20 inline-block uppercase">Live_Sync (Just Now)</p>
                 </div>
-                <Button className="w-full mt-4 bg-primary text-black hover:bg-emerald-500 font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(16,185,129,0.3)]">Proceed to Sanction</Button>
+                
+                <Button onClick={() => setShowModal(true)} className="w-full h-14 bg-primary text-black hover:bg-emerald-600 font-black uppercase tracking-widest shadow-[0_0_15px_rgba(16,185,129,0.3)]">
+                  Proceed to Sanction
+                </Button>
               </CardContent>
             </Card>
           </div>
 
-          {/* Right Column: SHAP Explainability & NLP */}
+          {/* SHAP NLP Analysis */}
           <Card className="xl:col-span-2 bg-card/40 border-white/5 backdrop-blur-md rounded-3xl flex flex-col">
             <CardHeader className="border-b border-white/5 p-6">
               <div>
@@ -265,7 +342,6 @@ export default function UnderwritingDashboard() {
             </CardHeader>
             <CardContent className="p-8 space-y-8 flex-1">
               
-              {/* NLP Explanation Block */}
               <div className="bg-primary/5 border border-primary/20 p-5 rounded-2xl relative overflow-hidden">
                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary" />
                 <p className="text-xs font-bold text-primary uppercase tracking-widest mb-2">AI Summary Generation</p>
@@ -286,17 +362,12 @@ export default function UnderwritingDashboard() {
                         {item.value > 0 ? `+${item.value}` : item.value}
                       </span>
                     </div>
-                    {/* Split visual bar for SHAP values */}
                     <div className="h-2 w-full bg-black/40 rounded-full overflow-hidden flex border border-white/5">
                       <div className="w-1/2 flex justify-end">
-                        {item.type === 'negative' && (
-                           <div className="h-full bg-red-500 rounded-l-full" style={{ width: `${Math.abs(item.value)}%` }} />
-                        )}
+                        {item.type === 'negative' && <div className="h-full bg-red-500 rounded-l-full" style={{ width: `${Math.abs(item.value)}%` }} />}
                       </div>
                       <div className="w-1/2">
-                        {item.type === 'positive' && (
-                           <div className="h-full bg-emerald-500 rounded-r-full shadow-[0_0_10px_rgba(16,185,129,0.4)]" style={{ width: `${item.value}%` }} />
-                        )}
+                        {item.type === 'positive' && <div className="h-full bg-emerald-500 rounded-r-full shadow-[0_0_10px_rgba(16,185,129,0.4)]" style={{ width: `${item.value}%` }} />}
                       </div>
                     </div>
                   </div>
