@@ -3,7 +3,7 @@ import sys
 import importlib.util
 from pathlib import Path
 
-# Path to your API file
+
 api_path = Path("Project\backend\api_final_final\api\api.py")
 
 spec = importlib.util.spec_from_file_location("msme_api", str(api_path))
@@ -23,13 +23,13 @@ def verify_gstin(target_gstin):
         print("ERROR: 'detected_fraud_rings.json' not found. Run the engine first.")
         return
 
-    # Scan the JSON for the target GSTIN
+    
     for ring in fraud_data:
         for node in ring["nodes_involved"]:
-            # Ensure we are handling the enriched dictionary format
+            
             if isinstance(node, dict) and node.get("gstin") == target_gstin:
                 
-                # If found, format a critical alert
+                
                 print("\n" + "="*60)
                 print("🚨 CRITICAL FRAUD MATCH DETECTED 🚨".center(60))
                 print("="*60)
@@ -45,9 +45,8 @@ def verify_gstin(target_gstin):
                 print("="*60 + "\n")
                 return
 
-    # If the loop finishes without returning, the GSTIN is clear of graph fraud
     print("\n" + "="*60)
-    print("✅ STATUS CLEAR".center(60))
+    print("STATUS CLEAR".center(60))
     print("="*60)
     print(f"TARGET GSTIN   : {target_gstin}")
     print("DETAILS        : No circular topology or accommodation bill")
@@ -60,7 +59,6 @@ def verify_gstin(target_gstin):
 if __name__ == "__main__":
     print("\n🔍 MSME COMPLIANCE LOOKUP TOOL 🔍")
     
-    # Allow passing the GSTIN as a command line argument, or ask for input
     if len(sys.argv) > 1:
         search_query = sys.argv[1]
     else:
