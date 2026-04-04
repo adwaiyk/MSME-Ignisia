@@ -1,0 +1,5 @@
+api/lib/python3.12/site-packages/llvmlite/binding/libllvmlite.so
+api/lib/python3.12/site-packages/nvidia/nccl/lib/libnccl.so.2
+api/lib/python3.12/site-packages/xgboost/lib/libxgboost.so
+
+*.csv
