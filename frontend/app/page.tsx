@@ -25,8 +25,8 @@ export default function LandingPage() {
               <Building2 className="size-5" />
             </div>
             <div className="flex flex-col leading-none">
-              <span className="font-black text-xl tracking-tight text-white">IGNISIA.AI</span>
-              <span className="text-[10px] text-primary uppercase tracking-[0.3em] font-bold">Enterprise</span>
+              <span className="font-black text-xl tracking-tight text-white">AXIOM.AI</span>
+              
             </div>
           </div>
 
@@ -62,9 +62,6 @@ export default function LandingPage() {
               Launch Engine <ArrowRight className="h-5 w-5" />
             </Button>
           </Link>
-          <Button variant="outline" className="border-white/10 bg-white/5 hover:bg-white/10 text-white font-bold h-14 px-8 rounded-full text-lg backdrop-blur-md">
-            Read Whitepaper
-          </Button>
         </div>
 
         {/* --- HERO DASHBOARD MOCKUP (Abstract Floating Elements) --- */}
@@ -146,11 +143,10 @@ export default function LandingPage() {
       <footer className="border-t border-white/5 py-8 text-center bg-black relative z-10">
         <div className="flex items-center justify-center gap-2 mb-2">
           <Building2 className="h-4 w-4 text-primary" />
-          <span className="font-black text-white tracking-tight">IGNISIA.AI</span>
+          <span className="font-black text-white tracking-tight">AXIOM.AI</span>
         </div>
-        <p className="text-xs text-slate-500 font-mono uppercase tracking-widest">Enterprise Prototype // Build for Hackathon</p>
+        <p className="text-xs text-slate-500 font-mono uppercase tracking-widest">Built with ❤️ by Runtime Terrors</p>
       </footer>
 
     </div>
   );
-}

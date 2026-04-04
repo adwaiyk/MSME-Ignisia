@@ -21,7 +21,7 @@ export default function Layout({
           <Separator orientation="vertical" className="mr-2 h-4 bg-white/10" />
           <div className="flex items-center gap-2">
             <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em]">
-              IGNISIA.AI
+              Axiom.ai
             </span>
             <span className="text-[10px] text-white/20 font-mono">//</span>
             <span className="text-[10px] font-bold text-primary uppercase tracking-widest">

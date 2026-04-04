@@ -56,7 +56,7 @@ export function AppSidebar() {
                   <Building2 className="size-4" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none ml-2">
-                  <span className="font-bold text-white tracking-tight">MSME Ignisia</span>
+                  <span className="font-bold text-white tracking-tight">Axiom.ai</span>
                   <span className="text-[10px] text-primary uppercase tracking-widest font-black">Enterprise Gateway</span>
                 </div>
               </Link>
@@ -117,7 +117,7 @@ export function AppSidebar() {
                 <DropdownMenuItem asChild>
                   <Link href="/" className="flex items-center gap-3 px-3 py-2 text-destructive focus:text-white focus:bg-destructive/20 cursor-pointer rounded-lg transition-colors font-bold text-xs uppercase tracking-tighter">
                     <LogOut className="size-4" />
-                    <span>Terminate Session</span>
+                    <span>Logout</span>
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>

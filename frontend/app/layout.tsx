@@ -7,7 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip"; // <-- Import this
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ignisia.AI | MSME Credit Scoring",
+  title: "Axiom.ai",
   description: "Real-Time MSME Credit Scoring",
 };
 
