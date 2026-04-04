@@ -57,7 +57,7 @@ def verify_gstin(target_gstin):
     print(result)
 
 if __name__ == "__main__":
-    print("\n🔍 MSME COMPLIANCE LOOKUP TOOL 🔍")
+    print("\nMSME COMPLIANCE LOOKUP TOOL 🔍")
     
     if len(sys.argv) > 1:
         search_query = sys.argv[1]
