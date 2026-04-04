@@ -1,0 +1,5522 @@
+[
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19519",
+                "name": "Global Textiles",
+                "gstin": "14UXBGO9504M4ZG"
+            },
+            {
+                "msme_id": "pooja.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13645",
+                "name": "Lakshmi Logistics",
+                "gstin": "24BJEZM8008R8ZH"
+            },
+            {
+                "msme_id": "pooja.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 1040349.43,
+        "evidence_graph": [
+            {
+                "source": "MSME_19519",
+                "target": "pooja.enterprises@okhdfc",
+                "volume": 278788.09
+            },
+            {
+                "source": "pooja.enterprises@okhdfc",
+                "target": "MSME_13645",
+                "volume": 252111.38
+            },
+            {
+                "source": "MSME_13645",
+                "target": "pooja.enterprises@ybl",
+                "volume": 258635.34999999998
+            },
+            {
+                "source": "pooja.enterprises@ybl",
+                "target": "MSME_19519",
+                "volume": 250814.61000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16092",
+                "name": "Om Industries",
+                "gstin": "27WKLAN3273H2ZQ"
+            },
+            {
+                "msme_id": "rajesh.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15423",
+                "name": "Prime Packaging",
+                "gstin": "12ZKWIP5347P4ZR"
+            },
+            {
+                "msme_id": "suresh.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 1013436.76,
+        "evidence_graph": [
+            {
+                "source": "MSME_16092",
+                "target": "rajesh.enterprises@ybl",
+                "volume": 247217.39
+            },
+            {
+                "source": "rajesh.enterprises@ybl",
+                "target": "MSME_15423",
+                "volume": 269513.32
+            },
+            {
+                "source": "MSME_15423",
+                "target": "suresh.store@okicici",
+                "volume": 237999.69
+            },
+            {
+                "source": "suresh.store@okicici",
+                "target": "MSME_16092",
+                "volume": 258706.36
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13460",
+                "name": "Rapid Foods",
+                "gstin": "12ISCPB6499V7ZG"
+            },
+            {
+                "msme_id": "amit.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15172",
+                "name": "Rapid Enterprises",
+                "gstin": "26YFXHI6278D1ZL"
+            },
+            {
+                "msme_id": "rajesh.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 1000986.52,
+        "evidence_graph": [
+            {
+                "source": "MSME_13460",
+                "target": "amit.traders@ybl",
+                "volume": 256709.45
+            },
+            {
+                "source": "amit.traders@ybl",
+                "target": "MSME_15172",
+                "volume": 254972.34999999998
+            },
+            {
+                "source": "MSME_15172",
+                "target": "rajesh.enterprises@oksbi",
+                "volume": 257714.87
+            },
+            {
+                "source": "rajesh.enterprises@oksbi",
+                "target": "MSME_13460",
+                "volume": 231589.85
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17753",
+                "name": "Sai Enterprises",
+                "gstin": "10WWTQD1161B2ZU"
+            },
+            {
+                "msme_id": "amit.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17563",
+                "name": "Rapid Logistics",
+                "gstin": "28YQWTU9326G1ZT"
+            },
+            {
+                "msme_id": "vikas.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 996914.03,
+        "evidence_graph": [
+            {
+                "source": "MSME_17753",
+                "target": "amit.enterprises@oksbi",
+                "volume": 249496.78
+            },
+            {
+                "source": "amit.enterprises@oksbi",
+                "target": "MSME_17563",
+                "volume": 232151.37
+            },
+            {
+                "source": "MSME_17563",
+                "target": "vikas.store@ybl",
+                "volume": 264898.65
+            },
+            {
+                "source": "vikas.store@ybl",
+                "target": "MSME_17753",
+                "volume": 250367.23
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17174",
+                "name": "Urban Enterprises",
+                "gstin": "23BZPDR3706V6ZM"
+            },
+            {
+                "msme_id": "amit.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10186",
+                "name": "Prime Logistics",
+                "gstin": "14FWUEC7067W5ZD"
+            },
+            {
+                "msme_id": "suresh.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 992284.01,
+        "evidence_graph": [
+            {
+                "source": "MSME_17174",
+                "target": "amit.store@oksbi",
+                "volume": 247226.07
+            },
+            {
+                "source": "amit.store@oksbi",
+                "target": "MSME_10186",
+                "volume": 248876.22999999998
+            },
+            {
+                "source": "MSME_10186",
+                "target": "suresh.traders@okicici",
+                "volume": 238940.25
+            },
+            {
+                "source": "suresh.traders@okicici",
+                "target": "MSME_17174",
+                "volume": 257241.46
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13928",
+                "name": "Skyline Traders",
+                "gstin": "31BAORK1776U7ZP"
+            },
+            {
+                "msme_id": "neha.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14698",
+                "name": "Rapid Traders",
+                "gstin": "19DAXQW6836V7ZF"
+            },
+            {
+                "msme_id": "neha.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 991065.06,
+        "evidence_graph": [
+            {
+                "source": "MSME_13928",
+                "target": "neha.traders@oksbi",
+                "volume": 240344.84000000003
+            },
+            {
+                "source": "neha.traders@oksbi",
+                "target": "MSME_14698",
+                "volume": 248322.94999999998
+            },
+            {
+                "source": "MSME_14698",
+                "target": "neha.enterprises@ybl",
+                "volume": 254544.89
+            },
+            {
+                "source": "neha.enterprises@ybl",
+                "target": "MSME_13928",
+                "volume": 247852.38
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10186",
+                "name": "Prime Logistics",
+                "gstin": "14FWUEC7067W5ZD"
+            },
+            {
+                "msme_id": "suresh.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11569",
+                "name": "Global Foods",
+                "gstin": "35RLPMB8027X8ZC"
+            },
+            {
+                "msme_id": "amit.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 977907.14,
+        "evidence_graph": [
+            {
+                "source": "MSME_10186",
+                "target": "suresh.traders@okicici",
+                "volume": 238940.25
+            },
+            {
+                "source": "suresh.traders@okicici",
+                "target": "MSME_11569",
+                "volume": 252716.82
+            },
+            {
+                "source": "MSME_11569",
+                "target": "amit.store@oksbi",
+                "volume": 237373.84
+            },
+            {
+                "source": "amit.store@oksbi",
+                "target": "MSME_10186",
+                "volume": 248876.22999999998
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15617",
+                "name": "Global Foods",
+                "gstin": "26HLKZB7337E2ZO"
+            },
+            {
+                "msme_id": "neha.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15526",
+                "name": "Prime Foods",
+                "gstin": "12ARPEY2169V8Z0"
+            }
+        ],
+        "total_laundered_inr": 966088.54,
+        "evidence_graph": [
+            {
+                "source": "rajesh.store@ybl",
+                "target": "MSME_15617",
+                "volume": 254619.7
+            },
+            {
+                "source": "MSME_15617",
+                "target": "neha.store@ybl",
+                "volume": 222809.85
+            },
+            {
+                "source": "neha.store@ybl",
+                "target": "MSME_15526",
+                "volume": 241728.28000000003
+            },
+            {
+                "source": "MSME_15526",
+                "target": "rajesh.store@ybl",
+                "volume": 246930.71000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11490",
+                "name": "Green Foods",
+                "gstin": "27DXNJI9880P1ZF"
+            },
+            {
+                "msme_id": "rajesh.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13490",
+                "name": "Om Textiles",
+                "gstin": "30FBWMW9792T3Z9"
+            },
+            {
+                "msme_id": "amit.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 961885.97,
+        "evidence_graph": [
+            {
+                "source": "MSME_11490",
+                "target": "rajesh.traders@oksbi",
+                "volume": 235932.57
+            },
+            {
+                "source": "rajesh.traders@oksbi",
+                "target": "MSME_13490",
+                "volume": 235320.74
+            },
+            {
+                "source": "MSME_13490",
+                "target": "amit.enterprises@oksbi",
+                "volume": 242417.52000000002
+            },
+            {
+                "source": "amit.enterprises@oksbi",
+                "target": "MSME_11490",
+                "volume": 248215.14
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "pooja.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10295",
+                "name": "Shree Enterprises",
+                "gstin": "36UOLCZ5583Z8ZC"
+            },
+            {
+                "msme_id": "suresh.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19461",
+                "name": "Skyline Foods",
+                "gstin": "20FRHMM7069O3ZY"
+            }
+        ],
+        "total_laundered_inr": 959812.85,
+        "evidence_graph": [
+            {
+                "source": "pooja.store@oksbi",
+                "target": "MSME_10295",
+                "volume": 233967.0
+            },
+            {
+                "source": "MSME_10295",
+                "target": "suresh.enterprises@oksbi",
+                "volume": 253824.02999999997
+            },
+            {
+                "source": "suresh.enterprises@oksbi",
+                "target": "MSME_19461",
+                "volume": 245376.36
+            },
+            {
+                "source": "MSME_19461",
+                "target": "pooja.store@oksbi",
+                "volume": 226645.46
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "vikas.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10885",
+                "name": "Lakshmi Industries",
+                "gstin": "11EXKHB8647C2ZV"
+            },
+            {
+                "msme_id": "vikas.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19218",
+                "name": "Shree Logistics",
+                "gstin": "23UHGPE6931N4ZG"
+            }
+        ],
+        "total_laundered_inr": 956111.57,
+        "evidence_graph": [
+            {
+                "source": "vikas.traders@ybl",
+                "target": "MSME_10885",
+                "volume": 244466.86
+            },
+            {
+                "source": "MSME_10885",
+                "target": "vikas.store@okhdfc",
+                "volume": 235094.5
+            },
+            {
+                "source": "vikas.store@okhdfc",
+                "target": "MSME_19218",
+                "volume": 233643.27
+            },
+            {
+                "source": "MSME_19218",
+                "target": "vikas.traders@ybl",
+                "volume": 242906.94
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19602",
+                "name": "Shree Packaging",
+                "gstin": "13MAZJK5917R4ZM"
+            },
+            {
+                "msme_id": "rajesh.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11496",
+                "name": "Skyline Logistics",
+                "gstin": "15MGTZU2932Y8ZO"
+            },
+            {
+                "msme_id": "suresh.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 955276.31,
+        "evidence_graph": [
+            {
+                "source": "MSME_19602",
+                "target": "rajesh.enterprises@ybl",
+                "volume": 239635.03
+            },
+            {
+                "source": "rajesh.enterprises@ybl",
+                "target": "MSME_11496",
+                "volume": 222598.61
+            },
+            {
+                "source": "MSME_11496",
+                "target": "suresh.traders@okicici",
+                "volume": 248862.06
+            },
+            {
+                "source": "suresh.traders@okicici",
+                "target": "MSME_19602",
+                "volume": 244180.61
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16296",
+                "name": "Sai Textiles",
+                "gstin": "33KFWEL1992A3ZW"
+            },
+            {
+                "msme_id": "rajesh.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15291",
+                "name": "Sai Industries",
+                "gstin": "11JKCOF0773Q7Z4"
+            },
+            {
+                "msme_id": "pooja.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 954214.23,
+        "evidence_graph": [
+            {
+                "source": "MSME_16296",
+                "target": "rajesh.store@okhdfc",
+                "volume": 246936.72
+            },
+            {
+                "source": "rajesh.store@okhdfc",
+                "target": "MSME_15291",
+                "volume": 234887.97999999998
+            },
+            {
+                "source": "MSME_15291",
+                "target": "pooja.traders@oksbi",
+                "volume": 250637.32
+            },
+            {
+                "source": "pooja.traders@oksbi",
+                "target": "MSME_16296",
+                "volume": 221752.21
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16825",
+                "name": "Sai Textiles",
+                "gstin": "19GMXTW0922K7ZW"
+            },
+            {
+                "msme_id": "pooja.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14434",
+                "name": "Skyline Retail",
+                "gstin": "15ODOPL1399J3ZB"
+            }
+        ],
+        "total_laundered_inr": 953872.05,
+        "evidence_graph": [
+            {
+                "source": "amit.enterprises@oksbi",
+                "target": "MSME_16825",
+                "volume": 241039.03
+            },
+            {
+                "source": "MSME_16825",
+                "target": "pooja.enterprises@ybl",
+                "volume": 241923.83000000002
+            },
+            {
+                "source": "pooja.enterprises@ybl",
+                "target": "MSME_14434",
+                "volume": 237269.69
+            },
+            {
+                "source": "MSME_14434",
+                "target": "amit.enterprises@oksbi",
+                "volume": 233639.5
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15295",
+                "name": "Shree Packaging",
+                "gstin": "21BHMRP6368W5ZT"
+            },
+            {
+                "msme_id": "pooja.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18305",
+                "name": "Green Textiles",
+                "gstin": "18MGCYG3451R2ZU"
+            },
+            {
+                "msme_id": "amit.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 951730.41,
+        "evidence_graph": [
+            {
+                "source": "MSME_15295",
+                "target": "pooja.enterprises@okhdfc",
+                "volume": 229004.32
+            },
+            {
+                "source": "pooja.enterprises@okhdfc",
+                "target": "MSME_18305",
+                "volume": 244469.19
+            },
+            {
+                "source": "MSME_18305",
+                "target": "amit.traders@okhdfc",
+                "volume": 235025.8
+            },
+            {
+                "source": "amit.traders@okhdfc",
+                "target": "MSME_15295",
+                "volume": 243231.1
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18813",
+                "name": "Prime Enterprises",
+                "gstin": "34RTBXM2274A4Z0"
+            },
+            {
+                "msme_id": "rajesh.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17931",
+                "name": "Green Textiles",
+                "gstin": "21ZEABK9502G1ZC"
+            },
+            {
+                "msme_id": "neha.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 949973.65,
+        "evidence_graph": [
+            {
+                "source": "MSME_18813",
+                "target": "rajesh.enterprises@ybl",
+                "volume": 228627.44
+            },
+            {
+                "source": "rajesh.enterprises@ybl",
+                "target": "MSME_17931",
+                "volume": 240846.36
+            },
+            {
+                "source": "MSME_17931",
+                "target": "neha.traders@okicici",
+                "volume": 255225.01
+            },
+            {
+                "source": "neha.traders@okicici",
+                "target": "MSME_18813",
+                "volume": 225274.84
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "neha.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11858",
+                "name": "Global Logistics",
+                "gstin": "33QNOWY7329Y4ZS"
+            },
+            {
+                "msme_id": "suresh.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14241",
+                "name": "Skyline Industries",
+                "gstin": "31WJDCS5825Y4Z6"
+            }
+        ],
+        "total_laundered_inr": 946582.67,
+        "evidence_graph": [
+            {
+                "source": "neha.enterprises@okicici",
+                "target": "MSME_11858",
+                "volume": 229007.8
+            },
+            {
+                "source": "MSME_11858",
+                "target": "suresh.traders@okicici",
+                "volume": 233509.63999999998
+            },
+            {
+                "source": "suresh.traders@okicici",
+                "target": "MSME_14241",
+                "volume": 244799.52000000002
+            },
+            {
+                "source": "MSME_14241",
+                "target": "neha.enterprises@okicici",
+                "volume": 239265.71
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15778",
+                "name": "Green Textiles",
+                "gstin": "26HBXRC6669L1ZP"
+            },
+            {
+                "msme_id": "amit.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11515",
+                "name": "Green Packaging",
+                "gstin": "10WOSEK3472E3Z9"
+            },
+            {
+                "msme_id": "pooja.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 941110.82,
+        "evidence_graph": [
+            {
+                "source": "MSME_15778",
+                "target": "amit.enterprises@okhdfc",
+                "volume": 234337.68000000002
+            },
+            {
+                "source": "amit.enterprises@okhdfc",
+                "target": "MSME_11515",
+                "volume": 240319.37
+            },
+            {
+                "source": "MSME_11515",
+                "target": "pooja.traders@oksbi",
+                "volume": 244921.63
+            },
+            {
+                "source": "pooja.traders@oksbi",
+                "target": "MSME_15778",
+                "volume": 221532.14
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15295",
+                "name": "Shree Packaging",
+                "gstin": "21BHMRP6368W5ZT"
+            },
+            {
+                "msme_id": "pooja.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11965",
+                "name": "Prime Traders",
+                "gstin": "33OYYHH1081Z1ZI"
+            },
+            {
+                "msme_id": "amit.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 940879.89,
+        "evidence_graph": [
+            {
+                "source": "MSME_15295",
+                "target": "pooja.enterprises@okhdfc",
+                "volume": 229004.32
+            },
+            {
+                "source": "pooja.enterprises@okhdfc",
+                "target": "MSME_11965",
+                "volume": 235541.85
+            },
+            {
+                "source": "MSME_11965",
+                "target": "amit.traders@okhdfc",
+                "volume": 233102.62
+            },
+            {
+                "source": "amit.traders@okhdfc",
+                "target": "MSME_15295",
+                "volume": 243231.1
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16196",
+                "name": "Urban Logistics",
+                "gstin": "16OYJZP0762A1ZV"
+            },
+            {
+                "msme_id": "neha.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_12946",
+                "name": "Green Industries",
+                "gstin": "12CTKGB9926I5ZF"
+            },
+            {
+                "msme_id": "rajesh.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 939420.26,
+        "evidence_graph": [
+            {
+                "source": "MSME_16196",
+                "target": "neha.traders@oksbi",
+                "volume": 235441.61
+            },
+            {
+                "source": "neha.traders@oksbi",
+                "target": "MSME_12946",
+                "volume": 221086.28
+            },
+            {
+                "source": "MSME_12946",
+                "target": "rajesh.traders@ybl",
+                "volume": 237644.26
+            },
+            {
+                "source": "rajesh.traders@ybl",
+                "target": "MSME_16196",
+                "volume": 245248.11
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14354",
+                "name": "Green Retail",
+                "gstin": "32GLZHE4839S7ZY"
+            },
+            {
+                "msme_id": "neha.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18016",
+                "name": "Global Traders",
+                "gstin": "32IAETP2617B2ZU"
+            }
+        ],
+        "total_laundered_inr": 936874.65,
+        "evidence_graph": [
+            {
+                "source": "rajesh.enterprises@okhdfc",
+                "target": "MSME_14354",
+                "volume": 244113.71000000002
+            },
+            {
+                "source": "MSME_14354",
+                "target": "neha.store@okicici",
+                "volume": 231180.33000000002
+            },
+            {
+                "source": "neha.store@okicici",
+                "target": "MSME_18016",
+                "volume": 232666.38
+            },
+            {
+                "source": "MSME_18016",
+                "target": "rajesh.enterprises@okhdfc",
+                "volume": 228914.22999999998
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14505",
+                "name": "Global Industries",
+                "gstin": "29MNCSK3969I3ZA"
+            },
+            {
+                "msme_id": "pooja.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16659",
+                "name": "Om Packaging",
+                "gstin": "28NPICY5582W7ZF"
+            }
+        ],
+        "total_laundered_inr": 936575.75,
+        "evidence_graph": [
+            {
+                "source": "rajesh.enterprises@okhdfc",
+                "target": "MSME_14505",
+                "volume": 224912.77000000002
+            },
+            {
+                "source": "MSME_14505",
+                "target": "pooja.enterprises@oksbi",
+                "volume": 247036.01
+            },
+            {
+                "source": "pooja.enterprises@oksbi",
+                "target": "MSME_16659",
+                "volume": 232020.44
+            },
+            {
+                "source": "MSME_16659",
+                "target": "rajesh.enterprises@okhdfc",
+                "volume": 232606.53
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18167",
+                "name": "Shree Retail",
+                "gstin": "12NOWRK1344Z4Z9"
+            },
+            {
+                "msme_id": "neha.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11411",
+                "name": "Skyline Enterprises",
+                "gstin": "22HLPJS7117L2ZT"
+            },
+            {
+                "msme_id": "rajesh.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 929268.62,
+        "evidence_graph": [
+            {
+                "source": "MSME_18167",
+                "target": "neha.store@ybl",
+                "volume": 231676.71
+            },
+            {
+                "source": "neha.store@ybl",
+                "target": "MSME_11411",
+                "volume": 213988.39
+            },
+            {
+                "source": "MSME_11411",
+                "target": "rajesh.traders@okhdfc",
+                "volume": 244632.4
+            },
+            {
+                "source": "rajesh.traders@okhdfc",
+                "target": "MSME_18167",
+                "volume": 238971.12
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "vikas.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13948",
+                "name": "Sai Enterprises",
+                "gstin": "24XUFQI3106M8Z1"
+            },
+            {
+                "msme_id": "neha.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18601",
+                "name": "Sai Industries",
+                "gstin": "24IFKYE5137L6Z4"
+            }
+        ],
+        "total_laundered_inr": 923747.55,
+        "evidence_graph": [
+            {
+                "source": "vikas.traders@ybl",
+                "target": "MSME_13948",
+                "volume": 233324.07
+            },
+            {
+                "source": "MSME_13948",
+                "target": "neha.enterprises@okicici",
+                "volume": 230271.4
+            },
+            {
+                "source": "neha.enterprises@okicici",
+                "target": "MSME_18601",
+                "volume": 239683.78
+            },
+            {
+                "source": "MSME_18601",
+                "target": "vikas.traders@ybl",
+                "volume": 220468.3
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18522",
+                "name": "Om Retail",
+                "gstin": "32MXAIK0805J5ZI"
+            },
+            {
+                "msme_id": "suresh.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13272",
+                "name": "Shree Traders",
+                "gstin": "15PBGXY7431X5ZM"
+            }
+        ],
+        "total_laundered_inr": 920837.48,
+        "evidence_graph": [
+            {
+                "source": "rajesh.store@ybl",
+                "target": "MSME_18522",
+                "volume": 238476.53
+            },
+            {
+                "source": "MSME_18522",
+                "target": "suresh.store@oksbi",
+                "volume": 232429.88
+            },
+            {
+                "source": "suresh.store@oksbi",
+                "target": "MSME_13272",
+                "volume": 233169.45
+            },
+            {
+                "source": "MSME_13272",
+                "target": "rajesh.store@ybl",
+                "volume": 216761.62
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "vikas.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14556",
+                "name": "Sai Foods",
+                "gstin": "26OUHSE9358I7ZE"
+            },
+            {
+                "msme_id": "neha.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16630",
+                "name": "Lakshmi Foods",
+                "gstin": "29ERNLG1938D2ZN"
+            }
+        ],
+        "total_laundered_inr": 918911.71,
+        "evidence_graph": [
+            {
+                "source": "vikas.enterprises@oksbi",
+                "target": "MSME_14556",
+                "volume": 233188.85
+            },
+            {
+                "source": "MSME_14556",
+                "target": "neha.traders@oksbi",
+                "volume": 228252.43
+            },
+            {
+                "source": "neha.traders@oksbi",
+                "target": "MSME_16630",
+                "volume": 232240.43
+            },
+            {
+                "source": "MSME_16630",
+                "target": "vikas.enterprises@oksbi",
+                "volume": 225230.0
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19268",
+                "name": "Lakshmi Traders",
+                "gstin": "21QJEAQ2682B8Z9"
+            },
+            {
+                "msme_id": "neha.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11858",
+                "name": "Global Logistics",
+                "gstin": "33QNOWY7329Y4ZS"
+            },
+            {
+                "msme_id": "suresh.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 918653.31,
+        "evidence_graph": [
+            {
+                "source": "MSME_19268",
+                "target": "neha.enterprises@okicici",
+                "volume": 216813.61
+            },
+            {
+                "source": "neha.enterprises@okicici",
+                "target": "MSME_11858",
+                "volume": 229007.8
+            },
+            {
+                "source": "MSME_11858",
+                "target": "suresh.traders@okicici",
+                "volume": 233509.63999999998
+            },
+            {
+                "source": "suresh.traders@okicici",
+                "target": "MSME_19268",
+                "volume": 239322.26
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "vikas.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14751",
+                "name": "Skyline Textiles",
+                "gstin": "29SFXEF0011P4ZK"
+            },
+            {
+                "msme_id": "vikas.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10114",
+                "name": "Urban Foods",
+                "gstin": "26QGQZB9552T1ZT"
+            }
+        ],
+        "total_laundered_inr": 913217.01,
+        "evidence_graph": [
+            {
+                "source": "vikas.enterprises@okhdfc",
+                "target": "MSME_14751",
+                "volume": 233731.67
+            },
+            {
+                "source": "MSME_14751",
+                "target": "vikas.traders@okhdfc",
+                "volume": 223091.11
+            },
+            {
+                "source": "vikas.traders@okhdfc",
+                "target": "MSME_10114",
+                "volume": 237084.04
+            },
+            {
+                "source": "MSME_10114",
+                "target": "vikas.enterprises@okhdfc",
+                "volume": 219310.19
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "vikas.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19762",
+                "name": "Lakshmi Packaging",
+                "gstin": "17EKUKU4260U3ZH"
+            },
+            {
+                "msme_id": "rajesh.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18639",
+                "name": "Om Packaging",
+                "gstin": "30JHISJ2483O8ZJ"
+            }
+        ],
+        "total_laundered_inr": 906567.37,
+        "evidence_graph": [
+            {
+                "source": "vikas.enterprises@okhdfc",
+                "target": "MSME_19762",
+                "volume": 237837.49
+            },
+            {
+                "source": "MSME_19762",
+                "target": "rajesh.store@okhdfc",
+                "volume": 222241.71
+            },
+            {
+                "source": "rajesh.store@okhdfc",
+                "target": "MSME_18639",
+                "volume": 220730.51
+            },
+            {
+                "source": "MSME_18639",
+                "target": "vikas.enterprises@okhdfc",
+                "volume": 225757.66
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "pooja.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15510",
+                "name": "Rapid Retail",
+                "gstin": "35OXICA0017J5ZH"
+            },
+            {
+                "msme_id": "rajesh.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18565",
+                "name": "Global Industries",
+                "gstin": "21GEYDT5884L4ZA"
+            }
+        ],
+        "total_laundered_inr": 905140.53,
+        "evidence_graph": [
+            {
+                "source": "pooja.traders@okicici",
+                "target": "MSME_15510",
+                "volume": 235177.73
+            },
+            {
+                "source": "MSME_15510",
+                "target": "rajesh.traders@okicici",
+                "volume": 224280.42
+            },
+            {
+                "source": "rajesh.traders@okicici",
+                "target": "MSME_18565",
+                "volume": 220976.86
+            },
+            {
+                "source": "MSME_18565",
+                "target": "pooja.traders@okicici",
+                "volume": 224705.52
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18699",
+                "name": "Global Retail",
+                "gstin": "29STYQQ1062S2ZM"
+            },
+            {
+                "msme_id": "suresh.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15923",
+                "name": "Prime Traders",
+                "gstin": "25OBGJO7172H6ZA"
+            }
+        ],
+        "total_laundered_inr": 903274.54,
+        "evidence_graph": [
+            {
+                "source": "rajesh.enterprises@oksbi",
+                "target": "MSME_18699",
+                "volume": 231370.53
+            },
+            {
+                "source": "MSME_18699",
+                "target": "suresh.enterprises@okhdfc",
+                "volume": 228086.09
+            },
+            {
+                "source": "suresh.enterprises@okhdfc",
+                "target": "MSME_15923",
+                "volume": 223969.24
+            },
+            {
+                "source": "MSME_15923",
+                "target": "rajesh.enterprises@oksbi",
+                "volume": 219848.68
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16128",
+                "name": "Prime Traders",
+                "gstin": "23GUKXT0350N3Z8"
+            },
+            {
+                "msme_id": "pooja.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11965",
+                "name": "Prime Traders",
+                "gstin": "33OYYHH1081Z1ZI"
+            }
+        ],
+        "total_laundered_inr": 902206.04,
+        "evidence_graph": [
+            {
+                "source": "amit.traders@okhdfc",
+                "target": "MSME_16128",
+                "volume": 219057.75
+            },
+            {
+                "source": "MSME_16128",
+                "target": "pooja.enterprises@okhdfc",
+                "volume": 214503.82
+            },
+            {
+                "source": "pooja.enterprises@okhdfc",
+                "target": "MSME_11965",
+                "volume": 235541.85
+            },
+            {
+                "source": "MSME_11965",
+                "target": "amit.traders@okhdfc",
+                "volume": 233102.62
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "suresh.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17717",
+                "name": "Lakshmi Logistics",
+                "gstin": "21JGSMP9312S2ZQ"
+            },
+            {
+                "msme_id": "neha.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13588",
+                "name": "Sai Industries",
+                "gstin": "15QSJQQ9681E8ZJ"
+            }
+        ],
+        "total_laundered_inr": 901977.69,
+        "evidence_graph": [
+            {
+                "source": "suresh.enterprises@ybl",
+                "target": "MSME_17717",
+                "volume": 212167.13999999998
+            },
+            {
+                "source": "MSME_17717",
+                "target": "neha.traders@ybl",
+                "volume": 235888.31
+            },
+            {
+                "source": "neha.traders@ybl",
+                "target": "MSME_13588",
+                "volume": 234913.66
+            },
+            {
+                "source": "MSME_13588",
+                "target": "suresh.enterprises@ybl",
+                "volume": 219008.58000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19601",
+                "name": "Shree Foods",
+                "gstin": "24FFCBU1615R3ZC"
+            },
+            {
+                "msme_id": "vikas.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14081",
+                "name": "Om Retail",
+                "gstin": "25OQRHP0571C2ZN"
+            }
+        ],
+        "total_laundered_inr": 900239.66,
+        "evidence_graph": [
+            {
+                "source": "amit.traders@oksbi",
+                "target": "MSME_19601",
+                "volume": 233190.86
+            },
+            {
+                "source": "MSME_19601",
+                "target": "vikas.enterprises@oksbi",
+                "volume": 207881.0
+            },
+            {
+                "source": "vikas.enterprises@oksbi",
+                "target": "MSME_14081",
+                "volume": 236262.19999999998
+            },
+            {
+                "source": "MSME_14081",
+                "target": "amit.traders@oksbi",
+                "volume": 222905.6
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16637",
+                "name": "Green Logistics",
+                "gstin": "35KBLMK7587R7ZX"
+            },
+            {
+                "msme_id": "pooja.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19067",
+                "name": "Sai Textiles",
+                "gstin": "31QAZMF3195O2ZP"
+            }
+        ],
+        "total_laundered_inr": 895117.47,
+        "evidence_graph": [
+            {
+                "source": "amit.traders@okicici",
+                "target": "MSME_16637",
+                "volume": 238146.16
+            },
+            {
+                "source": "MSME_16637",
+                "target": "pooja.store@ybl",
+                "volume": 221496.41999999998
+            },
+            {
+                "source": "pooja.store@ybl",
+                "target": "MSME_19067",
+                "volume": 213131.83000000002
+            },
+            {
+                "source": "MSME_19067",
+                "target": "amit.traders@okicici",
+                "volume": 222343.06
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14167",
+                "name": "Shree Enterprises",
+                "gstin": "28XVABC1621G7Z6"
+            },
+            {
+                "msme_id": "vikas.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14081",
+                "name": "Om Retail",
+                "gstin": "25OQRHP0571C2ZN"
+            }
+        ],
+        "total_laundered_inr": 894956.83,
+        "evidence_graph": [
+            {
+                "source": "amit.traders@oksbi",
+                "target": "MSME_14167",
+                "volume": 228096.84
+            },
+            {
+                "source": "MSME_14167",
+                "target": "vikas.enterprises@oksbi",
+                "volume": 207692.19
+            },
+            {
+                "source": "vikas.enterprises@oksbi",
+                "target": "MSME_14081",
+                "volume": 236262.19999999998
+            },
+            {
+                "source": "MSME_14081",
+                "target": "amit.traders@oksbi",
+                "volume": 222905.6
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10745",
+                "name": "Skyline Traders",
+                "gstin": "20LPXDS4851F7Z5"
+            },
+            {
+                "msme_id": "vikas.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13561",
+                "name": "Om Industries",
+                "gstin": "15HVQJN3703A5ZS"
+            },
+            {
+                "msme_id": "vikas.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 894400.36,
+        "evidence_graph": [
+            {
+                "source": "MSME_10745",
+                "target": "vikas.traders@okhdfc",
+                "volume": 233054.36
+            },
+            {
+                "source": "vikas.traders@okhdfc",
+                "target": "MSME_13561",
+                "volume": 231005.40000000002
+            },
+            {
+                "source": "MSME_13561",
+                "target": "vikas.traders@okicici",
+                "volume": 224864.75
+            },
+            {
+                "source": "vikas.traders@okicici",
+                "target": "MSME_10745",
+                "volume": 205475.85
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11310",
+                "name": "Om Textiles",
+                "gstin": "24IALUW7447B7ZR"
+            },
+            {
+                "msme_id": "rajesh.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17455",
+                "name": "Prime Industries",
+                "gstin": "27FEXIH9914H3ZG"
+            }
+        ],
+        "total_laundered_inr": 893815.85,
+        "evidence_graph": [
+            {
+                "source": "amit.enterprises@oksbi",
+                "target": "MSME_11310",
+                "volume": 220274.40000000002
+            },
+            {
+                "source": "MSME_11310",
+                "target": "rajesh.store@okhdfc",
+                "volume": 219987.4
+            },
+            {
+                "source": "rajesh.store@okhdfc",
+                "target": "MSME_17455",
+                "volume": 224115.60000000003
+            },
+            {
+                "source": "MSME_17455",
+                "target": "amit.enterprises@oksbi",
+                "volume": 229438.45
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18694",
+                "name": "Sai Foods",
+                "gstin": "20HMJDQ7749Y6ZB"
+            },
+            {
+                "msme_id": "suresh.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14247",
+                "name": "Om Industries",
+                "gstin": "23OOQTO1969F5ZE"
+            }
+        ],
+        "total_laundered_inr": 893402.28,
+        "evidence_graph": [
+            {
+                "source": "rajesh.store@ybl",
+                "target": "MSME_18694",
+                "volume": 227883.43
+            },
+            {
+                "source": "MSME_18694",
+                "target": "suresh.traders@oksbi",
+                "volume": 216425.48
+            },
+            {
+                "source": "suresh.traders@oksbi",
+                "target": "MSME_14247",
+                "volume": 230190.2
+            },
+            {
+                "source": "MSME_14247",
+                "target": "rajesh.store@ybl",
+                "volume": 218903.16999999998
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "suresh.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10355",
+                "name": "Global Packaging",
+                "gstin": "24JAVGU1808L3ZR"
+            },
+            {
+                "msme_id": "amit.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17770",
+                "name": "Sai Textiles",
+                "gstin": "24YVBPI3522R6Z0"
+            }
+        ],
+        "total_laundered_inr": 892219.04,
+        "evidence_graph": [
+            {
+                "source": "suresh.enterprises@okicici",
+                "target": "MSME_10355",
+                "volume": 220466.75
+            },
+            {
+                "source": "MSME_10355",
+                "target": "amit.store@okicici",
+                "volume": 238562.41999999998
+            },
+            {
+                "source": "amit.store@okicici",
+                "target": "MSME_17770",
+                "volume": 210922.52000000002
+            },
+            {
+                "source": "MSME_17770",
+                "target": "suresh.enterprises@okicici",
+                "volume": 222267.35
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "pooja.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16835",
+                "name": "Skyline Industries",
+                "gstin": "15MRVMK4604X8ZZ"
+            },
+            {
+                "msme_id": "neha.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14354",
+                "name": "Green Retail",
+                "gstin": "32GLZHE4839S7ZY"
+            }
+        ],
+        "total_laundered_inr": 891507.86,
+        "evidence_graph": [
+            {
+                "source": "pooja.traders@okicici",
+                "target": "MSME_16835",
+                "volume": 211693.38999999998
+            },
+            {
+                "source": "MSME_16835",
+                "target": "neha.store@ybl",
+                "volume": 214416.75
+            },
+            {
+                "source": "neha.store@ybl",
+                "target": "MSME_14354",
+                "volume": 225551.93
+            },
+            {
+                "source": "MSME_14354",
+                "target": "pooja.traders@okicici",
+                "volume": 239845.78999999998
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18100",
+                "name": "Prime Foods",
+                "gstin": "21VVZEZ6475J2ZV"
+            },
+            {
+                "msme_id": "rajesh.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13320",
+                "name": "Green Textiles",
+                "gstin": "21LGLUZ5401S3ZU"
+            },
+            {
+                "msme_id": "pooja.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 886100.31,
+        "evidence_graph": [
+            {
+                "source": "MSME_18100",
+                "target": "rajesh.store@oksbi",
+                "volume": 212315.06
+            },
+            {
+                "source": "rajesh.store@oksbi",
+                "target": "MSME_13320",
+                "volume": 218187.51
+            },
+            {
+                "source": "MSME_13320",
+                "target": "pooja.traders@oksbi",
+                "volume": 230608.33000000002
+            },
+            {
+                "source": "pooja.traders@oksbi",
+                "target": "MSME_18100",
+                "volume": 224989.41
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10984",
+                "name": "Shree Enterprises",
+                "gstin": "17MLTQZ9843Y7Z0"
+            },
+            {
+                "msme_id": "neha.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18016",
+                "name": "Global Traders",
+                "gstin": "32IAETP2617B2ZU"
+            }
+        ],
+        "total_laundered_inr": 885496.28,
+        "evidence_graph": [
+            {
+                "source": "rajesh.enterprises@okhdfc",
+                "target": "MSME_10984",
+                "volume": 205663.6
+            },
+            {
+                "source": "MSME_10984",
+                "target": "neha.store@okicici",
+                "volume": 218252.07
+            },
+            {
+                "source": "neha.store@okicici",
+                "target": "MSME_18016",
+                "volume": 232666.38
+            },
+            {
+                "source": "MSME_18016",
+                "target": "rajesh.enterprises@okhdfc",
+                "volume": 228914.22999999998
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "pooja.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16311",
+                "name": "Global Logistics",
+                "gstin": "15BKBAJ8779E7ZZ"
+            },
+            {
+                "msme_id": "suresh.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18565",
+                "name": "Global Industries",
+                "gstin": "21GEYDT5884L4ZA"
+            }
+        ],
+        "total_laundered_inr": 885028.22,
+        "evidence_graph": [
+            {
+                "source": "pooja.traders@okicici",
+                "target": "MSME_16311",
+                "volume": 218298.16
+            },
+            {
+                "source": "MSME_16311",
+                "target": "suresh.traders@ybl",
+                "volume": 207140.45
+            },
+            {
+                "source": "suresh.traders@ybl",
+                "target": "MSME_18565",
+                "volume": 234884.09000000003
+            },
+            {
+                "source": "MSME_18565",
+                "target": "pooja.traders@okicici",
+                "volume": 224705.52
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16273",
+                "name": "Prime Packaging",
+                "gstin": "17DYPSL7000Z6ZW"
+            },
+            {
+                "msme_id": "rajesh.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11277",
+                "name": "Shree Textiles",
+                "gstin": "33FXAID9622T5ZL"
+            },
+            {
+                "msme_id": "pooja.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 882906.11,
+        "evidence_graph": [
+            {
+                "source": "MSME_16273",
+                "target": "rajesh.store@okhdfc",
+                "volume": 227838.57
+            },
+            {
+                "source": "rajesh.store@okhdfc",
+                "target": "MSME_11277",
+                "volume": 208274.71000000002
+            },
+            {
+                "source": "MSME_11277",
+                "target": "pooja.enterprises@okhdfc",
+                "volume": 227448.39
+            },
+            {
+                "source": "pooja.enterprises@okhdfc",
+                "target": "MSME_16273",
+                "volume": 219344.44
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15419",
+                "name": "Global Enterprises",
+                "gstin": "21TULCR9618R1Z9"
+            },
+            {
+                "msme_id": "vikas.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14556",
+                "name": "Sai Foods",
+                "gstin": "26OUHSE9358I7ZE"
+            },
+            {
+                "msme_id": "neha.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 882462.83,
+        "evidence_graph": [
+            {
+                "source": "MSME_15419",
+                "target": "vikas.enterprises@oksbi",
+                "volume": 207736.53
+            },
+            {
+                "source": "vikas.enterprises@oksbi",
+                "target": "MSME_14556",
+                "volume": 233188.85
+            },
+            {
+                "source": "MSME_14556",
+                "target": "neha.traders@oksbi",
+                "volume": 228252.43
+            },
+            {
+                "source": "neha.traders@oksbi",
+                "target": "MSME_15419",
+                "volume": 213285.02
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15670",
+                "name": "Skyline Industries",
+                "gstin": "34GQTDB3961V7Z6"
+            },
+            {
+                "msme_id": "neha.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10940",
+                "name": "Prime Foods",
+                "gstin": "28XOMNG7818U7Z9"
+            },
+            {
+                "msme_id": "suresh.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 881645.19,
+        "evidence_graph": [
+            {
+                "source": "MSME_15670",
+                "target": "neha.store@oksbi",
+                "volume": 207681.66999999998
+            },
+            {
+                "source": "neha.store@oksbi",
+                "target": "MSME_10940",
+                "volume": 236036.97999999998
+            },
+            {
+                "source": "MSME_10940",
+                "target": "suresh.store@ybl",
+                "volume": 220184.23
+            },
+            {
+                "source": "suresh.store@ybl",
+                "target": "MSME_15670",
+                "volume": 217742.31
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13731",
+                "name": "Global Foods",
+                "gstin": "11FFFZI9939R2ZY"
+            },
+            {
+                "msme_id": "vikas.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15955",
+                "name": "Om Textiles",
+                "gstin": "14HGXWY7578M7Z4"
+            },
+            {
+                "msme_id": "rajesh.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 878477.85,
+        "evidence_graph": [
+            {
+                "source": "MSME_13731",
+                "target": "vikas.store@oksbi",
+                "volume": 216718.7
+            },
+            {
+                "source": "vikas.store@oksbi",
+                "target": "MSME_15955",
+                "volume": 233174.61
+            },
+            {
+                "source": "MSME_15955",
+                "target": "rajesh.enterprises@ybl",
+                "volume": 214595.99
+            },
+            {
+                "source": "rajesh.enterprises@ybl",
+                "target": "MSME_13731",
+                "volume": 213988.55000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11161",
+                "name": "Lakshmi Retail",
+                "gstin": "17UDUZE2317M4ZN"
+            },
+            {
+                "msme_id": "suresh.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15923",
+                "name": "Prime Traders",
+                "gstin": "25OBGJO7172H6ZA"
+            }
+        ],
+        "total_laundered_inr": 877430.03,
+        "evidence_graph": [
+            {
+                "source": "rajesh.store@ybl",
+                "target": "MSME_11161",
+                "volume": 202812.47999999998
+            },
+            {
+                "source": "MSME_11161",
+                "target": "suresh.enterprises@okhdfc",
+                "volume": 224556.76
+            },
+            {
+                "source": "suresh.enterprises@okhdfc",
+                "target": "MSME_15923",
+                "volume": 223969.24
+            },
+            {
+                "source": "MSME_15923",
+                "target": "rajesh.store@ybl",
+                "volume": 226091.55
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19037",
+                "name": "Urban Industries",
+                "gstin": "23VIFPZ7941G6ZF"
+            },
+            {
+                "msme_id": "vikas.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19763",
+                "name": "Prime Packaging",
+                "gstin": "29FJYFC9357I5ZK"
+            }
+        ],
+        "total_laundered_inr": 875765.99,
+        "evidence_graph": [
+            {
+                "source": "rajesh.traders@okicici",
+                "target": "MSME_19037",
+                "volume": 223441.31
+            },
+            {
+                "source": "MSME_19037",
+                "target": "vikas.enterprises@oksbi",
+                "volume": 229362.71000000002
+            },
+            {
+                "source": "vikas.enterprises@oksbi",
+                "target": "MSME_19763",
+                "volume": 213330.38999999998
+            },
+            {
+                "source": "MSME_19763",
+                "target": "rajesh.traders@okicici",
+                "volume": 209631.58
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16581",
+                "name": "Green Foods",
+                "gstin": "21ABALB7335I1Z8"
+            },
+            {
+                "msme_id": "suresh.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18774",
+                "name": "Green Foods",
+                "gstin": "29MLDQR4490K8ZF"
+            }
+        ],
+        "total_laundered_inr": 874834.47,
+        "evidence_graph": [
+            {
+                "source": "rajesh.enterprises@okhdfc",
+                "target": "MSME_16581",
+                "volume": 228570.29
+            },
+            {
+                "source": "MSME_16581",
+                "target": "suresh.traders@okhdfc",
+                "volume": 203817.88
+            },
+            {
+                "source": "suresh.traders@okhdfc",
+                "target": "MSME_18774",
+                "volume": 229317.35
+            },
+            {
+                "source": "MSME_18774",
+                "target": "rajesh.enterprises@okhdfc",
+                "volume": 213128.95
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_16086",
+                "name": "Global Logistics",
+                "gstin": "36UIWND0062E6Z4"
+            },
+            {
+                "msme_id": "neha.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18840",
+                "name": "Green Foods",
+                "gstin": "33VAWGV6404S6ZJ"
+            },
+            {
+                "msme_id": "amit.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 871389.57,
+        "evidence_graph": [
+            {
+                "source": "MSME_16086",
+                "target": "neha.traders@okhdfc",
+                "volume": 208383.11
+            },
+            {
+                "source": "neha.traders@okhdfc",
+                "target": "MSME_18840",
+                "volume": 216552.83000000002
+            },
+            {
+                "source": "MSME_18840",
+                "target": "amit.traders@oksbi",
+                "volume": 235501.39
+            },
+            {
+                "source": "amit.traders@oksbi",
+                "target": "MSME_16086",
+                "volume": 210952.24
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19490",
+                "name": "Sai Textiles",
+                "gstin": "31POLWJ5218T6ZG"
+            },
+            {
+                "msme_id": "vikas.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10645",
+                "name": "Rapid Textiles",
+                "gstin": "15KRGGN9149A2ZT"
+            },
+            {
+                "msme_id": "pooja.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 870802.03,
+        "evidence_graph": [
+            {
+                "source": "MSME_19490",
+                "target": "vikas.store@okicici",
+                "volume": 218888.26
+            },
+            {
+                "source": "vikas.store@okicici",
+                "target": "MSME_10645",
+                "volume": 204958.61
+            },
+            {
+                "source": "MSME_10645",
+                "target": "pooja.traders@okhdfc",
+                "volume": 234079.16999999998
+            },
+            {
+                "source": "pooja.traders@okhdfc",
+                "target": "MSME_19490",
+                "volume": 212875.99
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17888",
+                "name": "Sai Packaging",
+                "gstin": "25IWKMH3087V4ZD"
+            },
+            {
+                "msme_id": "vikas.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10302",
+                "name": "Global Enterprises",
+                "gstin": "11CHBWM1881K8ZP"
+            },
+            {
+                "msme_id": "neha.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 870122.26,
+        "evidence_graph": [
+            {
+                "source": "MSME_17888",
+                "target": "vikas.traders@oksbi",
+                "volume": 225497.99
+            },
+            {
+                "source": "vikas.traders@oksbi",
+                "target": "MSME_10302",
+                "volume": 203889.54
+            },
+            {
+                "source": "MSME_10302",
+                "target": "neha.enterprises@ybl",
+                "volume": 216419.46000000002
+            },
+            {
+                "source": "neha.enterprises@ybl",
+                "target": "MSME_17888",
+                "volume": 224315.27000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18683",
+                "name": "Urban Textiles",
+                "gstin": "32NZCQQ6062D1Z3"
+            },
+            {
+                "msme_id": "rajesh.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16266",
+                "name": "Skyline Industries",
+                "gstin": "13YIKUE6554P7ZE"
+            },
+            {
+                "msme_id": "amit.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 868917.52,
+        "evidence_graph": [
+            {
+                "source": "MSME_18683",
+                "target": "rajesh.traders@oksbi",
+                "volume": 214897.77000000002
+            },
+            {
+                "source": "rajesh.traders@oksbi",
+                "target": "MSME_16266",
+                "volume": 208231.56
+            },
+            {
+                "source": "MSME_16266",
+                "target": "amit.traders@oksbi",
+                "volume": 216839.52000000002
+            },
+            {
+                "source": "amit.traders@oksbi",
+                "target": "MSME_18683",
+                "volume": 228948.67
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11310",
+                "name": "Om Textiles",
+                "gstin": "24IALUW7447B7ZR"
+            },
+            {
+                "msme_id": "rajesh.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10960",
+                "name": "Global Foods",
+                "gstin": "29UGBLG3820W8ZJ"
+            }
+        ],
+        "total_laundered_inr": 867448.79,
+        "evidence_graph": [
+            {
+                "source": "amit.enterprises@oksbi",
+                "target": "MSME_11310",
+                "volume": 220274.40000000002
+            },
+            {
+                "source": "MSME_11310",
+                "target": "rajesh.store@okhdfc",
+                "volume": 219987.4
+            },
+            {
+                "source": "rajesh.store@okhdfc",
+                "target": "MSME_10960",
+                "volume": 221217.88
+            },
+            {
+                "source": "MSME_10960",
+                "target": "amit.enterprises@oksbi",
+                "volume": 205969.11
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19543",
+                "name": "Om Retail",
+                "gstin": "34XSZPY6987T6ZX"
+            },
+            {
+                "msme_id": "rajesh.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14503",
+                "name": "Urban Foods",
+                "gstin": "24TPJZA8863C3ZC"
+            }
+        ],
+        "total_laundered_inr": 866743.39,
+        "evidence_graph": [
+            {
+                "source": "amit.traders@okicici",
+                "target": "MSME_19543",
+                "volume": 208321.38
+            },
+            {
+                "source": "MSME_19543",
+                "target": "rajesh.store@okicici",
+                "volume": 225870.59
+            },
+            {
+                "source": "rajesh.store@okicici",
+                "target": "MSME_14503",
+                "volume": 211943.37
+            },
+            {
+                "source": "MSME_14503",
+                "target": "amit.traders@okicici",
+                "volume": 220608.05
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10150",
+                "name": "Skyline Industries",
+                "gstin": "19APUAG5395Z7ZH"
+            },
+            {
+                "msme_id": "rajesh.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17855",
+                "name": "Rapid Textiles",
+                "gstin": "33MQORO0559L5ZF"
+            },
+            {
+                "msme_id": "rajesh.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 865910.14,
+        "evidence_graph": [
+            {
+                "source": "MSME_10150",
+                "target": "rajesh.enterprises@oksbi",
+                "volume": 216828.49
+            },
+            {
+                "source": "rajesh.enterprises@oksbi",
+                "target": "MSME_17855",
+                "volume": 225748.00999999998
+            },
+            {
+                "source": "MSME_17855",
+                "target": "rajesh.enterprises@ybl",
+                "volume": 210314.68
+            },
+            {
+                "source": "rajesh.enterprises@ybl",
+                "target": "MSME_10150",
+                "volume": 213018.96000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15899",
+                "name": "Global Enterprises",
+                "gstin": "11SSEMI2580A7Z7"
+            },
+            {
+                "msme_id": "rajesh.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17455",
+                "name": "Prime Industries",
+                "gstin": "27FEXIH9914H3ZG"
+            }
+        ],
+        "total_laundered_inr": 864877.58,
+        "evidence_graph": [
+            {
+                "source": "amit.enterprises@ybl",
+                "target": "MSME_15899",
+                "volume": 218315.97
+            },
+            {
+                "source": "MSME_15899",
+                "target": "rajesh.store@okhdfc",
+                "volume": 197989.7
+            },
+            {
+                "source": "rajesh.store@okhdfc",
+                "target": "MSME_17455",
+                "volume": 224115.60000000003
+            },
+            {
+                "source": "MSME_17455",
+                "target": "amit.enterprises@ybl",
+                "volume": 224456.31
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17796",
+                "name": "Om Logistics",
+                "gstin": "28VVIWF8985I4ZS"
+            },
+            {
+                "msme_id": "pooja.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10617",
+                "name": "Sai Logistics",
+                "gstin": "23IDHJX1063S7Z9"
+            }
+        ],
+        "total_laundered_inr": 862527.19,
+        "evidence_graph": [
+            {
+                "source": "amit.traders@oksbi",
+                "target": "MSME_17796",
+                "volume": 213223.98
+            },
+            {
+                "source": "MSME_17796",
+                "target": "pooja.store@okhdfc",
+                "volume": 218427.12
+            },
+            {
+                "source": "pooja.store@okhdfc",
+                "target": "MSME_10617",
+                "volume": 207354.23
+            },
+            {
+                "source": "MSME_10617",
+                "target": "amit.traders@oksbi",
+                "volume": 223521.86
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10227",
+                "name": "Shree Logistics",
+                "gstin": "12IIZSC4046L7ZO"
+            },
+            {
+                "msme_id": "rajesh.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16027",
+                "name": "Sai Retail",
+                "gstin": "12XUGFJ0046B7ZP"
+            },
+            {
+                "msme_id": "vikas.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 862363.45,
+        "evidence_graph": [
+            {
+                "source": "MSME_10227",
+                "target": "rajesh.store@okhdfc",
+                "volume": 217895.94
+            },
+            {
+                "source": "rajesh.store@okhdfc",
+                "target": "MSME_16027",
+                "volume": 211434.61
+            },
+            {
+                "source": "MSME_16027",
+                "target": "vikas.traders@oksbi",
+                "volume": 203852.69999999998
+            },
+            {
+                "source": "vikas.traders@oksbi",
+                "target": "MSME_10227",
+                "volume": 229180.2
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_15703",
+                "name": "Skyline Traders",
+                "gstin": "34PWPYN5685X2Z1"
+            },
+            {
+                "msme_id": "suresh.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_12442",
+                "name": "Skyline Logistics",
+                "gstin": "33VAISL5728Q3ZE"
+            },
+            {
+                "msme_id": "vikas.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 861893.57,
+        "evidence_graph": [
+            {
+                "source": "MSME_15703",
+                "target": "suresh.traders@ybl",
+                "volume": 232135.07
+            },
+            {
+                "source": "suresh.traders@ybl",
+                "target": "MSME_12442",
+                "volume": 215633.7
+            },
+            {
+                "source": "MSME_12442",
+                "target": "vikas.store@ybl",
+                "volume": 208457.09999999998
+            },
+            {
+                "source": "vikas.store@ybl",
+                "target": "MSME_15703",
+                "volume": 205667.69999999998
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "pooja.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19311",
+                "name": "Global Retail",
+                "gstin": "35ZNNLM0452L5Z2"
+            },
+            {
+                "msme_id": "pooja.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10617",
+                "name": "Sai Logistics",
+                "gstin": "23IDHJX1063S7Z9"
+            }
+        ],
+        "total_laundered_inr": 860722.14,
+        "evidence_graph": [
+            {
+                "source": "pooja.store@oksbi",
+                "target": "MSME_19311",
+                "volume": 222648.19999999998
+            },
+            {
+                "source": "MSME_19311",
+                "target": "pooja.store@okhdfc",
+                "volume": 217951.47
+            },
+            {
+                "source": "pooja.store@okhdfc",
+                "target": "MSME_10617",
+                "volume": 207354.23
+            },
+            {
+                "source": "MSME_10617",
+                "target": "pooja.store@oksbi",
+                "volume": 212768.24
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18202",
+                "name": "Sai Retail",
+                "gstin": "33JIBJE7480H7Z5"
+            },
+            {
+                "msme_id": "vikas.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13320",
+                "name": "Green Textiles",
+                "gstin": "21LGLUZ5401S3ZU"
+            },
+            {
+                "msme_id": "pooja.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 860042.06,
+        "evidence_graph": [
+            {
+                "source": "MSME_18202",
+                "target": "vikas.store@ybl",
+                "volume": 214375.22999999998
+            },
+            {
+                "source": "vikas.store@ybl",
+                "target": "MSME_13320",
+                "volume": 207603.91999999998
+            },
+            {
+                "source": "MSME_13320",
+                "target": "pooja.traders@oksbi",
+                "volume": 230608.33000000002
+            },
+            {
+                "source": "pooja.traders@oksbi",
+                "target": "MSME_18202",
+                "volume": 207454.58000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "pooja.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16835",
+                "name": "Skyline Industries",
+                "gstin": "15MRVMK4604X8ZZ"
+            },
+            {
+                "msme_id": "neha.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11809",
+                "name": "Global Packaging",
+                "gstin": "24MNLQX5785N7ZX"
+            }
+        ],
+        "total_laundered_inr": 859924.26,
+        "evidence_graph": [
+            {
+                "source": "pooja.traders@okicici",
+                "target": "MSME_16835",
+                "volume": 211693.38999999998
+            },
+            {
+                "source": "MSME_16835",
+                "target": "neha.store@ybl",
+                "volume": 214416.75
+            },
+            {
+                "source": "neha.store@ybl",
+                "target": "MSME_11809",
+                "volume": 202057.72
+            },
+            {
+                "source": "MSME_11809",
+                "target": "pooja.traders@okicici",
+                "volume": 231756.40000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18673",
+                "name": "Urban Logistics",
+                "gstin": "28PCOGF5483F4Z5"
+            },
+            {
+                "msme_id": "rajesh.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18592",
+                "name": "Skyline Retail",
+                "gstin": "24GQPAO7906N4ZV"
+            },
+            {
+                "msme_id": "pooja.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 859030.33,
+        "evidence_graph": [
+            {
+                "source": "MSME_18673",
+                "target": "rajesh.store@okicici",
+                "volume": 218636.5
+            },
+            {
+                "source": "rajesh.store@okicici",
+                "target": "MSME_18592",
+                "volume": 209413.21000000002
+            },
+            {
+                "source": "MSME_18592",
+                "target": "pooja.enterprises@ybl",
+                "volume": 224715.16999999998
+            },
+            {
+                "source": "pooja.enterprises@ybl",
+                "target": "MSME_18673",
+                "volume": 206265.45
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14552",
+                "name": "Rapid Industries",
+                "gstin": "13UJUGJ2195S7Z9"
+            },
+            {
+                "msme_id": "neha.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11858",
+                "name": "Global Logistics",
+                "gstin": "33QNOWY7329Y4ZS"
+            },
+            {
+                "msme_id": "suresh.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 854206.12,
+        "evidence_graph": [
+            {
+                "source": "MSME_14552",
+                "target": "neha.enterprises@okicici",
+                "volume": 204865.14
+            },
+            {
+                "source": "neha.enterprises@okicici",
+                "target": "MSME_11858",
+                "volume": 229007.8
+            },
+            {
+                "source": "MSME_11858",
+                "target": "suresh.store@okicici",
+                "volume": 215106.45
+            },
+            {
+                "source": "suresh.store@okicici",
+                "target": "MSME_14552",
+                "volume": 205226.72999999998
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "vikas.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10051",
+                "name": "Global Industries",
+                "gstin": "20PRAKA3768G3ZG"
+            },
+            {
+                "msme_id": "vikas.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16770",
+                "name": "Skyline Retail",
+                "gstin": "17LRRHP0101L8ZB"
+            }
+        ],
+        "total_laundered_inr": 852263.31,
+        "evidence_graph": [
+            {
+                "source": "vikas.traders@ybl",
+                "target": "MSME_10051",
+                "volume": 216612.67
+            },
+            {
+                "source": "MSME_10051",
+                "target": "vikas.store@okicici",
+                "volume": 205496.43
+            },
+            {
+                "source": "vikas.store@okicici",
+                "target": "MSME_16770",
+                "volume": 212432.35
+            },
+            {
+                "source": "MSME_16770",
+                "target": "vikas.traders@ybl",
+                "volume": 217721.86
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16581",
+                "name": "Green Foods",
+                "gstin": "21ABALB7335I1Z8"
+            },
+            {
+                "msme_id": "vikas.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17601",
+                "name": "Shree Packaging",
+                "gstin": "31MFAPT4376R7Z2"
+            }
+        ],
+        "total_laundered_inr": 847882.96,
+        "evidence_graph": [
+            {
+                "source": "rajesh.enterprises@okhdfc",
+                "target": "MSME_16581",
+                "volume": 228570.29
+            },
+            {
+                "source": "MSME_16581",
+                "target": "vikas.enterprises@ybl",
+                "volume": 202017.88
+            },
+            {
+                "source": "vikas.enterprises@ybl",
+                "target": "MSME_17601",
+                "volume": 205667.33000000002
+            },
+            {
+                "source": "MSME_17601",
+                "target": "rajesh.enterprises@okhdfc",
+                "volume": 211627.46000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10021",
+                "name": "Om Retail",
+                "gstin": "13WGDGV2132O5Z7"
+            },
+            {
+                "msme_id": "amit.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15040",
+                "name": "Green Industries",
+                "gstin": "24TRJUF7565P2ZW"
+            },
+            {
+                "msme_id": "neha.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 847872.69,
+        "evidence_graph": [
+            {
+                "source": "MSME_10021",
+                "target": "amit.store@okicici",
+                "volume": 210715.35
+            },
+            {
+                "source": "amit.store@okicici",
+                "target": "MSME_15040",
+                "volume": 204404.76
+            },
+            {
+                "source": "MSME_15040",
+                "target": "neha.enterprises@okhdfc",
+                "volume": 207474.88
+            },
+            {
+                "source": "neha.enterprises@okhdfc",
+                "target": "MSME_10021",
+                "volume": 225277.7
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16746",
+                "name": "Green Packaging",
+                "gstin": "27XHZFC8484K8ZQ"
+            },
+            {
+                "msme_id": "suresh.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14467",
+                "name": "Global Industries",
+                "gstin": "19ZEBFF8346M3Z3"
+            }
+        ],
+        "total_laundered_inr": 846558.27,
+        "evidence_graph": [
+            {
+                "source": "amit.enterprises@ybl",
+                "target": "MSME_16746",
+                "volume": 196159.34
+            },
+            {
+                "source": "MSME_16746",
+                "target": "suresh.store@ybl",
+                "volume": 224066.28
+            },
+            {
+                "source": "suresh.store@ybl",
+                "target": "MSME_14467",
+                "volume": 208716.47
+            },
+            {
+                "source": "MSME_14467",
+                "target": "amit.enterprises@ybl",
+                "volume": 217616.18
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13453",
+                "name": "Shree Industries",
+                "gstin": "20VQDZX9455M2Z1"
+            },
+            {
+                "msme_id": "neha.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15755",
+                "name": "Green Enterprises",
+                "gstin": "14QWSGH2309V6ZI"
+            }
+        ],
+        "total_laundered_inr": 846541.22,
+        "evidence_graph": [
+            {
+                "source": "amit.store@okicici",
+                "target": "MSME_13453",
+                "volume": 203859.16999999998
+            },
+            {
+                "source": "MSME_13453",
+                "target": "neha.traders@okicici",
+                "volume": 217840.15
+            },
+            {
+                "source": "neha.traders@okicici",
+                "target": "MSME_15755",
+                "volume": 206058.47
+            },
+            {
+                "source": "MSME_15755",
+                "target": "amit.store@okicici",
+                "volume": 218783.43
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18892",
+                "name": "Om Textiles",
+                "gstin": "11QDVRW7869R7ZM"
+            },
+            {
+                "msme_id": "vikas.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13714",
+                "name": "Lakshmi Packaging",
+                "gstin": "34GHCPO8574T3ZB"
+            },
+            {
+                "msme_id": "amit.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 842030.45,
+        "evidence_graph": [
+            {
+                "source": "MSME_18892",
+                "target": "vikas.traders@okicici",
+                "volume": 211513.99
+            },
+            {
+                "source": "vikas.traders@okicici",
+                "target": "MSME_13714",
+                "volume": 201001.14
+            },
+            {
+                "source": "MSME_13714",
+                "target": "amit.enterprises@okicici",
+                "volume": 207649.22999999998
+            },
+            {
+                "source": "amit.enterprises@okicici",
+                "target": "MSME_18892",
+                "volume": 221866.09
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10828",
+                "name": "Shree Logistics",
+                "gstin": "35KYADV2776K3ZZ"
+            },
+            {
+                "msme_id": "rajesh.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16271",
+                "name": "Rapid Retail",
+                "gstin": "30GXGHJ0364R5ZO"
+            },
+            {
+                "msme_id": "neha.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 841939.97,
+        "evidence_graph": [
+            {
+                "source": "MSME_10828",
+                "target": "rajesh.enterprises@oksbi",
+                "volume": 210740.21999999997
+            },
+            {
+                "source": "rajesh.enterprises@oksbi",
+                "target": "MSME_16271",
+                "volume": 215109.75999999998
+            },
+            {
+                "source": "MSME_16271",
+                "target": "neha.store@okhdfc",
+                "volume": 209104.47999999998
+            },
+            {
+                "source": "neha.store@okhdfc",
+                "target": "MSME_10828",
+                "volume": 206985.51
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12037",
+                "name": "Global Foods",
+                "gstin": "24GBJRM1528W4ZS"
+            },
+            {
+                "msme_id": "neha.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10754",
+                "name": "Urban Traders",
+                "gstin": "31KZHUT1963W7ZY"
+            },
+            {
+                "msme_id": "suresh.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 840201.03,
+        "evidence_graph": [
+            {
+                "source": "MSME_12037",
+                "target": "neha.store@okhdfc",
+                "volume": 200342.8
+            },
+            {
+                "source": "neha.store@okhdfc",
+                "target": "MSME_10754",
+                "volume": 218645.12
+            },
+            {
+                "source": "MSME_10754",
+                "target": "suresh.traders@okicici",
+                "volume": 206369.85
+            },
+            {
+                "source": "suresh.traders@okicici",
+                "target": "MSME_12037",
+                "volume": 214843.26
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11213",
+                "name": "Sai Textiles",
+                "gstin": "26AJYEU7725C7ZP"
+            },
+            {
+                "msme_id": "pooja.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15462",
+                "name": "Lakshmi Logistics",
+                "gstin": "33NKOUV4927K1ZS"
+            }
+        ],
+        "total_laundered_inr": 839733.81,
+        "evidence_graph": [
+            {
+                "source": "amit.store@okicici",
+                "target": "MSME_11213",
+                "volume": 212676.50999999998
+            },
+            {
+                "source": "MSME_11213",
+                "target": "pooja.enterprises@okicici",
+                "volume": 215264.72000000003
+            },
+            {
+                "source": "pooja.enterprises@okicici",
+                "target": "MSME_15462",
+                "volume": 208744.97999999998
+            },
+            {
+                "source": "MSME_15462",
+                "target": "amit.store@okicici",
+                "volume": 203047.6
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "pooja.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16575",
+                "name": "Om Logistics",
+                "gstin": "34HTISH3161W1ZO"
+            },
+            {
+                "msme_id": "pooja.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16037",
+                "name": "Om Retail",
+                "gstin": "29PYKRY1352N5ZT"
+            }
+        ],
+        "total_laundered_inr": 838956.58,
+        "evidence_graph": [
+            {
+                "source": "pooja.store@oksbi",
+                "target": "MSME_16575",
+                "volume": 215153.43
+            },
+            {
+                "source": "MSME_16575",
+                "target": "pooja.enterprises@okicici",
+                "volume": 210032.54
+            },
+            {
+                "source": "pooja.enterprises@okicici",
+                "target": "MSME_16037",
+                "volume": 211234.61
+            },
+            {
+                "source": "MSME_16037",
+                "target": "pooja.store@oksbi",
+                "volume": 202536.0
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16389",
+                "name": "Global Packaging",
+                "gstin": "13GXECY6246J6ZK"
+            },
+            {
+                "msme_id": "vikas.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17601",
+                "name": "Shree Packaging",
+                "gstin": "31MFAPT4376R7Z2"
+            }
+        ],
+        "total_laundered_inr": 838108.62,
+        "evidence_graph": [
+            {
+                "source": "rajesh.enterprises@okhdfc",
+                "target": "MSME_16389",
+                "volume": 210129.52
+            },
+            {
+                "source": "MSME_16389",
+                "target": "vikas.enterprises@ybl",
+                "volume": 210684.31
+            },
+            {
+                "source": "vikas.enterprises@ybl",
+                "target": "MSME_17601",
+                "volume": 205667.33000000002
+            },
+            {
+                "source": "MSME_17601",
+                "target": "rajesh.enterprises@okhdfc",
+                "volume": 211627.46000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_11435",
+                "name": "Rapid Industries",
+                "gstin": "11QYKFP2306K4ZH"
+            },
+            {
+                "msme_id": "amit.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15479",
+                "name": "Global Textiles",
+                "gstin": "22FIEYP9202F4ZU"
+            },
+            {
+                "msme_id": "suresh.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 837903.76,
+        "evidence_graph": [
+            {
+                "source": "MSME_11435",
+                "target": "amit.traders@okhdfc",
+                "volume": 221869.65000000002
+            },
+            {
+                "source": "amit.traders@okhdfc",
+                "target": "MSME_15479",
+                "volume": 193490.16999999998
+            },
+            {
+                "source": "MSME_15479",
+                "target": "suresh.store@okhdfc",
+                "volume": 214536.97999999998
+            },
+            {
+                "source": "suresh.store@okhdfc",
+                "target": "MSME_11435",
+                "volume": 208006.96000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "pooja.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11531",
+                "name": "Prime Industries",
+                "gstin": "22ALCRD9144L8ZD"
+            },
+            {
+                "msme_id": "suresh.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15551",
+                "name": "Global Enterprises",
+                "gstin": "18IGTHF3315U4ZF"
+            }
+        ],
+        "total_laundered_inr": 836064.35,
+        "evidence_graph": [
+            {
+                "source": "pooja.store@ybl",
+                "target": "MSME_11531",
+                "volume": 218097.02000000002
+            },
+            {
+                "source": "MSME_11531",
+                "target": "suresh.store@ybl",
+                "volume": 208848.41999999998
+            },
+            {
+                "source": "suresh.store@ybl",
+                "target": "MSME_15551",
+                "volume": 202351.46
+            },
+            {
+                "source": "MSME_15551",
+                "target": "pooja.store@ybl",
+                "volume": 206767.45
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16680",
+                "name": "Skyline Logistics",
+                "gstin": "21OPPUW7793U4ZA"
+            },
+            {
+                "msme_id": "rajesh.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10629",
+                "name": "Shree Traders",
+                "gstin": "10GSVSV5418R5ZE"
+            }
+        ],
+        "total_laundered_inr": 835462.39,
+        "evidence_graph": [
+            {
+                "source": "rajesh.enterprises@okhdfc",
+                "target": "MSME_16680",
+                "volume": 216386.54
+            },
+            {
+                "source": "MSME_16680",
+                "target": "rajesh.enterprises@okicici",
+                "volume": 208794.39
+            },
+            {
+                "source": "rajesh.enterprises@okicici",
+                "target": "MSME_10629",
+                "volume": 211063.6
+            },
+            {
+                "source": "MSME_10629",
+                "target": "rajesh.enterprises@okhdfc",
+                "volume": 199217.86
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18886",
+                "name": "Global Logistics",
+                "gstin": "34ORDKM4995K8ZB"
+            },
+            {
+                "msme_id": "rajesh.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_12067",
+                "name": "Prime Packaging",
+                "gstin": "17LCSLK6803H5ZJ"
+            },
+            {
+                "msme_id": "pooja.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 835399.31,
+        "evidence_graph": [
+            {
+                "source": "MSME_18886",
+                "target": "rajesh.enterprises@oksbi",
+                "volume": 205978.71
+            },
+            {
+                "source": "rajesh.enterprises@oksbi",
+                "target": "MSME_12067",
+                "volume": 209612.31
+            },
+            {
+                "source": "MSME_12067",
+                "target": "pooja.enterprises@okicici",
+                "volume": 209855.83999999997
+            },
+            {
+                "source": "pooja.enterprises@okicici",
+                "target": "MSME_18886",
+                "volume": 209952.45
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "suresh.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16964",
+                "name": "Prime Textiles",
+                "gstin": "18PIZGJ2030E6ZJ"
+            },
+            {
+                "msme_id": "rajesh.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18599",
+                "name": "Sai Enterprises",
+                "gstin": "18NOEOF9229R2Z5"
+            }
+        ],
+        "total_laundered_inr": 831709.91,
+        "evidence_graph": [
+            {
+                "source": "suresh.enterprises@okicici",
+                "target": "MSME_16964",
+                "volume": 214422.38999999998
+            },
+            {
+                "source": "MSME_16964",
+                "target": "rajesh.enterprises@oksbi",
+                "volume": 191988.62
+            },
+            {
+                "source": "rajesh.enterprises@oksbi",
+                "target": "MSME_18599",
+                "volume": 213341.40999999997
+            },
+            {
+                "source": "MSME_18599",
+                "target": "suresh.enterprises@okicici",
+                "volume": 211957.49
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12234",
+                "name": "Lakshmi Textiles",
+                "gstin": "14EHIII7298J4ZY"
+            },
+            {
+                "msme_id": "amit.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10237",
+                "name": "Shree Industries",
+                "gstin": "22GERCE9653J7ZD"
+            },
+            {
+                "msme_id": "neha.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 828350.87,
+        "evidence_graph": [
+            {
+                "source": "MSME_12234",
+                "target": "amit.enterprises@ybl",
+                "volume": 217772.29
+            },
+            {
+                "source": "amit.enterprises@ybl",
+                "target": "MSME_10237",
+                "volume": 194434.65
+            },
+            {
+                "source": "MSME_10237",
+                "target": "neha.store@okicici",
+                "volume": 204391.36
+            },
+            {
+                "source": "neha.store@okicici",
+                "target": "MSME_12234",
+                "volume": 211752.57
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "vikas.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17409",
+                "name": "Lakshmi Traders",
+                "gstin": "26TQOTU5591N5ZL"
+            },
+            {
+                "msme_id": "vikas.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18601",
+                "name": "Sai Industries",
+                "gstin": "24IFKYE5137L6Z4"
+            }
+        ],
+        "total_laundered_inr": 827682.66,
+        "evidence_graph": [
+            {
+                "source": "vikas.traders@ybl",
+                "target": "MSME_17409",
+                "volume": 209022.55
+            },
+            {
+                "source": "MSME_17409",
+                "target": "vikas.enterprises@okhdfc",
+                "volume": 193129.39
+            },
+            {
+                "source": "vikas.enterprises@okhdfc",
+                "target": "MSME_18601",
+                "volume": 205062.41999999998
+            },
+            {
+                "source": "MSME_18601",
+                "target": "vikas.traders@ybl",
+                "volume": 220468.3
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11377",
+                "name": "Prime Textiles",
+                "gstin": "17XYARH4956Z3ZC"
+            },
+            {
+                "msme_id": "neha.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15370",
+                "name": "Green Foods",
+                "gstin": "31LRGGE1221Q3ZK"
+            }
+        ],
+        "total_laundered_inr": 826640.16,
+        "evidence_graph": [
+            {
+                "source": "amit.store@okicici",
+                "target": "MSME_11377",
+                "volume": 216391.45
+            },
+            {
+                "source": "MSME_11377",
+                "target": "neha.store@ybl",
+                "volume": 215002.72999999998
+            },
+            {
+                "source": "neha.store@ybl",
+                "target": "MSME_15370",
+                "volume": 191470.27000000002
+            },
+            {
+                "source": "MSME_15370",
+                "target": "amit.store@okicici",
+                "volume": 203775.71
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13509",
+                "name": "Sai Enterprises",
+                "gstin": "35ZTFPC2012S7ZB"
+            },
+            {
+                "msme_id": "vikas.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18506",
+                "name": "Urban Foods",
+                "gstin": "16EOJDQ5493W4Z2"
+            },
+            {
+                "msme_id": "rajesh.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 826312.05,
+        "evidence_graph": [
+            {
+                "source": "MSME_13509",
+                "target": "vikas.store@okhdfc",
+                "volume": 218514.06
+            },
+            {
+                "source": "vikas.store@okhdfc",
+                "target": "MSME_18506",
+                "volume": 201820.71
+            },
+            {
+                "source": "MSME_18506",
+                "target": "rajesh.traders@oksbi",
+                "volume": 193707.5
+            },
+            {
+                "source": "rajesh.traders@oksbi",
+                "target": "MSME_13509",
+                "volume": 212269.78
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10311",
+                "name": "Lakshmi Textiles",
+                "gstin": "24QCYTL6129D8Z5"
+            },
+            {
+                "msme_id": "vikas.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16126",
+                "name": "Green Logistics",
+                "gstin": "22FGMDR5693H8ZY"
+            },
+            {
+                "msme_id": "suresh.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 821833.2,
+        "evidence_graph": [
+            {
+                "source": "MSME_10311",
+                "target": "vikas.traders@oksbi",
+                "volume": 197373.78999999998
+            },
+            {
+                "source": "vikas.traders@oksbi",
+                "target": "MSME_16126",
+                "volume": 217674.31
+            },
+            {
+                "source": "MSME_16126",
+                "target": "suresh.store@okhdfc",
+                "volume": 196028.46000000002
+            },
+            {
+                "source": "suresh.store@okhdfc",
+                "target": "MSME_10311",
+                "volume": 210756.63999999998
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17909",
+                "name": "Lakshmi Packaging",
+                "gstin": "19ZZBUC1657P8Z3"
+            },
+            {
+                "msme_id": "amit.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17154",
+                "name": "Shree Textiles",
+                "gstin": "28FZBAT3660H8ZE"
+            },
+            {
+                "msme_id": "rajesh.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 821526.13,
+        "evidence_graph": [
+            {
+                "source": "MSME_17909",
+                "target": "amit.traders@oksbi",
+                "volume": 204204.41999999998
+            },
+            {
+                "source": "amit.traders@oksbi",
+                "target": "MSME_17154",
+                "volume": 216718.47999999998
+            },
+            {
+                "source": "MSME_17154",
+                "target": "rajesh.traders@okhdfc",
+                "volume": 192835.93
+            },
+            {
+                "source": "rajesh.traders@okhdfc",
+                "target": "MSME_17909",
+                "volume": 207767.3
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18818",
+                "name": "Om Foods",
+                "gstin": "32TLFRQ9017W6ZA"
+            },
+            {
+                "msme_id": "amit.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_12989",
+                "name": "Lakshmi Foods",
+                "gstin": "10VONUJ3489U8ZY"
+            },
+            {
+                "msme_id": "neha.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 821321.15,
+        "evidence_graph": [
+            {
+                "source": "MSME_18818",
+                "target": "amit.traders@ybl",
+                "volume": 209822.89
+            },
+            {
+                "source": "amit.traders@ybl",
+                "target": "MSME_12989",
+                "volume": 200402.99
+            },
+            {
+                "source": "MSME_12989",
+                "target": "neha.traders@ybl",
+                "volume": 210023.59
+            },
+            {
+                "source": "neha.traders@ybl",
+                "target": "MSME_18818",
+                "volume": 201071.68
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_18673",
+                "name": "Urban Logistics",
+                "gstin": "28PCOGF5483F4Z5"
+            },
+            {
+                "msme_id": "rajesh.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17252",
+                "name": "Om Industries",
+                "gstin": "14XYUTC4585T8ZH"
+            },
+            {
+                "msme_id": "pooja.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 817901.34,
+        "evidence_graph": [
+            {
+                "source": "MSME_18673",
+                "target": "rajesh.store@okicici",
+                "volume": 218636.5
+            },
+            {
+                "source": "rajesh.store@okicici",
+                "target": "MSME_17252",
+                "volume": 191480.2
+            },
+            {
+                "source": "MSME_17252",
+                "target": "pooja.enterprises@ybl",
+                "volume": 201519.19
+            },
+            {
+                "source": "pooja.enterprises@ybl",
+                "target": "MSME_18673",
+                "volume": 206265.45
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_19431",
+                "name": "Shree Industries",
+                "gstin": "10MYNGJ9625C7ZF"
+            },
+            {
+                "msme_id": "pooja.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17288",
+                "name": "Green Packaging",
+                "gstin": "15OZJCZ5927R6ZA"
+            },
+            {
+                "msme_id": "rajesh.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 817676.36,
+        "evidence_graph": [
+            {
+                "source": "MSME_19431",
+                "target": "pooja.store@ybl",
+                "volume": 214063.08
+            },
+            {
+                "source": "pooja.store@ybl",
+                "target": "MSME_17288",
+                "volume": 201494.24000000002
+            },
+            {
+                "source": "MSME_17288",
+                "target": "rajesh.enterprises@okicici",
+                "volume": 209612.66
+            },
+            {
+                "source": "rajesh.enterprises@okicici",
+                "target": "MSME_19431",
+                "volume": 192506.38
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_12067",
+                "name": "Prime Packaging",
+                "gstin": "17LCSLK6803H5ZJ"
+            },
+            {
+                "msme_id": "pooja.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11053",
+                "name": "Green Industries",
+                "gstin": "30EKAUA6554Q5Z1"
+            }
+        ],
+        "total_laundered_inr": 816327.92,
+        "evidence_graph": [
+            {
+                "source": "rajesh.enterprises@oksbi",
+                "target": "MSME_12067",
+                "volume": 209612.31
+            },
+            {
+                "source": "MSME_12067",
+                "target": "pooja.enterprises@okicici",
+                "volume": 209855.83999999997
+            },
+            {
+                "source": "pooja.enterprises@okicici",
+                "target": "MSME_11053",
+                "volume": 193037.78
+            },
+            {
+                "source": "MSME_11053",
+                "target": "rajesh.enterprises@oksbi",
+                "volume": 203821.99000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13698",
+                "name": "Lakshmi Textiles",
+                "gstin": "35HJGWA7673F7Z1"
+            },
+            {
+                "msme_id": "pooja.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14267",
+                "name": "Shree Logistics",
+                "gstin": "27YFOJC1024Y6ZT"
+            },
+            {
+                "msme_id": "amit.traders@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 813152.59,
+        "evidence_graph": [
+            {
+                "source": "MSME_13698",
+                "target": "pooja.enterprises@okicici",
+                "volume": 198610.21
+            },
+            {
+                "source": "pooja.enterprises@okicici",
+                "target": "MSME_14267",
+                "volume": 201981.62
+            },
+            {
+                "source": "MSME_14267",
+                "target": "amit.traders@okhdfc",
+                "volume": 210968.5
+            },
+            {
+                "source": "amit.traders@okhdfc",
+                "target": "MSME_13698",
+                "volume": 201592.25999999998
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_13097",
+                "name": "Urban Logistics",
+                "gstin": "16IRMXL7504S5Z5"
+            },
+            {
+                "msme_id": "pooja.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17901",
+                "name": "Om Logistics",
+                "gstin": "25RFFMY1314R5Z5"
+            },
+            {
+                "msme_id": "rajesh.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 811239.17,
+        "evidence_graph": [
+            {
+                "source": "MSME_13097",
+                "target": "pooja.traders@ybl",
+                "volume": 193858.52000000002
+            },
+            {
+                "source": "pooja.traders@ybl",
+                "target": "MSME_17901",
+                "volume": 195024.93
+            },
+            {
+                "source": "MSME_17901",
+                "target": "rajesh.enterprises@ybl",
+                "volume": 211385.73
+            },
+            {
+                "source": "rajesh.enterprises@ybl",
+                "target": "MSME_13097",
+                "volume": 210969.99000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "suresh.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11394",
+                "name": "Global Traders",
+                "gstin": "36YFBJZ5612K6Z9"
+            },
+            {
+                "msme_id": "rajesh.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17450",
+                "name": "Global Logistics",
+                "gstin": "29FQVQN5347G7ZS"
+            }
+        ],
+        "total_laundered_inr": 809516.72,
+        "evidence_graph": [
+            {
+                "source": "suresh.enterprises@ybl",
+                "target": "MSME_11394",
+                "volume": 212487.62
+            },
+            {
+                "source": "MSME_11394",
+                "target": "rajesh.store@oksbi",
+                "volume": 209714.09
+            },
+            {
+                "source": "rajesh.store@oksbi",
+                "target": "MSME_17450",
+                "volume": 195694.76
+            },
+            {
+                "source": "MSME_17450",
+                "target": "suresh.enterprises@ybl",
+                "volume": 191620.25
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14194",
+                "name": "Green Enterprises",
+                "gstin": "25JZPWS0524J6ZI"
+            },
+            {
+                "msme_id": "neha.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14126",
+                "name": "Urban Enterprises",
+                "gstin": "22NZAIB4253B3ZR"
+            },
+            {
+                "msme_id": "neha.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 803710.01,
+        "evidence_graph": [
+            {
+                "source": "MSME_14194",
+                "target": "neha.traders@ybl",
+                "volume": 211050.61000000002
+            },
+            {
+                "source": "neha.traders@ybl",
+                "target": "MSME_14126",
+                "volume": 191165.51
+            },
+            {
+                "source": "MSME_14126",
+                "target": "neha.enterprises@okhdfc",
+                "volume": 191485.15
+            },
+            {
+                "source": "neha.enterprises@okhdfc",
+                "target": "MSME_14194",
+                "volume": 210008.74
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10311",
+                "name": "Lakshmi Textiles",
+                "gstin": "24QCYTL6129D8Z5"
+            },
+            {
+                "msme_id": "vikas.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19509",
+                "name": "Global Enterprises",
+                "gstin": "17HRKSG0470H1ZN"
+            },
+            {
+                "msme_id": "suresh.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 803415.87,
+        "evidence_graph": [
+            {
+                "source": "MSME_10311",
+                "target": "vikas.traders@oksbi",
+                "volume": 197373.78999999998
+            },
+            {
+                "source": "vikas.traders@oksbi",
+                "target": "MSME_19509",
+                "volume": 192517.36
+            },
+            {
+                "source": "MSME_19509",
+                "target": "suresh.store@okhdfc",
+                "volume": 202768.08000000002
+            },
+            {
+                "source": "suresh.store@okhdfc",
+                "target": "MSME_10311",
+                "volume": 210756.63999999998
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "neha.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14646",
+                "name": "Prime Packaging",
+                "gstin": "29DIQGQ5436O2ZO"
+            },
+            {
+                "msme_id": "amit.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15040",
+                "name": "Green Industries",
+                "gstin": "24TRJUF7565P2ZW"
+            }
+        ],
+        "total_laundered_inr": 802379.15,
+        "evidence_graph": [
+            {
+                "source": "neha.enterprises@okhdfc",
+                "target": "MSME_14646",
+                "volume": 193239.43
+            },
+            {
+                "source": "MSME_14646",
+                "target": "amit.store@okicici",
+                "volume": 197260.08000000002
+            },
+            {
+                "source": "amit.store@okicici",
+                "target": "MSME_15040",
+                "volume": 204404.76
+            },
+            {
+                "source": "MSME_15040",
+                "target": "neha.enterprises@okhdfc",
+                "volume": 207474.88
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "neha.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10497",
+                "name": "Green Retail",
+                "gstin": "12FHWAS6264V7Z8"
+            },
+            {
+                "msme_id": "rajesh.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13845",
+                "name": "Global Logistics",
+                "gstin": "14CRTOF9139V5ZG"
+            }
+        ],
+        "total_laundered_inr": 801438.44,
+        "evidence_graph": [
+            {
+                "source": "neha.traders@ybl",
+                "target": "MSME_10497",
+                "volume": 185841.0
+            },
+            {
+                "source": "MSME_10497",
+                "target": "rajesh.store@oksbi",
+                "volume": 212693.85
+            },
+            {
+                "source": "rajesh.store@oksbi",
+                "target": "MSME_13845",
+                "volume": 199744.25
+            },
+            {
+                "source": "MSME_13845",
+                "target": "neha.traders@ybl",
+                "volume": 203159.34
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18150",
+                "name": "Urban Packaging",
+                "gstin": "11YEXPI4699Q5ZT"
+            },
+            {
+                "msme_id": "pooja.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_12632",
+                "name": "Green Industries",
+                "gstin": "26QLXXW7105L7ZE"
+            }
+        ],
+        "total_laundered_inr": 801286.86,
+        "evidence_graph": [
+            {
+                "source": "rajesh.store@ybl",
+                "target": "MSME_18150",
+                "volume": 191339.28999999998
+            },
+            {
+                "source": "MSME_18150",
+                "target": "pooja.store@ybl",
+                "volume": 213833.2
+            },
+            {
+                "source": "pooja.store@ybl",
+                "target": "MSME_12632",
+                "volume": 203514.36
+            },
+            {
+                "source": "MSME_12632",
+                "target": "rajesh.store@ybl",
+                "volume": 192600.01
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_17832",
+                "name": "Shree Industries",
+                "gstin": "27BVIYZ3732C7ZT"
+            },
+            {
+                "msme_id": "pooja.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18455",
+                "name": "Green Logistics",
+                "gstin": "12DRTZB9424E4ZY"
+            },
+            {
+                "msme_id": "pooja.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 800745.55,
+        "evidence_graph": [
+            {
+                "source": "MSME_17832",
+                "target": "pooja.store@oksbi",
+                "volume": 201664.13
+            },
+            {
+                "source": "pooja.store@oksbi",
+                "target": "MSME_18455",
+                "volume": 189156.2
+            },
+            {
+                "source": "MSME_18455",
+                "target": "pooja.traders@okicici",
+                "volume": 198469.22
+            },
+            {
+                "source": "pooja.traders@okicici",
+                "target": "MSME_17832",
+                "volume": 211456.0
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14739",
+                "name": "Shree Foods",
+                "gstin": "15HYRUP1876R2ZD"
+            },
+            {
+                "msme_id": "suresh.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14205",
+                "name": "Prime Industries",
+                "gstin": "23HMTLI3535E3ZX"
+            },
+            {
+                "msme_id": "vikas.traders@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 799711.24,
+        "evidence_graph": [
+            {
+                "source": "MSME_14739",
+                "target": "suresh.store@okicici",
+                "volume": 190938.46
+            },
+            {
+                "source": "suresh.store@okicici",
+                "target": "MSME_14205",
+                "volume": 210309.84000000003
+            },
+            {
+                "source": "MSME_14205",
+                "target": "vikas.traders@okicici",
+                "volume": 191238.05
+            },
+            {
+                "source": "vikas.traders@okicici",
+                "target": "MSME_14739",
+                "volume": 207224.89
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_12775",
+                "name": "Om Foods",
+                "gstin": "21BPINP9550U5ZR"
+            },
+            {
+                "msme_id": "pooja.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10223",
+                "name": "Lakshmi Logistics",
+                "gstin": "31RJAYD5456V3ZF"
+            },
+            {
+                "msme_id": "vikas.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 796986.87,
+        "evidence_graph": [
+            {
+                "source": "MSME_12775",
+                "target": "pooja.traders@oksbi",
+                "volume": 207908.55
+            },
+            {
+                "source": "pooja.traders@oksbi",
+                "target": "MSME_10223",
+                "volume": 191000.96
+            },
+            {
+                "source": "MSME_10223",
+                "target": "vikas.store@oksbi",
+                "volume": 190614.19
+            },
+            {
+                "source": "vikas.store@oksbi",
+                "target": "MSME_12775",
+                "volume": 207463.17
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "suresh.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15623",
+                "name": "Skyline Industries",
+                "gstin": "34UHPDJ5722W1ZQ"
+            },
+            {
+                "msme_id": "amit.enterprises@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16746",
+                "name": "Green Packaging",
+                "gstin": "27XHZFC8484K8ZQ"
+            }
+        ],
+        "total_laundered_inr": 793371.19,
+        "evidence_graph": [
+            {
+                "source": "suresh.enterprises@ybl",
+                "target": "MSME_15623",
+                "volume": 191087.28000000003
+            },
+            {
+                "source": "MSME_15623",
+                "target": "amit.enterprises@ybl",
+                "volume": 214264.76
+            },
+            {
+                "source": "amit.enterprises@ybl",
+                "target": "MSME_16746",
+                "volume": 196159.34
+            },
+            {
+                "source": "MSME_16746",
+                "target": "suresh.enterprises@ybl",
+                "volume": 191859.81
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "amit.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19432",
+                "name": "Global Textiles",
+                "gstin": "14IVCTU7473I4ZL"
+            },
+            {
+                "msme_id": "vikas.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11840",
+                "name": "Sai Logistics",
+                "gstin": "18YFECM7953D7ZD"
+            }
+        ],
+        "total_laundered_inr": 789016.28,
+        "evidence_graph": [
+            {
+                "source": "amit.enterprises@okhdfc",
+                "target": "MSME_19432",
+                "volume": 206089.59
+            },
+            {
+                "source": "MSME_19432",
+                "target": "vikas.enterprises@oksbi",
+                "volume": 193667.78
+            },
+            {
+                "source": "vikas.enterprises@oksbi",
+                "target": "MSME_11840",
+                "volume": 188899.82
+            },
+            {
+                "source": "MSME_11840",
+                "target": "amit.enterprises@okhdfc",
+                "volume": 200359.08999999997
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14702",
+                "name": "Om Enterprises",
+                "gstin": "13BBOUF9419K1ZS"
+            },
+            {
+                "msme_id": "rajesh.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_12643",
+                "name": "Skyline Traders",
+                "gstin": "11DXOEA5755F3ZA"
+            },
+            {
+                "msme_id": "pooja.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 781186.41,
+        "evidence_graph": [
+            {
+                "source": "MSME_14702",
+                "target": "rajesh.traders@oksbi",
+                "volume": 182922.42
+            },
+            {
+                "source": "rajesh.traders@oksbi",
+                "target": "MSME_12643",
+                "volume": 193197.45
+            },
+            {
+                "source": "MSME_12643",
+                "target": "pooja.traders@oksbi",
+                "volume": 199231.66999999998
+            },
+            {
+                "source": "pooja.traders@oksbi",
+                "target": "MSME_14702",
+                "volume": 205834.87
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14126",
+                "name": "Urban Enterprises",
+                "gstin": "22NZAIB4253B3ZR"
+            },
+            {
+                "msme_id": "neha.enterprises@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_15026",
+                "name": "Sai Textiles",
+                "gstin": "27MKUGE9433W1Z5"
+            },
+            {
+                "msme_id": "neha.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 780964.79,
+        "evidence_graph": [
+            {
+                "source": "MSME_14126",
+                "target": "neha.enterprises@okhdfc",
+                "volume": 191485.15
+            },
+            {
+                "source": "neha.enterprises@okhdfc",
+                "target": "MSME_15026",
+                "volume": 201976.6
+            },
+            {
+                "source": "MSME_15026",
+                "target": "neha.traders@ybl",
+                "volume": 196337.53
+            },
+            {
+                "source": "neha.traders@ybl",
+                "target": "MSME_14126",
+                "volume": 191165.51
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_10074",
+                "name": "Om Logistics",
+                "gstin": "12OPQQT5063D3ZS"
+            },
+            {
+                "msme_id": "neha.store@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_18707",
+                "name": "Sai Textiles",
+                "gstin": "26OTGTQ3551Y6ZD"
+            },
+            {
+                "msme_id": "rajesh.store@okhdfc",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 768966.23,
+        "evidence_graph": [
+            {
+                "source": "MSME_10074",
+                "target": "neha.store@ybl",
+                "volume": 178966.69
+            },
+            {
+                "source": "neha.store@ybl",
+                "target": "MSME_18707",
+                "volume": 202816.22
+            },
+            {
+                "source": "MSME_18707",
+                "target": "rajesh.store@okhdfc",
+                "volume": 193959.87
+            },
+            {
+                "source": "rajesh.store@okhdfc",
+                "target": "MSME_10074",
+                "volume": 193223.45
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "suresh.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_14779",
+                "name": "Om Textiles",
+                "gstin": "31ATRDD8269E2ZW"
+            },
+            {
+                "msme_id": "suresh.traders@ybl",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11111",
+                "name": "Green Traders",
+                "gstin": "20HOFTW9282C1Z0"
+            }
+        ],
+        "total_laundered_inr": 765705.73,
+        "evidence_graph": [
+            {
+                "source": "suresh.enterprises@okicici",
+                "target": "MSME_14779",
+                "volume": 203950.78999999998
+            },
+            {
+                "source": "MSME_14779",
+                "target": "suresh.traders@ybl",
+                "volume": 190961.41
+            },
+            {
+                "source": "suresh.traders@ybl",
+                "target": "MSME_11111",
+                "volume": 178177.45
+            },
+            {
+                "source": "MSME_11111",
+                "target": "suresh.enterprises@okicici",
+                "volume": 192616.08000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "suresh.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_16226",
+                "name": "Skyline Enterprises",
+                "gstin": "13GZBMT8413Y4ZM"
+            },
+            {
+                "msme_id": "suresh.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17998",
+                "name": "Rapid Textiles",
+                "gstin": "11WQKYK5375C6ZI"
+            }
+        ],
+        "total_laundered_inr": 761162.98,
+        "evidence_graph": [
+            {
+                "source": "suresh.enterprises@okicici",
+                "target": "MSME_16226",
+                "volume": 202437.18
+            },
+            {
+                "source": "MSME_16226",
+                "target": "suresh.store@oksbi",
+                "volume": 192122.63
+            },
+            {
+                "source": "suresh.store@oksbi",
+                "target": "MSME_17998",
+                "volume": 189612.78
+            },
+            {
+                "source": "MSME_17998",
+                "target": "suresh.enterprises@okicici",
+                "volume": 176990.39
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "suresh.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13697",
+                "name": "Skyline Packaging",
+                "gstin": "12OCISX2437G2Z1"
+            },
+            {
+                "msme_id": "amit.enterprises@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_11111",
+                "name": "Green Traders",
+                "gstin": "20HOFTW9282C1Z0"
+            }
+        ],
+        "total_laundered_inr": 749952.32,
+        "evidence_graph": [
+            {
+                "source": "suresh.enterprises@okicici",
+                "target": "MSME_13697",
+                "volume": 188512.38
+            },
+            {
+                "source": "MSME_13697",
+                "target": "amit.enterprises@oksbi",
+                "volume": 189075.05
+            },
+            {
+                "source": "amit.enterprises@oksbi",
+                "target": "MSME_11111",
+                "volume": 179748.81
+            },
+            {
+                "source": "MSME_11111",
+                "target": "suresh.enterprises@okicici",
+                "volume": 192616.08000000002
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "suresh.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_13697",
+                "name": "Skyline Packaging",
+                "gstin": "12OCISX2437G2Z1"
+            },
+            {
+                "msme_id": "suresh.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17998",
+                "name": "Rapid Textiles",
+                "gstin": "11WQKYK5375C6ZI"
+            }
+        ],
+        "total_laundered_inr": 744596.53,
+        "evidence_graph": [
+            {
+                "source": "suresh.enterprises@okicici",
+                "target": "MSME_13697",
+                "volume": 188512.38
+            },
+            {
+                "source": "MSME_13697",
+                "target": "suresh.store@oksbi",
+                "volume": 189480.97999999998
+            },
+            {
+                "source": "suresh.store@oksbi",
+                "target": "MSME_17998",
+                "volume": 189612.78
+            },
+            {
+                "source": "MSME_17998",
+                "target": "suresh.enterprises@okicici",
+                "volume": 176990.39
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "MSME_14957",
+                "name": "Lakshmi Textiles",
+                "gstin": "29JTAOP4107L5ZC"
+            },
+            {
+                "msme_id": "pooja.traders@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_10223",
+                "name": "Lakshmi Logistics",
+                "gstin": "31RJAYD5456V3ZF"
+            },
+            {
+                "msme_id": "vikas.store@oksbi",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            }
+        ],
+        "total_laundered_inr": 739097.24,
+        "evidence_graph": [
+            {
+                "source": "MSME_14957",
+                "target": "pooja.traders@oksbi",
+                "volume": 184761.94
+            },
+            {
+                "source": "pooja.traders@oksbi",
+                "target": "MSME_10223",
+                "volume": 191000.96
+            },
+            {
+                "source": "MSME_10223",
+                "target": "vikas.store@oksbi",
+                "volume": 190614.19
+            },
+            {
+                "source": "vikas.store@oksbi",
+                "target": "MSME_14957",
+                "volume": 172720.15
+            }
+        ]
+    },
+    {
+        "fraud_type": "Accommodation Bill",
+        "nodes_involved": [
+            {
+                "msme_id": "rajesh.enterprises@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_17509",
+                "name": "Global Retail",
+                "gstin": "27PUIHT9309S1ZL"
+            },
+            {
+                "msme_id": "vikas.store@okicici",
+                "name": "Unknown Entity",
+                "gstin": "GSTIN_NOT_FOUND"
+            },
+            {
+                "msme_id": "MSME_19629",
+                "name": "Shree Retail",
+                "gstin": "28STTZY1225J3ZC"
+            }
+        ],
+        "total_laundered_inr": 738967.48,
+        "evidence_graph": [
+            {
+                "source": "rajesh.enterprises@okicici",
+                "target": "MSME_17509",
+                "volume": 182973.65
+            },
+            {
+                "source": "MSME_17509",
+                "target": "vikas.store@okicici",
+                "volume": 177333.13
+            },
+            {
+                "source": "vikas.store@okicici",
+                "target": "MSME_19629",
+                "volume": 188344.25
+            },
+            {
+                "source": "MSME_19629",
+                "target": "rajesh.enterprises@okicici",
+                "volume": 190316.45
+            }
+        ]
+    }
+]

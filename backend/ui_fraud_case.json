@@ -1,0 +1,49 @@
+{
+    "fraud_type": "Accommodation Bill",
+    "reasoning": "ML anomaly detection + Graph Cycle validation with <5% variance.",
+    "total_laundered_inr": 1040349.43,
+    "nodes": [
+        {
+            "id": "MSME_19519",
+            "label": "Global Textiles",
+            "gstin": "14UXBGO9504M4ZG"
+        },
+        {
+            "id": "pooja.enterprises@okhdfc",
+            "label": "Unknown Entity",
+            "gstin": "GSTIN_NOT_FOUND"
+        },
+        {
+            "id": "MSME_13645",
+            "label": "Lakshmi Logistics",
+            "gstin": "24BJEZM8008R8ZH"
+        },
+        {
+            "id": "pooja.enterprises@ybl",
+            "label": "Unknown Entity",
+            "gstin": "GSTIN_NOT_FOUND"
+        }
+    ],
+    "links": [
+        {
+            "source": "MSME_19519",
+            "target": "pooja.enterprises@okhdfc",
+            "label": "\u20b9278,788"
+        },
+        {
+            "source": "pooja.enterprises@okhdfc",
+            "target": "MSME_13645",
+            "label": "\u20b9252,111"
+        },
+        {
+            "source": "MSME_13645",
+            "target": "pooja.enterprises@ybl",
+            "label": "\u20b9258,635"
+        },
+        {
+            "source": "pooja.enterprises@ybl",
+            "target": "MSME_19519",
+            "label": "\u20b9250,815"
+        }
+    ]
+}
